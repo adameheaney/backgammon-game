@@ -1,13 +1,22 @@
 package Java;
 
 public class Dice {
+
     private int numSides = 6;
 
-    public int roll(int numDie) {
+    public int roll(int num) {
         int sum = 0;
-        for(; numDie > 0; numDie--) {
-            sum += (int) (Math.random() * 6 + 1);
+        for(; num > 0; num--) {
+            sum += (int) (Math.random() * numSides + 1);
         }
         return sum;
+    }
+
+    public void setNumSides(int n) {
+        numSides = n;
+    }
+
+    public int getNumSides() {
+        return numSides;
     }
 }
