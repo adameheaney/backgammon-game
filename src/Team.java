@@ -3,18 +3,21 @@ package src;
 public class Team {
 
     private final int HOME_Y_POS;
-    private final int TEAM;
     private final String TEAM_NAME;
     private PieceNode[][] pieces;
+    private int numActivePieces;
+    BackgammonBoard b;
 
-    public Team(int homeYPos, int team, String teamName, int teamNum, String piecePositions, int numSpaces) {
+    public Team(int homeYPos, String teamName, 
+    String piecePositions, int numSpaces, BackgammonBoard b) {
         HOME_Y_POS = homeYPos;
-        this.TEAM = team;
         TEAM_NAME = teamName;
-        instantiatePieces(teamNum, piecePositions, numSpaces);
+        instantiatePieces(piecePositions, numSpaces);
+        numActivePieces = 15;
+        this.b = b;
     }
 
-    private void instantiatePieces(int teamNum, String piecePositions, int numSpaces) {
+    private void instantiatePieces(String piecePositions, int numSpaces) {
         pieces = new PieceNode[2][numSpaces];
         while(!piecePositions.isBlank()) {
             int posX = Integer.parseInt(piecePositions.substring(0, piecePositions.indexOf(" ")));
@@ -39,12 +42,20 @@ public class Team {
         return HOME_Y_POS;
     }
 
-    public int getTeamNum() {
-        return TEAM;
-    }
-
     public String getTeamName() {
         return TEAM_NAME;
+    }
+
+    public BackgammonBoard getBoard() {
+        return b;
+    }
+
+    /*-----------------------------------------------
+     *  Methods that manipulate or return Piece data
+     ----------------------------------------------*/
+
+    public int getNumActivePieces() {
+        return numActivePieces;
     }
 
     public PieceNode[][] getPieces() {
@@ -63,7 +74,16 @@ public class Team {
         return num;
     }
 
-    public movePiece(int startPosX, int startPosY, int newPosX, int newPosY) {
-        
+    public void movePiece(int startPosX, int startPosY, int movement) {
+        if(pieces[startPosY][startPosX] == null)
+            return;
+        PieceNode curr = pieces[startPosY][startPosX];
+        while(curr.getNext() != null) {
+            curr = curr.getNext();
+        }
+        curr.getPiece().move(movement, this);
+        if(!curr.getPiece().isInPlay()) {
+            numActivePieces--;
+        }
     }
 }
