@@ -1,5 +1,5 @@
-package Java;
+package src;
 
 public class Backgammon {
-    
+
 }

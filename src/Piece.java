@@ -1,4 +1,4 @@
-package Java;
+package src;
 
 public class Piece {
 
