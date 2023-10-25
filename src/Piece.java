@@ -6,6 +6,7 @@ public class Piece {
     private int posY;
     private boolean eaten = false;
     private boolean inPlay;
+    private int numSpaces = 11;
     
     public Piece(int posX, int posY) {
         this.posX = posX;
@@ -40,7 +41,7 @@ public class Piece {
         }
         posX = newPos[0];
         posY = newPos[1];
-        if(posX >= t.getBoard().getNumSpaces()) {
+        if(posX >= numSpaces) {
             inPlay = false;
         }
         return new int[] {posX, posY};
