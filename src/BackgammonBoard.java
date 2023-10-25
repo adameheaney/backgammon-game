@@ -26,7 +26,7 @@ public class BackgammonBoard {
     }
 
     //TODO
-    public boolean movePiece(int movement) {
+    public boolean movePiece(int newPosX, int newPosY, int movement) {
         return false;
     }
 

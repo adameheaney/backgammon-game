@@ -18,9 +18,9 @@ public class Piece {
         this.inPlay = inPlay;
     }
 
-    public int[] move(int movement, Team t) {
+    public void move(int movement, Team t) {
         if(eaten) {
-            return putBackIn(movement + 5, t);
+            putBackIn(movement + 5, t);
         }
         int[] newPos = new int[2];
         //clockwise movement
@@ -44,18 +44,16 @@ public class Piece {
         if(posX >= t.getNumSpaces()){
             inPlay = false;
         }
-        return new int[] {posX, posY};
     }
 
     public void getEaten() {
         eaten = true;
     }
 
-    private int[] putBackIn(int num, Team team) {
-        int[] newPos = {1-team.getHomeYPos(), num};
+    private void putBackIn(int num, Team team) {
+        int[] newPos = {num, 1-team.getHomeYPos()};
         posX = newPos[0];
         posY = newPos[1];
-        return newPos;
     }
 
     public int getPosX() {

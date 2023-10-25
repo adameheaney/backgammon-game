@@ -101,13 +101,15 @@ public class Team {
         }
         return board;
     }
+    
+    public int getNumSpaces() {
+        return numSpaces;
+    }
     /*-----------------------------------------------
      *  Methods that manipulate or return Piece data
      ----------------------------------------------*/
 
-    public int getNumSpaces() {
-        return numSpaces;
-    }
+    
     public int getNumActivePieces() {
         return numActivePieces;
     }
@@ -128,21 +130,36 @@ public class Team {
         return num;
     }
     //currently working on this
-    public void movePiece(int startPosX, int startPosY, int movement) {
+    public boolean movePiece(int startPosX, int startPosY, int movement) {
         if(pieces[startPosY][startPosX] == null)
-            return;
+            return false;
+        /*in the event that you want to move a piece that is already in your home to complete the game, this checks if all of your pieces are home first before doing that. Pretty sure it works*/
         if(startPosY == HOME_Y_POS && startPosX + movement > numSpaces) {
+            PieceNode piece = pieces[startPosX][startPosY].detach();
+            if(piece == pieces[startPosX][startPosY]) {
+                pieces[startPosX][startPosY] = null;
+            }
             if(allPiecesInHome) {
-                pieces[startPosX][startPosY].getPiece().move(movement, this);
+                piece.getPiece().move(movement, this);
+                if(inactivePieces == null) {
+                    inactivePieces = pieces[startPosX][startPosY];
+                }
+                else {
+                    inactivePieces.attach(eatenPieces);
+                }
+                numActivePieces--;
+                return true;
+            }
+            else {
+                return false;
             }
         }
-        PieceNode curr = pieces[startPosY][startPosX];
-        while(curr.getNext() != null) {
-            curr = curr.getNext();
+        PieceNode piece = pieces[startPosX][startPosY].detach();
+        if(piece == pieces[startPosX][startPosY]) {
+                pieces[startPosX][startPosY] = null;
         }
-        curr.getPiece().move(movement, this);
-        if(!curr.getPiece().isInPlay()) {
-            numActivePieces--;
-        }
+        piece.getPiece().move(movement, this);
+        pieces[piece.getPiece().getPosX()][piece.getPiece().getPosY()].attach(piece);
+        return true;
     }
 }
