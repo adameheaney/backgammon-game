@@ -9,11 +9,14 @@ public class Team {
     private PieceNode inactivePieces;
     private int numActivePieces = 15;
     private int points;
+    private boolean allPiecesInHome = false;
+    private int numSpaces;
 
     public Team(int homeYPos, String teamName, 
     String piecePositions, int numSpaces) {
         HOME_Y_POS = homeYPos;
         TEAM_NAME = teamName;
+        this.numSpaces = numSpaces;
         instantiatePieces(piecePositions, numSpaces);
     }
 
@@ -102,6 +105,9 @@ public class Team {
      *  Methods that manipulate or return Piece data
      ----------------------------------------------*/
 
+    public int getNumSpaces() {
+        return numSpaces;
+    }
     public int getNumActivePieces() {
         return numActivePieces;
     }
@@ -121,10 +127,15 @@ public class Team {
         }
         return num;
     }
-
+    //currently working on this
     public void movePiece(int startPosX, int startPosY, int movement) {
         if(pieces[startPosY][startPosX] == null)
             return;
+        if(startPosY == HOME_Y_POS && startPosX + movement > numSpaces) {
+            if(allPiecesInHome) {
+                pieces[startPosX][startPosY].getPiece().move(movement, this);
+            }
+        }
         PieceNode curr = pieces[startPosY][startPosX];
         while(curr.getNext() != null) {
             curr = curr.getNext();

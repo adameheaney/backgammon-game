@@ -41,7 +41,7 @@ public class Piece {
         }
         posX = newPos[0];
         posY = newPos[1];
-        if(posX >= numSpaces) {
+        if(posX >= t.getNumSpaces()){
             inPlay = false;
         }
         return new int[] {posX, posY};
