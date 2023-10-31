@@ -1,10 +1,29 @@
 package src;
 
+import java.util.Scanner;
 public class Backgammon {
-    public static void main(String[] args) {
-        BackgammonBoard b = new BackgammonBoard();
-        System.out.println(b.getTeams()[0].boardString());
-        System.out.println(" \n ");
-        System.out.println(b.getTeams()[1].boardString());
+
+    private BackgammonBoard b;
+    private Dice d;
+
+    public Backgammon() {
+        b = new BackgammonBoard();
+        d = new Dice();
+    }
+
+    public void play() {
+
+    }
+
+    public void startGame() {
+        
+    }
+
+    private void gameLoop() {
+
+    }
+
+    private void turn(Team t) {
+
     }
 }

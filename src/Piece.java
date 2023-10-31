@@ -46,7 +46,31 @@ public class Piece {
         }
     }
 
-    public void getEaten() {
+    public int[] calculateNewPos(int movement, Team t) {
+        if(eaten) {
+           return new int[] {movement + 5, 1-t.getHomeYPos()};
+        }
+        int[] newPos = new int[2];
+        //clockwise movement
+        if(t.getHomeYPos() == posY) {
+            newPos[0] = movement + posX;
+            newPos[1] = posY;
+        }
+        //counter clockwise movement
+        else if(t.getHomeYPos() != posY) {
+            if(posX - movement < 0) {
+                newPos[0] = Math.abs(posX + 1 - movement);
+                newPos[1] = 1 - posY;
+            }
+            else {
+                newPos[0] = posY - movement;
+                newPos[1] = posY;
+            }
+        }
+        return newPos;
+    }
+
+    public void becomeEaten() {
         eaten = true;
     }
 
@@ -54,22 +78,18 @@ public class Piece {
         int[] newPos = {num, 1-team.getHomeYPos()};
         posX = newPos[0];
         posY = newPos[1];
+        eaten = false;
     }
 
+    public void setPosition(int[] newPos) {
+        posX = newPos[0];
+        posY = newPos[1];
+    }
     public int getPosX() {
         return posX;
     }
-
-    public void setPosX(int posX) {
-        this.posX = posX;
-    }
-
     public int getPosY() {
         return posY;
-    }
-
-    public void setPosY(int posY) {
-        this.posY = posY;
     }
     
     public boolean isEaten() {

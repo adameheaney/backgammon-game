@@ -35,13 +35,6 @@ public class PieceNode {
         return curr;
     }
 
-    public PieceNode getEnd() {
-        PieceNode curr = this;
-        while(curr.getNext() != null) {
-            curr = curr.getNext();
-        }
-        return curr;
-    }
     public Piece getPiece() {
         return piece;
     }

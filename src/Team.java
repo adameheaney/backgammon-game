@@ -2,15 +2,16 @@ package src;
 
 public class Team {
 
-    private final int HOME_Y_POS;
-    private final String TEAM_NAME;
     private PieceNode[][] pieces;
     private PieceNode eatenPieces;
     private PieceNode inactivePieces;
     private int numActivePieces = 15;
     private int points;
     private boolean allPiecesInHome = false;
-    private int numSpaces;
+
+    private final int HOME_Y_POS;
+    private final String TEAM_NAME;
+    private final int numSpaces;
 
     public Team(int homeYPos, String teamName, 
     String piecePositions, int numSpaces) {
@@ -57,6 +58,10 @@ public class Team {
         this.points += points;
     }
 
+    public void eatPiece(int[] pos) {
+        PieceNode piece = pieces[pos[0]][pos[1]].detach();
+        piece.getPiece().becomeEaten();
+    }
     public String boardString() {
         String board = "";
         for(int i = 1; i >= 0; i--) {
@@ -129,7 +134,7 @@ public class Team {
         }
         return num;
     }
-    //currently working on this
+
     public boolean movePiece(int startPosX, int startPosY, int movement) {
         if(pieces[startPosY][startPosX] == null)
             return false;

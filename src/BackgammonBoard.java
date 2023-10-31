@@ -3,11 +3,13 @@ package src;
 public class BackgammonBoard {
 
     private Team[] teams;
+    private int currTeam = 0;
+    private int turn = 0;
     private final int NUM_SPACES = 12;
-    private Dice dice;
+    private final int HOME_Y_POS_1 = 0;
+    private final int HOME_Y_POS_2 = 0;
 
     public BackgammonBoard() {
-        dice = new Dice();
         initializeBoard();
     }
 
@@ -15,25 +17,36 @@ public class BackgammonBoard {
         //DO NOT CHANGE, THESE ARE THE INITIALIZING COORDS FOR THE PIECES
         String team1String = "0 1 0 1 0 1 0 1 0 1 11 1 11 1 4 0 4 0 4 0 6 0 6 0 6 0 6 0 6 0 ";
         String team2String = "0 0 0 0 0 0 0 0 0 0 11 0 11 0 4 1 4 1 4 1 6 1 6 1 6 1 6 1 6 1 ";
-        teams = new Team[] {new Team(0, "W", team1String, NUM_SPACES), 
-                            new Team(1, "B", team2String, NUM_SPACES)};
-    }
-
-    public int[] roll() {
-        int rollOne = dice.roll(1);
-        int rollTwo = dice.roll(1);
-        return new int[] {rollOne, rollTwo};
+        teams = new Team[] {new Team(HOME_Y_POS_1, "W", team1String, NUM_SPACES), 
+                            new Team(HOME_Y_POS_2, "B", team2String, NUM_SPACES)};
     }
 
     //TODO
-    public boolean movePiece(int newPosX, int newPosY, int movement) {
+    public boolean movePiece(int startPosX, int startPosY, int movement) {
+        if(teams[turn].getPieces()[startPosX][startPosY] == null) {
+            return false;
+        }
+        Piece piece = teams[turn].getPieces()[startPosX][startPosY].detach().getPiece();
+        int[] newPos = piece.calculateNewPos(movement, teams[turn]);
+        if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) >= 2) {
+            return false;
+        }
+        else if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) == 1) {
+            
+        }
+        else if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) == 0) {
+
+        }
         return false;
     }
 
-    //TODO
     private boolean checkValidityOfPosition(int[] newPos, Team t) {
-        return false;
+        if(t.numPiecesOnSpace(newPos[0], newPos[1]) >= 2) {
+            return false;
+        }
+        return true;
     }
+
 
     public int getNUM_SPACES() {
         return NUM_SPACES;
@@ -41,6 +54,10 @@ public class BackgammonBoard {
 
     public Team[] getTeams() {
         return teams;
+    }
+
+    public void flipCurrTeam() {
+        currTeam = 1 - currTeam;
     }
     
 }
