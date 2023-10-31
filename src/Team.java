@@ -7,7 +7,6 @@ public class Team {
     private PieceNode inactivePieces;
     private int numActivePieces = 15;
     private int points;
-    private boolean allPiecesInHome = false;
 
     private final int HOME_Y_POS;
     private final String TEAM_NAME;
@@ -58,10 +57,7 @@ public class Team {
         this.points += points;
     }
 
-    public void eatPiece(int[] pos) {
-        PieceNode piece = pieces[pos[0]][pos[1]].detach();
-        piece.getPiece().becomeEaten();
-    }
+    
     public String boardString() {
         String board = "";
         for(int i = 1; i >= 0; i--) {
@@ -123,6 +119,14 @@ public class Team {
         return pieces;
     }
 
+    public PieceNode getEatenPieces() {
+        return eatenPieces;
+    }
+
+    public PieceNode getInactivePieces() {
+        return inactivePieces;
+    }
+
     public int numPiecesOnSpace(int posX, int posY) {
         if(pieces[posY][posX] == null)
             return 0;
@@ -136,15 +140,13 @@ public class Team {
     }
 
     public boolean movePiece(int startPosX, int startPosY, int movement) {
-        if(pieces[startPosY][startPosX] == null)
-            return false;
         /*in the event that you want to move a piece that is already in your home to complete the game, this checks if all of your pieces are home first before doing that. Pretty sure it works*/
         if(startPosY == HOME_Y_POS && startPosX + movement > numSpaces) {
             PieceNode piece = pieces[startPosX][startPosY].detach();
             if(piece == pieces[startPosX][startPosY]) {
                 pieces[startPosX][startPosY] = null;
             }
-            if(allPiecesInHome) {
+            if(allPiecesInHome()) {
                 piece.getPiece().move(movement, this);
                 if(inactivePieces == null) {
                     inactivePieces = pieces[startPosX][startPosY];
@@ -166,5 +168,36 @@ public class Team {
         piece.getPiece().move(movement, this);
         pieces[piece.getPiece().getPosX()][piece.getPiece().getPosY()].attach(piece);
         return true;
+    }
+    
+    private boolean allPiecesInHome() {
+        int numPieces = 0;
+        if(inactivePieces != null) 
+            numPieces = inactivePieces.numNodes();  
+        for(int i = 6; i < 12; i++) {
+            if(pieces[i][HOME_Y_POS] != null) {
+                numPieces += pieces[i][HOME_Y_POS].numNodes();
+            }
+        }
+        return numPieces == 15;
+    }
+    public boolean moveEatenPiece(int movement) {
+        if(eatenPieces == null) {
+            return false;
+        }
+        PieceNode piece = eatenPieces.detach();
+        piece.getPiece().move(movement, this);
+        if(pieces[piece.getPiece().getPosX()][piece.getPiece().getPosY()] == null)
+            pieces[piece.getPiece().getPosX()][piece.getPiece().getPosY()] = piece;
+        else
+            pieces[piece.getPiece().getPosX()][piece.getPiece().getPosY()].attach(piece);
+        return true;
+    }
+
+    public void eatPiece(int[] pos) {
+        PieceNode piece = pieces[pos[0]][pos[1]].detach();
+        piece.getPiece().becomeEaten();
+        if(eatenPieces != null) eatenPieces.attach(piece);
+        else eatenPieces = piece;
     }
 }

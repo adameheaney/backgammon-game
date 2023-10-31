@@ -26,7 +26,7 @@ public class BackgammonBoard {
         if(teams[turn].getPieces()[startPosX][startPosY] == null) {
             return false;
         }
-        Piece piece = teams[turn].getPieces()[startPosX][startPosY].detach().getPiece();
+        Piece piece = teams[turn].getPieces()[startPosX][startPosY].getEnd().getPiece();
         int[] newPos = piece.calculateNewPos(movement, teams[turn]);
         if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) >= 2) {
             return false;
@@ -40,14 +40,21 @@ public class BackgammonBoard {
         return false;
     }
 
-    private boolean checkValidityOfPosition(int[] newPos, Team t) {
-        if(t.numPiecesOnSpace(newPos[0], newPos[1]) >= 2) {
+    public boolean moveEatenPiece(int movement) {
+        if(teams[turn].getEatenPieces() == null) return false;
+        Piece piece = teams[turn].getEatenPieces().getEnd().getPiece();
+        int[] newPos = piece.calculateNewPos(movement, teams[turn]);
+        if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) >= 2) {
             return false;
         }
-        return true;
+        else if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) == 1) {
+            
+        }
+        else if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) == 0) {
+
+        }
+        return false;
     }
-
-
     public int getNUM_SPACES() {
         return NUM_SPACES;
     }

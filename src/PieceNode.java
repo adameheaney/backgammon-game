@@ -35,6 +35,19 @@ public class PieceNode {
         return curr;
     }
 
+    public PieceNode getEnd() {
+        PieceNode curr = this;
+        while(curr.getNext() != null) {
+            if(curr.getNext().getNext() != null)
+                curr = curr.getNext();
+            else {
+                PieceNode end = curr.getNext();
+                return end;
+            }
+        }
+        return curr;
+    }
+
     public Piece getPiece() {
         return piece;
     }
@@ -45,5 +58,15 @@ public class PieceNode {
 
     public PieceNode getNext() {
         return next;
+    }
+
+    public int numNodes() {
+        PieceNode curr = this;
+        int num = 1;
+        while(curr.getNext() != null) {
+            curr = curr.getNext();
+            num++;
+        }
+        return num;
     }
 }
