@@ -130,7 +130,7 @@ public class Team {
     }
 
     public int numPiecesOnSpace(int posX, int posY) {
-        if(pieces[posX][posY] == null)
+        if(posX >= numSpaces || pieces[posX][posY] == null)
             return 0;
         int num = 1;
         PieceNode curr = pieces[posX][posY];
@@ -143,12 +143,12 @@ public class Team {
 
     public boolean movePiece(int startPosX, int startPosY, int movement) {
         /*in the event that you want to move a piece that is already in your home to complete the game, this checks if all of your pieces are home first before doing that. Pretty sure it works*/
-        if(startPosY == HOME_Y_POS && startPosX + movement > numSpaces) {
+        if(startPosY == HOME_Y_POS && startPosX + movement >= numSpaces) {
             PieceNode piece = pieces[startPosX][startPosY].getEnd();
             if(allPiecesInHome()) {
                 piece.getPiece().move(movement, this);
                 if(inactivePieces == null) {
-                    inactivePieces = pieces[startPosX][startPosY];
+                    inactivePieces = piece;
                 }
                 else {
                     inactivePieces.attach(eatenPieces);
@@ -194,7 +194,7 @@ public class Team {
         int numPieces = 0;
         if(inactivePieces != null) 
             numPieces = inactivePieces.numNodes();  
-        for(int i = 6; i < 12; i++) {
+        for(int i = numSpaces / 2; i < numSpaces; i++) {
             if(pieces[i][HOME_Y_POS] != null) {
                 numPieces += pieces[i][HOME_Y_POS].numNodes();
             }

@@ -36,7 +36,7 @@ public class Piece {
                 newPos[1] = 1 - posY;
             }
             else {
-                newPos[0] = posY - movement;
+                newPos[0] = posX - movement;
                 newPos[1] = posY;
             }
         }
@@ -64,7 +64,7 @@ public class Piece {
                 newPos[1] = 1 - posY;
             }
             else {
-                newPos[0] = posY - movement;
+                newPos[0] = posX - movement;
                 newPos[1] = posY;
             }
         }

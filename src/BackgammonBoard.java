@@ -33,12 +33,10 @@ public class BackgammonBoard {
         }
         else if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) == 1) {
             teams[1 - turn].eatPiece(newPos);
-            teams[turn].movePiece(startPosX, startPosY, movement);
-            return true;
+            return teams[turn].movePiece(startPosX, startPosY, movement);
         }
         else if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) == 0) {
-            teams[turn].movePiece(startPosX, startPosY, movement);
-            return true;
+            return teams[turn].movePiece(startPosX, startPosY, movement);
         }
         return false;
     }
@@ -51,14 +49,11 @@ public class BackgammonBoard {
             return false;
         }
         else if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) == 1) {
-            teams[turn].moveEatenPiece(movement);
             teams[1 - turn].eatPiece(newPos);
-            return true;
+            return teams[turn].moveEatenPiece(movement);
         }
         else if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) == 0) {
-            teams[turn].moveEatenPiece(movement);
-            
-            return true;
+            return teams[turn].moveEatenPiece(movement);
         }
         return false;
     }
