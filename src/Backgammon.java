@@ -26,4 +26,8 @@ public class Backgammon {
     private void turn(Team t) {
 
     }
+
+    public BackgammonBoard getBoard() {
+        return b;
+    }
 }

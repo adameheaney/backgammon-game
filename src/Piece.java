@@ -20,7 +20,8 @@ public class Piece {
 
     public void move(int movement, Team t) {
         if(eaten) {
-            putBackIn(movement + 5, t);
+            putBackIn(12 - movement, t);
+            return;
         }
         int[] newPos = new int[2];
         //clockwise movement
@@ -48,7 +49,7 @@ public class Piece {
 
     public int[] calculateNewPos(int movement, Team t) {
         if(eaten) {
-           return new int[] {movement + 5, 1-t.getHomeYPos()};
+           return new int[] {12 - movement, 1-t.getHomeYPos()};
         }
         int[] newPos = new int[2];
         //clockwise movement

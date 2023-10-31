@@ -7,7 +7,7 @@ public class BackgammonBoard {
 
     private final int NUM_SPACES = 12;
     private final int HOME_Y_POS_1 = 0;
-    private final int HOME_Y_POS_2 = 0;
+    private final int HOME_Y_POS_2 = 1;
 
     public BackgammonBoard() {
         initializeBoard();
@@ -52,11 +52,12 @@ public class BackgammonBoard {
         }
         else if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) == 1) {
             teams[turn].moveEatenPiece(movement);
+            teams[1 - turn].eatPiece(newPos);
             return true;
         }
         else if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) == 0) {
             teams[turn].moveEatenPiece(movement);
-            teams[1 - turn].eatPiece(newPos);
+            
             return true;
         }
         return false;
