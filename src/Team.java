@@ -169,18 +169,7 @@ public class Team {
         pieces[piece.getPiece().getPosX()][piece.getPiece().getPosY()].attach(piece);
         return true;
     }
-    
-    private boolean allPiecesInHome() {
-        int numPieces = 0;
-        if(inactivePieces != null) 
-            numPieces = inactivePieces.numNodes();  
-        for(int i = 6; i < 12; i++) {
-            if(pieces[i][HOME_Y_POS] != null) {
-                numPieces += pieces[i][HOME_Y_POS].numNodes();
-            }
-        }
-        return numPieces == 15;
-    }
+
     public boolean moveEatenPiece(int movement) {
         if(eatenPieces == null) {
             return false;
@@ -193,6 +182,19 @@ public class Team {
             pieces[piece.getPiece().getPosX()][piece.getPiece().getPosY()].attach(piece);
         return true;
     }
+
+    private boolean allPiecesInHome() {
+        int numPieces = 0;
+        if(inactivePieces != null) 
+            numPieces = inactivePieces.numNodes();  
+        for(int i = 6; i < 12; i++) {
+            if(pieces[i][HOME_Y_POS] != null) {
+                numPieces += pieces[i][HOME_Y_POS].numNodes();
+            }
+        }
+        return numPieces == 15;
+    }
+    
 
     public void eatPiece(int[] pos) {
         PieceNode piece = pieces[pos[0]][pos[1]].detach();

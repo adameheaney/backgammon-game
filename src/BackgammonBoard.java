@@ -3,8 +3,8 @@ package src;
 public class BackgammonBoard {
 
     private Team[] teams;
-    private int currTeam = 0;
     private int turn = 0;
+
     private final int NUM_SPACES = 12;
     private final int HOME_Y_POS_1 = 0;
     private final int HOME_Y_POS_2 = 0;
@@ -32,10 +32,13 @@ public class BackgammonBoard {
             return false;
         }
         else if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) == 1) {
-            
+            teams[1 - turn].eatPiece(newPos);
+            teams[turn].movePiece(startPosX, startPosY, movement);
+            return true;
         }
         else if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) == 0) {
-
+            teams[turn].movePiece(startPosX, startPosY, movement);
+            return true;
         }
         return false;
     }
@@ -48,10 +51,13 @@ public class BackgammonBoard {
             return false;
         }
         else if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) == 1) {
-            
+            teams[turn].moveEatenPiece(movement);
+            return true;
         }
         else if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) == 0) {
-
+            teams[turn].moveEatenPiece(movement);
+            teams[1 - turn].eatPiece(newPos);
+            return true;
         }
         return false;
     }
@@ -63,8 +69,8 @@ public class BackgammonBoard {
         return teams;
     }
 
-    public void flipCurrTeam() {
-        currTeam = 1 - currTeam;
+    public void switchTurn() {
+        turn = 1 - turn;
     }
     
 }
