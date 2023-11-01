@@ -152,7 +152,7 @@ public class Team {
                     inactivePieces = piece;
                 }
                 else {
-                    inactivePieces.attach(eatenPieces);
+                    inactivePieces.attach(piece);
                 }
                 if(piece == pieces[startPosX][startPosY]) {
                     pieces[startPosX][startPosY] = null;

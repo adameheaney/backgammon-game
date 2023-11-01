@@ -6,7 +6,6 @@ public class Piece {
     private int posY;
     private boolean eaten = false;
     private boolean inPlay;
-    private int numSpaces = 11;
     
     public Piece(int posX, int posY) {
         this.posX = posX;
