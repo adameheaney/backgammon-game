@@ -74,6 +74,7 @@ public class Team {
                 else {
                     board += "0 ";
                 }
+                if(j == pieces.length / 2 - 1) board += "| ";
                 if(j == pieces.length - 1 && i == 1- HOME_Y_POS) {
                     if(eatenPieces != null) {
                         int eatenPieces = 1;

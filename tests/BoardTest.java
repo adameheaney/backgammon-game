@@ -36,12 +36,19 @@ public class BoardTest {
         b.movePiece(0, 1, 2);
         b.movePiece(0, 1, 2);
         b.movePiece(0, 1, 2);
-
+        b.movePiece(4, 0, 1);
+        b.movePiece(4, 0, 2);
         b.switchTurn();
         b.movePiece(0, 0, 1);
-        Assertions.assertEquals(1, b.getTeams()[0].getEatenPieces().numNodes());
+        b.movePiece(11, 0, 6);
+        b.movePiece(11, 0, 7);
+        Assertions.assertEquals(3, b.getTeams()[0].getEatenPieces().numNodes());
         b.switchTurn();
-        Assertions.assertFalse(b.movePiece(4, 0, 2));
-        System.out.println(b.boardString());
+        Assertions.assertFalse(b.movePiece(11, 1, 2));
+        b.moveEatenPiece(2);
+        b.moveEatenPiece(2);
+        Assertions.assertFalse(b.moveEatenPiece(6));
+        Assertions.assertEquals(1, b.getTeams()[0].getEatenPieces().numNodes());
+        b.moveEatenPiece(2);
     }
 }
