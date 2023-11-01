@@ -164,6 +164,9 @@ public class Team {
                 return false;
             }
         }
+        else if(eatenPieces != null) {
+            return false;
+        }
         PieceNode piece = pieces[startPosX][startPosY].detach();
         if(piece == pieces[startPosX][startPosY]) {
                 pieces[startPosX][startPosY] = null;

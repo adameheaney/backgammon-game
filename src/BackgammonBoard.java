@@ -23,6 +23,9 @@ public class BackgammonBoard {
 
     //TODO
     public boolean movePiece(int startPosX, int startPosY, int movement) {
+        if(startPosX < 0 || startPosX > NUM_SPACES || startPosY < 0 || startPosY > 1) {
+            return false;
+        }
         if(teams[turn].getPieces()[startPosX][startPosY] == null) {
             return false;
         }
@@ -57,8 +60,9 @@ public class BackgammonBoard {
         }
         return false;
     }
-    public int getNUM_SPACES() {
-        return NUM_SPACES;
+    
+    public String boardString() {
+        return teams[0].boardString() + "\n" + teams[1].boardString();
     }
 
     public Team[] getTeams() {
