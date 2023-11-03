@@ -60,6 +60,58 @@ public class BackgammonBoard {
         return false;
     }
     
+    //----------------------------------------------------
+    //METHODS FOR CHECKING VALID MOVES
+    //----------------------------------------------------
+
+
+    //TODO: Will check for a valid movement for a team with a roll
+    private boolean hasValidMove(int movement) {
+
+    }
+
+    public boolean checkMovePiece(int startPosX, int startPosY, int movement) {
+        if(startPosX < 0 || startPosX > NUM_SPACES || startPosY < 0 || startPosY > 1) {
+            return false;
+        }
+        if(teams[turn].getPieces()[startPosX][startPosY] == null) {
+            return false;
+        }
+        Piece piece = teams[turn].getPieces()[startPosX][startPosY].getEnd().getPiece();
+        int[] newPos = piece.calculateNewPos(movement, teams[turn]);
+        if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) >= 2) {
+            return false;
+        }
+        else if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) == 1) {
+            teams[1 - turn].eatPiece(newPos);
+            return teams[turn].movePiece(startPosX, startPosY, movement);
+        }
+        else if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) == 0) {
+            return teams[turn].movePiece(startPosX, startPosY, movement);
+        }
+        return false;
+    }
+
+    public boolean checkMoveEatenPiece(int movement) {
+        if(teams[turn].getEatenPieces() == null) return false;
+        Piece piece = teams[turn].getEatenPieces().getEnd().getPiece();
+        int[] newPos = piece.calculateNewPos(movement, teams[turn]);
+        if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) >= 2) {
+            return false;
+        }
+        else if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) == 1) {
+            teams[1 - turn].eatPiece(newPos);
+            return teams[turn].moveEatenPiece(movement);
+        }
+        else if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) == 0) {
+            return teams[turn].moveEatenPiece(movement);
+        }
+        return false;
+    }
+
+
+
+    //misc methods
     public String boardString() {
         String board = "";
         for(int i = 1; i >= 0; i--) {

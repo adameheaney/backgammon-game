@@ -19,7 +19,7 @@ public class Backgammon {
     }
 
     public void play() {
-
+        startGame();
     }
 
     public void startGame() {
@@ -28,12 +28,16 @@ public class Backgammon {
         ArrayList<Integer> rolls = d.rolls(2);
         while(rolls.get(0) == rolls.get(1))
             rolls = d.rolls(2);
-        if(rolls.get(0) > rolls.get(1)) 
-            System.out.println(b.getTeams()[0].getTeamName() + " goes first! With the rolls " + rolls.get(0) + " and " + rolls.get(1));
-        else 
-            System.out.println(b.getTeams()[1].getTeamName() + " goes first! With the rolls " + rolls.get(0) + " and " + rolls.get(1));
+        if(rolls.get(0) > rolls.get(1)) { 
+            System.out.println(b.getTeams()[0].getTeamName() + " goes first!");
+            b.setTurn(0);
+        }
+        else { 
+            System.out.println(b.getTeams()[1].getTeamName() + " goes first!");
+            b.setTurn(1);
+        }
         while(rolls.size() > 0) {
-            System.out.println("Input the coordinates of the piece you'd like to move! With the rolls " + rolls.get(0) + " and " + rolls.get(1));
+            System.out.println("Input the coordinates of the piece you'd like to move with the roll/s " + rolls.toString());
             String move = console.nextLine();
 
             //regex things
@@ -49,19 +53,23 @@ public class Backgammon {
             }
             System.out.println("Which roll would you like to use? " + rolls.toString());
             int chosenRoll = console.nextInt();
+            console.nextLine();
 
             //makes sure input is valid
             while(!rolls.contains(chosenRoll)) {
                 System.out.println("You didn't roll that number, choose again.");
                 System.out.println("Which roll would you like to use? " +  rolls.toString());
                 chosenRoll = console.nextInt();
+                console.nextLine();
             }
             Boolean validMove = b.movePiece(Integer.parseInt(move.substring(0, move.indexOf(" "))), Integer.parseInt(move.substring(move.indexOf(" ") + 1)), chosenRoll);
             if(validMove) {
                 rolls.remove(rolls.indexOf(chosenRoll));
             }
             else {
+                System.out.println("\n-------------------------------------------------------------");
                 System.out.println("Invalid move! Move a different piece or use a different dice.");
+                System.out.println("---------------------------------------------------------------\n");
             }
             System.out.println(b.boardString());
         }
