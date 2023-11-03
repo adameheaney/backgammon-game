@@ -1,5 +1,6 @@
 package src;
 
+import java.util.ArrayList;
 /**
  * @author Adam Heaney
  * This class is a representation of a dice
@@ -28,10 +29,10 @@ public class Dice {
      * @param numRolls
      * @return
      */
-    public int[] rolls(int numRolls) {
-        int[] rolls = new int[numRolls];
+    public ArrayList<Integer> rolls(int numRolls) {
+        ArrayList<Integer> rolls = new ArrayList<>();
         for(int i = 0; i < numRolls; i++) {
-            rolls[i] =  (int) (Math.random() * numSides + 1);
+            rolls.add((int) (Math.random() * numSides + 1));
         }
         return rolls;
     }
