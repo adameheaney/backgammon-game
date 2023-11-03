@@ -1,6 +1,8 @@
 package src;
 
 import java.util.Scanner;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
 
 public class Backgammon {
 
@@ -29,7 +31,24 @@ public class Backgammon {
         else 
             System.out.println(b.getTeams()[1].getTeamName() + " goes first!");
         System.out.println("Input the coordinates of the piece you'd like to move!");
-        
+        String move = console.nextLine();
+        String regex = "\\d+\\s\\d+";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(move);
+        while(!matcher.find()) {
+            System.out.println("Input must be a string of the format \"x y\"");
+            move = console.nextLine();
+            matcher = pattern.matcher(move);
+        }
+        System.out.println("Which roll would you like to use? " + rolls[0] + " or " + rolls[1] + "?");
+        int chosenRoll = console.nextInt();
+        while(!(chosenRoll == rolls[0] || chosenRoll == rolls[1])) {
+            System.out.println("You didn't roll that number, choose again.");
+            System.out.println("Which roll would you like to use? " + rolls[0] + " or " + rolls[1] + "?");
+            chosenRoll = console.nextInt();
+        }
+        b.movePiece(Integer.parseInt(move.substring(0, move.indexOf(" "))), Integer.parseInt(move.substring(move.indexOf(" ") + 1)), chosenRoll);
+        System.out.println(b.boardString());
     }
 
     private void gameLoop() {
