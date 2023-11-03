@@ -56,8 +56,13 @@ public class Backgammon {
                 System.out.println("Which roll would you like to use? " +  rolls.toString());
                 chosenRoll = console.nextInt();
             }
-            b.movePiece(Integer.parseInt(move.substring(0, move.indexOf(" "))), Integer.parseInt(move.substring(move.indexOf(" ") + 1)), chosenRoll);
-            rolls.remove(chosenRoll);
+            Boolean validMove = b.movePiece(Integer.parseInt(move.substring(0, move.indexOf(" "))), Integer.parseInt(move.substring(move.indexOf(" ") + 1)), chosenRoll);
+            if(validMove) {
+                rolls.remove(rolls.indexOf(chosenRoll));
+            }
+            else {
+                System.out.println("Invalid move! Move a different piece or use a different dice.");
+            }
             System.out.println(b.boardString());
         }
     }
