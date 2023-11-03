@@ -57,6 +57,7 @@ public class BoardTest {
     @Test
     public void ClearBoardTest() {
         b = new BackgammonBoard();
+        System.out.println(b.boardString());
         b.movePiece(11, 1, 18);
         b.movePiece(11, 1, 18);
         b.movePiece(0, 1, 7);

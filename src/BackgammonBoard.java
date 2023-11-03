@@ -21,7 +21,6 @@ public class BackgammonBoard {
                             new Team(HOME_Y_POS_2, "B", team2String, NUM_SPACES)};
     }
 
-    //TODO
     public boolean movePiece(int startPosX, int startPosY, int movement) {
         if(startPosX < 0 || startPosX > NUM_SPACES || startPosY < 0 || startPosY > 1) {
             return false;
@@ -62,7 +61,31 @@ public class BackgammonBoard {
     }
     
     public String boardString() {
-        return teams[0].boardString() + "\n" + teams[1].boardString();
+        String board = "";
+        for(int i = 1; i >= 0; i--) {
+            for(int j = 0; j < NUM_SPACES; j++) {
+                if(teams[0].numPiecesOnSpace(j, i) > 0) {
+                    board += teams[0].numPiecesOnSpace(j, i) + teams[0].getTeamName() + " ";
+                }
+                else if(teams[1].numPiecesOnSpace(j, i) > 0) {
+                    board += teams[1].numPiecesOnSpace(j, i) + teams[1].getTeamName() + " ";
+                }
+                else {
+                    board += "0  ";
+                }
+                if(j == NUM_SPACES / 2 - 1 || j == NUM_SPACES - 1) board += "| ";
+                if(j == NUM_SPACES - 1) {
+                    Team t = teams[i];
+                    board += t.getTeamName() + " Home | ";
+                    if(t.getEatenPieces() == null) board += "E: 0 ";
+                    else board += "E: "+ t.getEatenPieces().numNodes() + " ";
+                    if(t.getInactivePieces() == null) board += "I: 0 ";
+                    else board += "I: "+ t.getInactivePieces().numNodes() + " ";
+                    board += "\n";
+                }
+            }
+        }
+        return board;
     }
 
     public Team[] getTeams() {
@@ -73,4 +96,7 @@ public class BackgammonBoard {
         turn = 1 - turn;
     }
     
+    public void setTurn(int num) {
+        turn = num;
+    }
 }
