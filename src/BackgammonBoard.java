@@ -23,6 +23,10 @@ public class BackgammonBoard {
                             new Team(HOME_Y_POS_2, "B", team2String, NUM_SPACES)};
     }
 
+
+    //---------------------------------
+    //METHODS FOR MOVING PIECES
+    //---------------------------------
     public boolean movePiece(int startPosX, int startPosY, int movement) {
         if(startPosX < 0 || startPosX > NUM_SPACES || startPosY < 0 || startPosY > 1) {
             return false;
@@ -67,33 +71,25 @@ public class BackgammonBoard {
     //----------------------------------------------------
 
 
-    //TODO: Will check for a valid movement for a team with a roll
-    private boolean hasValidMove(int movement) {
-        Team currt = teams[turn];
-        ArrayList<ArrayList<Integer>> pieceCordList = currt.getPieceCords();
-        
+    public boolean hasValidMove(int movement) {
+        for(int i = 0; i < 2; i++) {
+            for(int j = 0; j < NUM_SPACES; j++) {
+            if(checkMovePiece(j, i, movement))
+                return true;
+            }
+        }
+        return checkMoveEatenPiece(movement);
     }
 
-    public boolean checkMovePiece(int startPosX, int startPosY, int movement) {
-        if(startPosX < 0 || startPosX > NUM_SPACES || startPosY < 0 || startPosY > 1) {
-            return false;
-        }
-        if(teams[turn].getPieces()[startPosX][startPosY] == null) {
-            return false;
-        }
-        Piece piece = teams[turn].getPieces()[startPosX][startPosY].getEnd().getPiece();
+    private boolean checkMovePiece(int startPosX, int startPosY, int movement) {
+        Piece piece = teams[turn].getPieces()[startPosX][startPosY].getPiece();
         int[] newPos = piece.calculateNewPos(movement, teams[turn]);
         if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) >= 2) {
             return false;
         }
-        else if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) == 1) {
-            teams[1 - turn].eatPiece(newPos);
-            return teams[turn].movePiece(startPosX, startPosY, movement);
+        else {
+            return teams[turn].checkMovePiece(startPosX, startPosY, movement);
         }
-        else if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) == 0) {
-            return teams[turn].movePiece(startPosX, startPosY, movement);
-        }
-        return false;
     }
 
     public boolean checkMoveEatenPiece(int movement) {
@@ -103,19 +99,15 @@ public class BackgammonBoard {
         if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) >= 2) {
             return false;
         }
-        else if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) == 1) {
-            teams[1 - turn].eatPiece(newPos);
-            return teams[turn].moveEatenPiece(movement);
+        else {
+            return true;
         }
-        else if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) == 0) {
-            return teams[turn].moveEatenPiece(movement);
-        }
-        return false;
     }
 
 
-
-    //misc methods
+    //-----------------------------------
+    //MISCELLANEOUS METHODS
+    //-----------------------------------
     public String boardString() {
         String board = "";
         for(int i = 1; i >= 0; i--) {

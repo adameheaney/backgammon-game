@@ -149,8 +149,13 @@ public class Team {
     }
 
     public boolean movePiece(int startPosX, int startPosY, int movement) {
-        /*in the event that you want to move a piece that is already in your home to complete the game, this checks if all of your pieces are home first before doing that. Pretty sure it works*/
-        if(startPosY == HOME_Y_POS && startPosX + movement >= numSpaces) {
+        if(eatenPieces != null) {
+            return false;
+        }
+        /*in the event that you want to move a piece that is already in your home 
+        to complete the game, this checks if all of your pieces are home first before 
+        doing that. Pretty sure it works*/
+        else if(startPosY == HOME_Y_POS && startPosX + movement >= numSpaces) {
             PieceNode piece = pieces[startPosX][startPosY].getEnd();
             if(allPiecesInHome()) {
                 piece.getPiece().move(movement, this);
@@ -171,9 +176,6 @@ public class Team {
                 return false;
             }
         }
-        else if(eatenPieces != null) {
-            return false;
-        }
         PieceNode piece = pieces[startPosX][startPosY].detach();
         if(piece == pieces[startPosX][startPosY]) {
                 pieces[startPosX][startPosY] = null;
@@ -186,17 +188,19 @@ public class Team {
         return true;
     }
 
-    public ArrayList<ArrayList<Integer>> getPieceCords() {
-        ArrayList<ArrayList<Integer>> pieceCordList = new ArrayList<>();
-        for(int i = 1; i >= 0; i--) {
-            for(int j = 0; j < pieces.length; j++) {
-                PieceNode pieceNode = pieces[j][i];
-                if(pieceNode != null) {
-                    pieceCordList.add(new ArrayList<>(Arrays.asList(j, i)));
-                }
+    public boolean checkMovePiece(int startPosX,int startPosY, int movement) {
+        if(eatenPieces != null) {
+            return false;
+        }
+        else if(startPosY == HOME_Y_POS && startPosX + movement >= numSpaces) {
+            if(allPiecesInHome()) {
+                return true;
+            }
+            else {
+                return false;
             }
         }
-        return pieceCordList;
+        return true;
     }
     
     public boolean moveEatenPiece(int movement) {

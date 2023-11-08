@@ -87,7 +87,7 @@ public class Backgammon {
         return b;
     }
 
-    public Boolean hasValidMove(int movement) {
-        
+    private Boolean hasValidMove(int movement) {
+        return b.hasValidMove(movement);
     }
 }
