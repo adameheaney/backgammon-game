@@ -1,5 +1,9 @@
 package src;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Team {
 
     private PieceNode[][] pieces;
@@ -109,6 +113,8 @@ public class Team {
     public int getNumSpaces() {
         return numSpaces;
     }
+
+
     /*-----------------------------------------------
      *  Methods that manipulate or return Piece data
      ----------------------------------------------*/
@@ -180,6 +186,19 @@ public class Team {
         return true;
     }
 
+    public ArrayList<ArrayList<Integer>> getPieceCords() {
+        ArrayList<ArrayList<Integer>> pieceCordList = new ArrayList<>();
+        for(int i = 1; i >= 0; i--) {
+            for(int j = 0; j < pieces.length; j++) {
+                PieceNode pieceNode = pieces[j][i];
+                if(pieceNode != null) {
+                    pieceCordList.add(new ArrayList<>(Arrays.asList(j, i)));
+                }
+            }
+        }
+        return pieceCordList;
+    }
+    
     public boolean moveEatenPiece(int movement) {
         if(eatenPieces == null) {
             return false;

@@ -86,4 +86,8 @@ public class Backgammon {
     public BackgammonBoard getBoard() {
         return b;
     }
+
+    public Boolean hasValidMove(int movement) {
+        
+    }
 }

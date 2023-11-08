@@ -1,5 +1,7 @@
 package src;
 
+import java.util.ArrayList;
+
 public class BackgammonBoard {
 
     private Team[] teams;
@@ -67,7 +69,9 @@ public class BackgammonBoard {
 
     //TODO: Will check for a valid movement for a team with a roll
     private boolean hasValidMove(int movement) {
-
+        Team currt = teams[turn];
+        ArrayList<ArrayList<Integer>> pieceCordList = currt.getPieceCords();
+        
     }
 
     public boolean checkMovePiece(int startPosX, int startPosY, int movement) {
