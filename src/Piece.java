@@ -70,6 +70,27 @@ public class Piece {
         return newPos;
     }
 
+    public int[] calculateNewPos(int posX, int posY, int movement, Team t) {
+        int[] newPos = new int[2];
+        //clockwise movement
+        if(t.getHomeYPos() == posY) {
+            newPos[0] = movement + posX;
+            newPos[1] = posY;
+        }
+        //counter clockwise movement
+        else if(t.getHomeYPos() != posY) {
+            if(posX - movement < 0) {
+                newPos[0] = Math.abs(posX + 1 - movement);
+                newPos[1] = 1 - posY;
+            }
+            else {
+                newPos[0] = posX - movement;
+                newPos[1] = posY;
+            }
+        }
+        return newPos;
+    }
+
     public void becomeEaten() {
         eaten = true;
     }
