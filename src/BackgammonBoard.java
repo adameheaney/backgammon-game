@@ -72,31 +72,53 @@ public class BackgammonBoard {
 
 
     /**
-     * Returns true if there is a valid move for moveOne, NOT for moveTwo
+     * Returns the valid moves for moveOne, NOT for moveTwo
      * @param moveOne
      * @param moveTwo
      * @return
      */
-    public boolean hasValidMove(int moveOne, int moveTwo) {
-        for(int i = 0; i < 2; i++) {
-            for(int j = 0; j < NUM_SPACES; j++) {
-            if(checkMovePiece(j, i, moveOne, moveTwo))
-                return true;
+    public ArrayList<String> getValidMoves(int moveOne, int moveTwo) {
+        ArrayList<String> validMoves = new ArrayList<>();
+        if(teams[turn].getEatenPieces() != null) {
+            if(checkMoveEatenPiece(moveOne)) {
+                validMoves.add("E");
+                return validMoves;
             }
         }
-        return checkMoveEatenPiece(moveOne);
+        for(int i = 0; i < 2; i++) {
+            for(int j = 0; j < NUM_SPACES; j++) {
+                if(checkMovePiece(j, i, moveOne, moveTwo)){
+                    validMoves.add(j + " " + i + " 2");
+                }
+                if(checkMovePiece(j, i, moveOne, 0)) {
+                    validMoves.add(j + " " + i + " 1");
+                }
+            }
+        }
+        return validMoves;
     }
 
     private boolean checkMovePiece(int startPosX, int startPosY, int moveOne, int moveTwo) {
-        Piece piece = teams[turn].getPieces()[startPosX][startPosY].getPiece();
-        int[] newPos = piece.calculateNewPos(moveOne, teams[turn]);
-        int[] moveTwoPos = piece.calculateNewPos(moveTwo, teams[turn]);
-        int[] secondNewPos = piece.calculateNewPos(moveTwoPos[0], moveTwoPos[1], moveOne, teams[turn]);
-        if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) >= 2 && teams[1 - turn].numPiecesOnSpace(secondNewPos[0], secondNewPos[1]) => 2) {
+        if(teams[turn].getPieces()[startPosX][startPosY] == null)
             return false;
+        Piece piece = teams[turn].getPieces()[startPosX][startPosY].getPiece();
+        int[] moveTwoPos = null;
+        int[] newPos;
+        if(moveTwo != 0) {
+            moveTwoPos = piece.calculateNewPos(moveTwo, teams[turn]);
+            newPos = piece.calculateNewPos(moveTwoPos[0], moveTwoPos[1], moveOne, teams[turn]);
         }
         else {
+            newPos = piece.calculateNewPos(startPosX, startPosY, moveOne, teams[turn]);
+        }
+        if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) >= 2 || (moveTwoPos != null && teams[1 - turn].numPiecesOnSpace(moveTwoPos[0], moveTwoPos[1]) >= 2)) {
+            return false;
+        }
+        else if (moveTwo == 0){
             return teams[turn].checkMovePiece(startPosX, startPosY, moveOne);
+        }
+        else {
+            return teams[turn].checkMovePiece(moveTwoPos[0], moveTwoPos[1], moveOne);
         }
     }
 

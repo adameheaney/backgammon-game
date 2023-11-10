@@ -157,7 +157,7 @@ public class Team {
         doing that. Pretty sure it works*/
         else if(startPosY == HOME_Y_POS && startPosX + movement >= numSpaces) {
             PieceNode piece = pieces[startPosX][startPosY].getEnd();
-            if(allPiecesInHome()) {
+            if(allowedHome(startPosX, movement)) {
                 piece.getPiece().move(movement, this);
                 if(inactivePieces == null) {
                     inactivePieces = piece;
@@ -192,8 +192,9 @@ public class Team {
         if(eatenPieces != null) {
             return false;
         }
+        else if(startPosX > 11) return false;
         else if(startPosY == HOME_Y_POS && startPosX + movement >= numSpaces) {
-            if(allPiecesInHome()) {
+            if(allowedHome(startPosX, movement)) {
                 return true;
             }
             else {
@@ -227,6 +228,26 @@ public class Team {
             }
         }
         return numPieces == 15;
+    }
+
+    private boolean allowedHome(int posX, int movement) {
+        if(!allPiecesInHome()) {
+            return false;
+        }
+        if(movement + posX == numSpaces) {
+            return true;
+        }
+        else if(movement + posX < numSpaces) {
+            return false;
+        }
+        else if(movement + posX > numSpaces) {
+            for(int i = numSpaces / 2; i < numSpaces; i++) {
+                if(pieces[i][HOME_Y_POS] != null)
+                    return false;
+            }
+        }
+        return true;
+
     }
     
 
