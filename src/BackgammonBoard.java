@@ -12,15 +12,18 @@ public class BackgammonBoard {
     private final int HOME_Y_POS_2 = 1;
 
     public BackgammonBoard() {
-        initializeBoard();
+        initializeBoard("0 1 0 1 0 1 0 1 0 1 11 1 11 1 4 0 4 0 4 0 6 0 6 0 6 0 6 0 6 0"
+        , "0 0 0 0 0 0 0 0 0 0 11 0 11 0 4 1 4 1 4 1 6 1 6 1 6 1 6 1 6 1");
+    }
+    
+    public BackgammonBoard(String team1Pieces, String team2Pieces) {
+        initializeBoard(team1Pieces, team2Pieces);
     }
 
-    private void initializeBoard() {
+    private void initializeBoard(String team1Pieces, String team2Pieces) {
         //DO NOT CHANGE, THESE ARE THE INITIALIZING COORDS FOR THE PIECES
-        String team1String = "0 1 0 1 0 1 0 1 0 1 11 1 11 1 4 0 4 0 4 0 6 0 6 0 6 0 6 0 6 0 ";
-        String team2String = "0 0 0 0 0 0 0 0 0 0 11 0 11 0 4 1 4 1 4 1 6 1 6 1 6 1 6 1 6 1 ";
-        teams = new Team[] {new Team(HOME_Y_POS_1, "W", team1String, NUM_SPACES), 
-                            new Team(HOME_Y_POS_2, "B", team2String, NUM_SPACES)};
+        teams = new Team[] {new Team(HOME_Y_POS_1, "W", team1Pieces, NUM_SPACES), 
+                            new Team(HOME_Y_POS_2, "B", team2Pieces, NUM_SPACES)};
     }
 
 

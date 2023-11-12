@@ -1,9 +1,5 @@
 package src;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class Team {
 
     private PieceNode[][] pieces;
@@ -27,10 +23,20 @@ public class Team {
     private void instantiatePieces(String piecePositions, int numSpaces) {
         pieces = new PieceNode[numSpaces][2];
         while(!piecePositions.isBlank()) {
-            int posX = Integer.parseInt(piecePositions.substring(0, piecePositions.indexOf(" ")));
-            piecePositions = piecePositions.substring(piecePositions.indexOf(" ") + 1);
-            int posY = Integer.parseInt(piecePositions.substring(0, piecePositions.indexOf(" ")));
-            piecePositions = piecePositions.substring(piecePositions.indexOf(" ") + 1);
+            int posX;
+            int posY;
+            if(piecePositions.lastIndexOf(" ") != 1) {
+                posX = Integer.parseInt(piecePositions.substring(0, piecePositions.indexOf(" ")));
+                piecePositions = piecePositions.substring(piecePositions.indexOf(" ") + 1);
+                posY = Integer.parseInt(piecePositions.substring(0, piecePositions.indexOf(" ")));
+                piecePositions = piecePositions.substring(piecePositions.indexOf(" ") + 1);
+            }
+            else {
+                posX = Integer.parseInt(piecePositions.substring(0, piecePositions.indexOf(" ")));
+                piecePositions = piecePositions.substring(piecePositions.indexOf(" ") + 1);
+                posY = Integer.parseInt(piecePositions.substring(0).strip());
+                piecePositions = "";
+            }
             PieceNode newNode = new PieceNode(new Piece(posX, posY));
             if(pieces[posX][posY] == null) {
                 pieces[posX][posY] = newNode;
