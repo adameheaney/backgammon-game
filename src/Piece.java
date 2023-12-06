@@ -70,7 +70,7 @@ public class Piece {
         return newPos;
     }
 
-    public int[] calculateNewPos(int posX, int posY, int movement, Team t) {
+    public static int[] calculateNewPos(int posX, int posY, int movement, Team t) {
         int[] newPos = new int[2];
         //clockwise movement
         if(t.getHomeYPos() == posY) {

@@ -25,7 +25,7 @@ public class Team {
         while(!piecePositions.isBlank()) {
             int posX;
             int posY;
-            if(piecePositions.lastIndexOf(" ") != 1) {
+            if(piecePositions.lastIndexOf(" ") != 1 && piecePositions.lastIndexOf(" ") != 2) {
                 posX = Integer.parseInt(piecePositions.substring(0, piecePositions.indexOf(" ")));
                 piecePositions = piecePositions.substring(piecePositions.indexOf(" ") + 1);
                 posY = Integer.parseInt(piecePositions.substring(0, piecePositions.indexOf(" ")));

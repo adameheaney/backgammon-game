@@ -1,6 +1,7 @@
 package src;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 public class BackgammonBoard {
 
@@ -75,54 +76,58 @@ public class BackgammonBoard {
 
 
     /**
-     * Returns the valid moves for moveOne, NOT for moveTwo
+     * Returns ALL valid moves with every dice in a list: The format of a move is [roll, posX, posY, which # move]
      * @param moveOne
      * @param moveTwo
      * @return
      */
-    public ArrayList<String> getValidMoves(int moveOne, int moveTwo) {
-        ArrayList<String> validMoves = new ArrayList<>();
-        if(teams[turn].getEatenPieces() != null) {
-            if(checkMoveEatenPiece(moveOne)) {
-                validMoves.add("E");
-                return validMoves;
-            }
-        }
+    public HashSet<int[]> getAllValidMoves(int[] rolls) {
+        HashSet<int[]> validMoves = new HashSet<>();
         for(int i = 0; i < 2; i++) {
             for(int j = 0; j < NUM_SPACES; j++) {
-                if(checkMovePiece(j, i, moveOne, moveTwo)){
-                    validMoves.add(j + " " + i + " 2");
-                }
-                if(checkMovePiece(j, i, moveOne, 0)) {
-                    validMoves.add(j + " " + i + " 1");
-                }
+                validMoves.addAll(validMovesForPlace(j, i, rolls, new int[] {j , i}, new boolean[4], new HashSet<int[]>()));
             }
         }
         return validMoves;
     }
 
-    private boolean checkMovePiece(int startPosX, int startPosY, int moveOne, int moveTwo) {
+    private HashSet<int[]> validMovesForPlace(int startPosX, int startPosY, int[] rolls, 
+                                            int[] currPos, boolean[] usedIndices,
+                                            HashSet<int[]> validMoves) {
         if(teams[turn].getPieces()[startPosX][startPosY] == null)
-            return false;
-        Piece piece = teams[turn].getPieces()[startPosX][startPosY].getPiece();
-        int[] moveTwoPos = null;
-        int[] newPos;
-        if(moveTwo != 0) {
-            moveTwoPos = piece.calculateNewPos(moveTwo, teams[turn]);
-            newPos = piece.calculateNewPos(moveTwoPos[0], moveTwoPos[1], moveOne, teams[turn]);
+            return new HashSet<>();                                        
+        return checkMovePiece(startPosX, startPosY, rolls, currPos, usedIndices, validMoves);                        
+    }
+    //returns true if move one can be played after move two
+    private HashSet<int[]> checkMovePiece(int startPosX, int startPosY, 
+                                            int[] rolls, int[] currPos,
+                                            boolean[] usedIndices,
+                                            HashSet<int[]> validMoves) {
+        
+        for(int i = 0; i < rolls.length; i++) {
+            if(rolls[i] == -1 || usedIndices[i]) {
+                usedIndices[i] = true;
+                continue;
+            }
+            usedIndices[i] = true;
+            int[] newPos = Piece.calculateNewPos(currPos[0], currPos[1], rolls[i], teams[turn]);
+            if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) < 2) {
+                if(teams[turn].checkMovePiece(currPos[0], currPos[1], rolls[i])){
+                    validMoves.add(new int[] {rolls[i], startPosX, startPosY, numTrue(usedIndices)});
+                    checkMovePiece(startPosX, startPosY, rolls, newPos, usedIndices.clone(), validMoves);
+                }
+            }
+            usedIndices[i] = false;
         }
-        else {
-            newPos = piece.calculateNewPos(startPosX, startPosY, moveOne, teams[turn]);
+        return validMoves;
+    }
+
+    private int numTrue(boolean[] b) {
+        int numtrue = 0;
+        for(int i = 0; i < b.length; i++) {
+            if(b[i]) numtrue++;
         }
-        if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) >= 2 || (moveTwoPos != null && teams[1 - turn].numPiecesOnSpace(moveTwoPos[0], moveTwoPos[1]) >= 2)) {
-            return false;
-        }
-        else if (moveTwo == 0){
-            return teams[turn].checkMovePiece(startPosX, startPosY, moveOne);
-        }
-        else {
-            return teams[turn].checkMovePiece(moveTwoPos[0], moveTwoPos[1], moveOne);
-        }
+        return numtrue;
     }
 
     public boolean checkMoveEatenPiece(int movement) {

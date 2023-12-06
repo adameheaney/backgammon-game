@@ -29,10 +29,12 @@ public class Dice {
      * @param numRolls
      * @return
      */
-    public ArrayList<Integer> rolls(int numRolls) {
-        ArrayList<Integer> rolls = new ArrayList<>();
-        for(int i = 0; i < numRolls; i++) {
-            rolls.add((int) (Math.random() * numSides + 1));
+    public int[] rolls(int numRolls) {
+        int[] rolls = new int[4];
+        for(int i = 0; i < rolls.length; i++) {
+            if(i < numRolls)
+                rolls[i] = ((int) (Math.random() * numSides + 1));
+            else rolls[i] = -1;
         }
         return rolls;
     }
