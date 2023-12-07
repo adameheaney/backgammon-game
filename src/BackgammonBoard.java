@@ -95,7 +95,7 @@ public class BackgammonBoard {
                                             int[] currPos, boolean[] usedIndices,
                                             HashSet<int[]> validMoves) {
         if(teams[turn].getPieces()[startPosX][startPosY] == null)
-            return new HashSet<>();                                        
+            return new HashSet<>();                        
         return checkMovePiece(startPosX, startPosY, rolls, currPos, usedIndices, validMoves);                        
     }
     //returns true if move one can be played after move two
@@ -106,13 +106,12 @@ public class BackgammonBoard {
         
         for(int i = 0; i < rolls.length; i++) {
             if(rolls[i] == -1 || usedIndices[i]) {
-                usedIndices[i] = true;
                 continue;
             }
             usedIndices[i] = true;
             int[] newPos = Piece.calculateNewPos(currPos[0], currPos[1], rolls[i], teams[turn]);
             if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) < 2) {
-                if(teams[turn].checkMovePiece(currPos[0], currPos[1], rolls[i])){
+                if(teams[turn].checkMovePiece(currPos[0], currPos[1], rolls[i])) {
                     validMoves.add(new int[] {rolls[i], startPosX, startPosY, numTrue(usedIndices)});
                     checkMovePiece(startPosX, startPosY, rolls, newPos, usedIndices.clone(), validMoves);
                 }

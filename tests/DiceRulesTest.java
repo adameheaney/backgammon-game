@@ -9,7 +9,7 @@ public class DiceRulesTest {
     public static void main(String[] args) {
         //SameRollTest();
         //twoSingleMoveRolls();
-        basicTest();
+        doublesSingleMoveTest();
     }
     
     private static void sameRollTest() {

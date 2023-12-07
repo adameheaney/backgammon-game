@@ -7,6 +7,7 @@ public class Team {
     private PieceNode inactivePieces;
     private int numActivePieces = 15;
     private int points;
+    private int numPieces;
 
     private final int HOME_Y_POS;
     private final String TEAM_NAME;
@@ -48,6 +49,7 @@ public class Team {
                 }
                 currNode.setNext(newNode);
             }
+            numPieces++;
         }
     }
 
@@ -198,7 +200,6 @@ public class Team {
         if(eatenPieces != null) {
             return false;
         }
-        else if(startPosX > 11) return false;
         else if(startPosY == HOME_Y_POS && startPosX + movement >= numSpaces) {
             if(allowedHome(startPosX, movement)) {
                 return true;
@@ -233,7 +234,7 @@ public class Team {
                 numPieces += pieces[i][HOME_Y_POS].numNodes();
             }
         }
-        return numPieces == 15;
+        return numPieces == this.numPieces;
     }
 
     private boolean allowedHome(int posX, int movement) {
@@ -246,8 +247,8 @@ public class Team {
         else if(movement + posX < numSpaces) {
             return false;
         }
-        else if(movement + posX > numSpaces) {
-            for(int i = numSpaces / 2; i < numSpaces; i++) {
+        else if(movement + movement + posX > numSpaces) {
+            for(int i = numSpaces / 2; i < posX; i++) {
                 if(pieces[i][HOME_Y_POS] != null)
                     return false;
             }
