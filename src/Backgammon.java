@@ -217,12 +217,13 @@ public class Backgammon {
                     }
                 }
             }
-            if(allMoves.size() <= 2 && b.getTeams()[b.getTurn()].numPiecesOnSpace(allMoves.get(0)[1], allMoves.get(0)[2]) < 2){
+            if(allMoves.size() <= 2 
+            && b.getTeams()[b.getTurn()].numPiecesOnSpace(allMoves.get(0)[1], allMoves.get(0)[2]) < 2){
                 //checks if both dice have the same single valid move, and discards the lower dice, as the higher dice must be played in this situation
                 boolean onlyOneSpace = true;
                 int[] firstMove = new int[] {allMoves.get(0)[1],allMoves.get(0)[2]};
                 for(int i = 1; i < allMoves.size(); i++) {
-                    int[] move = new int[] {allMoves.get(i)[1],allMoves.get(i)[2]};
+                    int[] move = new int[] {allMoves.get(i)[1],allMoves.get(i)[2], allMoves.get(i)[3]};
                     if(!Arrays.equals(move, firstMove)) {
                         onlyOneSpace = false;
                     }
@@ -269,8 +270,8 @@ public class Backgammon {
                         for(int i = 0; i < allMoves.size(); i++) {
                             int[] move = allMoves.get(i);
                             int index = r == 1 ? 0 : 1;
-                            if(move[0] == rolls[index] && move[3] == 1) {
-                                temp.add(move);
+                            if(move[0] == rolls[r] && move[3] == 2) {
+                                temp.add(new int[] {rolls[index], move[1], move[2], 1});
                             }
                         }
                         allMoves.clear();
@@ -349,9 +350,9 @@ public class Backgammon {
         getValidMoves(allMoves);
         //the while loop for entering your moves
         while(!allMoves.isEmpty()) {
-            // for(int[] list : allMoves) {
-            //     System.out.println(Arrays.toString(list));
-            // }
+            for(int[] list : allMoves) {
+                System.out.println(Arrays.toString(list));
+            }
             int[] move = new int[3];
             System.out.println("Input your desired move. You have the rolls " + rollsToString());
             String moveString = console.nextLine().strip();
