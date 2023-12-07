@@ -12,7 +12,7 @@ public class DiceRulesTest {
         basicTest();
     }
     
-    private static void SameRollTest() {
+    private static void sameRollTest() {
         b = new BackgammonBoard("3 0", "11 0 11 0");
         game = new Backgammon(b);
         game.playTest(3, 5, 1);
@@ -33,6 +33,6 @@ public class DiceRulesTest {
     private static void basicTest() {
         b = new BackgammonBoard();
         game = new Backgammon(b);
-        game.playTest(3, 5, 1);
+        game.playTest(3, 5, 2);
     }
 }
