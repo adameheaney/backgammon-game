@@ -5,7 +5,6 @@ import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashSet;
 public class Backgammon {
 
     private BackgammonBoard b;

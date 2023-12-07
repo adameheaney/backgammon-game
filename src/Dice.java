@@ -1,6 +1,5 @@
 package src;
 
-import java.util.ArrayList;
 /**
  * @author Adam Heaney
  * This class is a representation of a dice
