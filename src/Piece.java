@@ -5,17 +5,12 @@ public class Piece {
     private int posX;
     private int posY;
     private boolean eaten = false;
-    private boolean inPlay;
     
     public Piece(int posX, int posY) {
         this.posX = posX;
         this.posY = posY;
-        inPlay = true;
     }
 
-    public Piece(boolean inPlay) {
-        this.inPlay = inPlay;
-    }
 
     public void move(int movement, Team t) {
         if(eaten) {
@@ -41,9 +36,6 @@ public class Piece {
         }
         posX = newPos[0];
         posY = newPos[1];
-        if(posX >= t.getNumSpaces()){
-            inPlay = false;
-        }
     }
 
     public int[] calculateNewPos(int movement, Team t) {
@@ -112,20 +104,7 @@ public class Piece {
     public int getPosY() {
         return posY;
     }
-    
     public boolean isEaten() {
         return eaten;
-    }
-
-    public void setEaten(boolean eaten) {
-        this.eaten = eaten;
-    }
-
-    public boolean isInPlay() {
-        return inPlay;
-    }
-
-    public void setInPlay(boolean inPlay) {
-        this.inPlay = inPlay;
     }
 }

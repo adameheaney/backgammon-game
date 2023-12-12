@@ -27,12 +27,48 @@ public class Team {
             int posX;
             int posY;
             if(piecePositions.lastIndexOf(" ") != 1 && piecePositions.lastIndexOf(" ") != 2) {
+                if(piecePositions.substring(0, 1).equals("E")) {
+                    Piece newPiece = new Piece(0, 0);
+                    newPiece.becomeEaten();
+                    if(eatenPieces == null) {
+                        eatenPieces = new PieceNode(newPiece);
+                    }
+                    else {
+                        PieceNode currNode = eatenPieces;
+                        while(currNode.getNext() != null) { 
+                            currNode = currNode.getNext();
+                        }
+                        currNode.setNext(new PieceNode(newPiece));
+                    }
+                    if(piecePositions.length() > 1)
+                        piecePositions = piecePositions.substring(2);
+                    else piecePositions = "";
+                    continue;
+                }
                 posX = Integer.parseInt(piecePositions.substring(0, piecePositions.indexOf(" ")));
                 piecePositions = piecePositions.substring(piecePositions.indexOf(" ") + 1);
                 posY = Integer.parseInt(piecePositions.substring(0, piecePositions.indexOf(" ")));
                 piecePositions = piecePositions.substring(piecePositions.indexOf(" ") + 1);
             }
             else {
+                if(piecePositions.substring(0, 1).equals("E")) {
+                    Piece newPiece = new Piece(0, 0);
+                    newPiece.becomeEaten();
+                    if(eatenPieces == null) {
+                        eatenPieces = new PieceNode(newPiece);
+                    }
+                    else {
+                        PieceNode currNode = eatenPieces;
+                        while(currNode.getNext() != null) { 
+                            currNode = currNode.getNext();
+                        }
+                        currNode.setNext(new PieceNode(newPiece));
+                    }
+                    if(piecePositions.length() > 1)
+                        piecePositions = piecePositions.substring(2);
+                    else piecePositions = "";
+                    continue;
+                }
                 posX = Integer.parseInt(piecePositions.substring(0, piecePositions.indexOf(" ")));
                 piecePositions = piecePositions.substring(piecePositions.indexOf(" ") + 1);
                 posY = Integer.parseInt(piecePositions.substring(0).strip());

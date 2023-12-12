@@ -7,7 +7,7 @@ public class DiceRulesTest {
     static BackgammonBoard b;
 
     public static void main(String[] args) {
-        forcedMoveTest();
+        eatenPiecesTest();
     }
     
     private static void sameRollTest() {
@@ -42,6 +42,12 @@ public class DiceRulesTest {
 
     private static void forcedMoveTest() {
         b = new BackgammonBoard("2 0 8 1", "1 1 1 1 3 1 3 1 7 0 7 0");
+        game = new Backgammon(b);
+        game.playTest(2, 5, 1);
+    }
+
+    private static void eatenPiecesTest() {
+        b = new BackgammonBoard("E E 8 1", "10 1 10 1");
         game = new Backgammon(b);
         game.playTest(2, 5, 1);
     }
