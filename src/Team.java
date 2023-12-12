@@ -1,18 +1,60 @@
 package src;
 
+/**
+ * @author Adam Heaney
+ * This class represents a single team in a backgammon game. It stores the team's number of pieces, points, inactive pieces, eaten pieces,
+ * pieces, home y position, and name.
+ */
 public class Team {
 
+    /**
+     * the pieces within the team placed on the board. The piece's positions dictate where it is placed in the array
+     */
     private PieceNode[][] pieces;
+    /**
+     * chain of eaten pieces
+     */
     private PieceNode eatenPieces;
+    /**
+     * chain of inactive pieces
+     */
     private PieceNode inactivePieces;
-    private int numActivePieces = 15;
+    /**
+     * number of active pieces on the board
+     */
+    private int numActivePieces;
+    /**
+     * number of points the team has (unimplemented)
+     */
     private int points;
+    /**
+     * total number of pieces the team has
+     */
     private int numPieces;
 
+    /**
+     * The team's home Y position: extremely important for board logic
+     */
     private final int HOME_Y_POS;
+
+    /**
+     * the team's name
+     */
     private final String TEAM_NAME;
+
+    /**
+     * number of spaces on the board's x axis
+     */
     private final int numSpaces;
 
+    /**
+     * insantiates a new team with the home y position at <b>homeYPos</b>, a team name, pieces based on the inputted piecePositions string,
+     * and the number of spaces.
+     * @param homeYPos 0 or 1 
+     * @param teamName preferably one letter
+     * @param piecePositions Format: "x y E..." E = eaten piece, each "x y" pair = a new piece's coordinates. Example: "4 0 4 0 5 0 5 0 E E E" or "1 0 1 0 11 1 11 0"
+     * @param numSpaces number of spaces on the board
+     */
     public Team(int homeYPos, String teamName, 
     String piecePositions, int numSpaces) {
         HOME_Y_POS = homeYPos;
@@ -21,6 +63,11 @@ public class Team {
         instantiatePieces(piecePositions, numSpaces);
     }
 
+    /**
+     * instantiates the pieces based on the piecePositions string
+     * @param piecePositions
+     * @param numSpaces
+     */
     private void instantiatePieces(String piecePositions, int numSpaces) {
         pieces = new PieceNode[numSpaces][2];
         while(!piecePositions.isBlank()) {
@@ -87,25 +134,44 @@ public class Team {
             }
             numPieces++;
         }
+        numActivePieces = numPieces;
     }
 
+    /**
+     * 
+     * @return the HomeYPos
+     */
     public int getHomeYPos() {
         return HOME_Y_POS;
     }
 
+    /**
+     * 
+     * @return the team's name
+     */
     public String getTeamName() {
         return TEAM_NAME;
     }
-
+    /**
+     * 
+     * @return number of points the team has
+     */
     public int getPoints() {
         return points;
     }
 
+    /**
+     * adds points to the team
+     * @param points
+     */
     public void addPoints(int points) {
         this.points += points;
     }
 
-    
+    /**
+     * 
+     * @return the team's board as a string
+     */
     public String boardString() {
         String board = "";
         for(int i = 1; i >= 0; i--) {
@@ -154,6 +220,10 @@ public class Team {
         return board;
     }
     
+    /**
+     * 
+     * @return number of spaces on the x axis
+     */
     public int getNumSpaces() {
         return numSpaces;
     }
@@ -163,23 +233,44 @@ public class Team {
      *  Methods that manipulate or return Piece data
      ----------------------------------------------*/
 
-    
+    /**
+     * 
+     * @return number of active pieces
+     */
     public int getNumActivePieces() {
         return numActivePieces;
     }
 
+    /**
+     * 
+     * @return the piece matrix
+     */
     public PieceNode[][] getPieces() {
         return pieces;
     }
 
+    /**
+     * 
+     * @return eatenPieces. It is a pieceNode that chains to all of the team's eaten pieces.
+     */
     public PieceNode getEatenPieces() {
         return eatenPieces;
     }
 
+    /**
+     * 
+     * @return inactivePieces. It is a pieceNode that chains to all of the team's inactive pieces.
+     */
     public PieceNode getInactivePieces() {
         return inactivePieces;
     }
 
+    /**
+     * 
+     * @param posX
+     * @param posY
+     * @return the number of pieces on the space at posX and posY
+     */
     public int numPiecesOnSpace(int posX, int posY) {
         if(posX >= numSpaces || pieces[posX][posY] == null)
             return 0;
@@ -192,6 +283,13 @@ public class Team {
         return num;
     }
 
+    /**
+     * moves a piece at (startPosX, startPosY) by (movement)
+     * @param startPosX
+     * @param startPosY
+     * @param movement
+     * @return true if the piece at (startPosX, startPosY) is able to move (movement)
+     */
     public boolean movePiece(int startPosX, int startPosY, int movement) {
         if(eatenPieces != null) {
             return false;
@@ -232,6 +330,13 @@ public class Team {
         return true;
     }
 
+    /**
+     * checks if you can move piece at (startPosX, startPosY) with (movement)
+     * @param startPosX
+     * @param startPosY
+     * @param movement
+     * @return true if the piece can move
+     */
     public boolean checkMovePiece(int startPosX,int startPosY, int movement) {
         if(eatenPieces != null) {
             return false;
@@ -247,6 +352,11 @@ public class Team {
         return true;
     }
     
+    /**
+     * moves an eaten piece based on (movement)
+     * @param movement
+     * @return true if the piece can move
+     */
     public boolean moveEatenPiece(int movement) {
         if(eatenPieces == null) {
             return false;
@@ -261,6 +371,10 @@ public class Team {
         return true;
     }
 
+    /**
+     * 
+     * @return true if all of the team's pieces are in the home
+     */
     private boolean allPiecesInHome() {
         int numPieces = 0;
         if(inactivePieces != null) 
@@ -273,6 +387,12 @@ public class Team {
         return numPieces == this.numPieces;
     }
 
+    /**
+     * determines of a piece at posX is allowed home based on (movement) and the team's pieces
+     * @param posX
+     * @param movement
+     * @return
+     */
     private boolean allowedHome(int posX, int movement) {
         if(!allPiecesInHome()) {
             return false;
@@ -293,7 +413,10 @@ public class Team {
 
     }
     
-
+    /**
+     * eats the piece at (pos)
+     * @param pos
+     */
     public void eatPiece(int[] pos) {
         PieceNode piece = pieces[pos[0]][pos[1]].detach();
         if(pieces[pos[0]][pos[1]] == piece) {

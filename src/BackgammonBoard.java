@@ -2,24 +2,58 @@ package src;
 
 import java.util.HashSet;
 
+/**
+ * @author Adam Heaney
+ * This class represents a backgammon board. The board has two teams which store the pieces. It keeps track of the turn as well. It has
+ * many methods for manipulating the pieces within the teams and other stuff. It also has a toString() method!
+ */
 public class BackgammonBoard {
 
+    /**
+     * The array that stores the teams. The size is 2.
+     */
     private Team[] teams;
+
+    /**
+     * int that goes between 0 and 1 which represent which turn it is
+     */
     private int turn = 0;
 
+    /**
+     * number of spaces in one row of the board
+     */
     private final int NUM_SPACES = 12;
+    /**
+     * home position of team 0
+     */
     private final int HOME_Y_POS_1 = 0;
+    /**
+     * home position of team 1
+     */
     private final int HOME_Y_POS_2 = 1;
 
+    /**
+     * creates a board with the default setup
+     */
     public BackgammonBoard() {
         initializeBoard("0 1 0 1 0 1 0 1 0 1 11 1 11 1 4 0 4 0 4 0 6 0 6 0 6 0 6 0 6 0"
         , "0 0 0 0 0 0 0 0 0 0 11 0 11 0 4 1 4 1 4 1 6 1 6 1 6 1 6 1 6 1");
     }
     
+    /**
+     * creates a board with custom piece setups
+     * @param team1Pieces
+     * @param team2Pieces
+     */
     public BackgammonBoard(String team1Pieces, String team2Pieces) {
         initializeBoard(team1Pieces, team2Pieces);
     }
 
+    /**
+     * initializes the board by creating the teams
+     * @param team1Pieces
+     * @param team2Pieces
+     */
     private void initializeBoard(String team1Pieces, String team2Pieces) {
         //DO NOT CHANGE, THESE ARE THE INITIALIZING COORDS FOR THE PIECES
         teams = new Team[] {new Team(HOME_Y_POS_1, "W", team1Pieces, NUM_SPACES), 
@@ -30,6 +64,14 @@ public class BackgammonBoard {
     //---------------------------------
     //METHODS FOR MOVING PIECES
     //---------------------------------
+
+    /**
+     * moves a piece on posX and posY with the roll "movement"
+     * @param startPosX
+     * @param startPosY
+     * @param movement
+     * @return true if the piece was able to be moved
+     */
     public boolean movePiece(int startPosX, int startPosY, int movement) {
         if(startPosX < 0 || startPosX > NUM_SPACES || startPosY < 0 || startPosY > 1) {
             return false;
@@ -52,6 +94,11 @@ public class BackgammonBoard {
         return false;
     }
 
+    /**
+     * moves an eaten piece with the roll "movement"
+     * @param movement
+     * @return true if the piece was able to be moved
+     */
     public boolean moveEatenPiece(int movement) {
         if(teams[turn].getEatenPieces() == null) return false;
         Piece piece = teams[turn].getEatenPieces().getEnd().getPiece();
@@ -90,6 +137,16 @@ public class BackgammonBoard {
         return validMoves;
     }
 
+    /**
+     * A recursive method that returns the valid moves for a specific space for every roll in rolls[]
+     * @param startPosX the posX of the space
+     * @param startPosY the posY of the space
+     * @param rolls the array of rolls
+     * @param currPos for recursion: initiate with {startPosX, startPosY}
+     * @param usedIndices for recursion: initiate with a new boolean[4]
+     * @param validMoves for recursion: initiate with a new HashSet<int[]>
+     * @return a HashSet<int[]> containing all possible moves
+     */
     private HashSet<int[]> validMovesForPlace(int startPosX, int startPosY, int[] rolls, 
                                             int[] currPos, boolean[] usedIndices,
                                             HashSet<int[]> validMoves) {
@@ -97,7 +154,10 @@ public class BackgammonBoard {
             return new HashSet<>();                        
         return checkMovePiece(startPosX, startPosY, rolls, currPos, usedIndices, validMoves);                        
     }
-    //returns true if move one can be played after move two
+    /**
+     * the method wrapped by validMovesForPlace()
+     * DO NOT CALL IN CODE, CALL validMovesForPlace() INSTEAD
+     */
     private HashSet<int[]> checkMovePiece(int startPosX, int startPosY, 
                                             int[] rolls, int[] currPos,
                                             boolean[] usedIndices,
@@ -120,6 +180,11 @@ public class BackgammonBoard {
         return validMoves;
     }
 
+    /**
+     * returns the number of true's in a boolean array
+     * @param b
+     * @return
+     */
     private int numTrue(boolean[] b) {
         int numtrue = 0;
         for(int i = 0; i < b.length; i++) {
@@ -128,22 +193,14 @@ public class BackgammonBoard {
         return numtrue;
     }
 
-    public boolean checkMoveEatenPiece(int movement) {
-        if(teams[turn].getEatenPieces() == null) return false;
-        Piece piece = teams[turn].getEatenPieces().getEnd().getPiece();
-        int[] newPos = piece.calculateNewPos(movement, teams[turn]);
-        if(teams[1 - turn].numPiecesOnSpace(newPos[0], newPos[1]) >= 2) {
-            return false;
-        }
-        else {
-            return true;
-        }
-    }
-
-
     //-----------------------------------
     //MISCELLANEOUS METHODS
     //-----------------------------------
+    
+    /**
+     * 
+     * @return a string representation of the board
+     */
     public String boardString() {
         String board = "";
         for(int i = 1; i >= 0; i--) {
@@ -172,18 +229,33 @@ public class BackgammonBoard {
         return board;
     }
 
+    /**
+     * 
+     * @return teams[] array
+     */
     public Team[] getTeams() {
         return teams;
     }
 
+    /**
+     * switches turn from 0 to 1 // 1 to 0
+     */
     public void switchTurn() {
         turn = 1 - turn;
     }
     
+    /**
+     * 
+     * @return turn
+     */
     public int getTurn() {
         return turn;
     }
 
+    /**
+     * sets turn 
+     * @param turn
+     */
     public void setTurn(int turn) {
         this.turn = turn;
     }
