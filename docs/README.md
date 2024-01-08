@@ -2,13 +2,13 @@
 
 ## How to run
 > Download the files <br>
-> Compile the code using """javac -d bin *.java""" once you are in the """src""" folder
-> After changing directory to the bin folder, run the code by using """java src.BackgammonRunner"""
+> Compile the code using """javac -d bin *.java""" once you are in the """src""" folder <br>
+> After changing directory to the bin folder, run the code by using """java src.BackgammonRunner""" <br>
 
 ## How to play
-> There are two teams on the board, B and W. Who starts is completely random.
-> When it is your turn to move, input the roll and coordinates as follows: "**roll** **x** **y**", with **roll** being a number you rolled, and **x** and **y** being the coordinate location of the piece you'd like to move.
-> "E" stands for the amount of eaten pieces you have, and "I" stands for the amount of pieces you have in home.
+> There are two teams on the board, B and W. Who starts is completely random. <br>
+> When it is your turn to move, input the roll and coordinates as follows: "**roll** **x** **y**", with **roll** being a number you rolled, and **x** and **y** being the coordinate location of the piece you'd like to move. <br>
+> "E" stands for the amount of eaten pieces you have, and "I" stands for the amount of pieces you have in home. <br>
 > 
 > It's that simple!
 
