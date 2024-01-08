@@ -18,5 +18,9 @@ There are a few rules to backgammon that aren't as well known that I have includ
 3. If you can play only one spot with both dice, and then won't be able to use the other dice, you **must** use the higher roll
 
 For an extensive list of all the rules, [here](https://www.bkgm.com/faq/BasicRules.html#what_if_i_can_only_play_one_number_) is a handbook from online
+
 ## About the project
-This is my latest project started in September 2023. I hope to make a fully functioning backgammon game that plays in the terminal. I will then create a GUI to make it more user-friendly. Afterwards, I hope to create an AI for backgammon!
+- Motivation: I started this project during my first semester as a sophomore at Brandeis University after my friend began reading into backgammon strategy. I hoped to create a backgammon bot that would be able to beat him despite his extensive effort to get better at the game. The first step of course is to recreate the entire game from scratch, so that's what I did. Why backgammon? Well, I come from an arabic background and grew up in a largely Syrian Jewish community, and therefore backgammon is an incredibly popular boardgame here.
+- Principles and what I learned: Going into this project, I wanted to lean into what I learned about object oriented design, and what better way to do that than by making a game from scratch. I created different files for each "object" within the game. There is a **dice** class, a **board** class, a **piece** class, a **team** class, etc. Additionally, I wanted to maintain clean and well-documented code so that I'd be able to tweak and come back to it later on to learn from my past self and see where I went wrong. That is also why this README is very extensive and in-depth. Overall this project was a hands on experience with learning Object-Oriented programming that I just didn't get from the assignments in class and I am very glad I took this project on. 
+- Bug-testing: I made a few test scenarios to try to see if the edge cases work, but my testing isn't terribly meticulous, so there may be a few unknown bugs with how the game's logic works.
+
