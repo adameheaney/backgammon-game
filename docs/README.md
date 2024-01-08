@@ -16,6 +16,7 @@ There are a few rules to backgammon that aren't as well known that I have includ
 1. Cannot roll doubles for the first move, as who goes first is determined by who rolls the higher dice first (this is done automatically)
 2. If there is only one viable move that a dice can play, it must be played. This means that if I can't use a roll without first using the other roll on a certain piece, then you must use the other roll on that certain piece.
 3. If you can play only one spot with both dice, and then won't be able to use the other dice, you **must** use the higher roll
-For an extensive list of all the rules, [here](#https://www.bkgm.com/faq/BasicRules.html#what_if_i_can_only_play_one_number_) is a handbook from online
+
+For an extensive list of all the rules, [here](https://www.bkgm.com/faq/BasicRules.html#what_if_i_can_only_play_one_number_) is a handbook from online
 ## About the project
 This is my latest project started in September 2023. I hope to make a fully functioning backgammon game that plays in the terminal. I will then create a GUI to make it more user-friendly. Afterwards, I hope to create an AI for backgammon!
