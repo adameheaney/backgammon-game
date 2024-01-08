@@ -2,7 +2,7 @@
 
 ## How to run
 - Download the files <br>
-- Compile the code using ```javac -d bin *.java``` once you are in the ```src``` folder <br>
+- Compile the code using ```javac -d \bin *.java``` once you are in the ```src``` folder <br>
 - After changing directory to the bin folder, run the code by using ```java src.BackgammonRunner``` <br>
 
 ## How to play
