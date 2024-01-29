@@ -432,7 +432,7 @@ public class Backgammon {
     }
 
     public void botAgainstBot(BackgammonBot bot, BackgammonBot bot2) {
-        printToFile("game.txt");
+        printToFile("docs/game.txt");
         int turn = 1;
         System.out.println("---------------------------------------\n              TURN " + turn + "\n---------------------------------------");
         startBotGame(bot, bot2);
