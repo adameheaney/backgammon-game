@@ -41,7 +41,14 @@ public class Backgammon {
     Scanner console;
 
     /**
-     * The generated rolls; global variable to make it simpler for the extra methods pertaining to """rolls"""
+     * The generated rolls; global variable to make it simpler for the extra methods pertaining to "rolls"
+     * How rolls works:
+     * - The dice class has a method named rolls(num), that returns an array of max size 4 filled with "num" rolls of 1-6.
+     * - The rest of the array is filled with -1.
+     * - EX: rolls = d.rolls(2) --> rolls = {4, 2, -1, -1}
+     * - Of course, if there are doubles, then the rolls will be filled with the extra rolls: {4, 4, 4, 4}, but generally the last two
+     * numbers will be -1.
+     * - There are a few methods pertaining to rolls. In retrospect, I should have used an ArrayList :p
      */
     private int[] rolls;
 
@@ -59,6 +66,7 @@ public class Backgammon {
      */
     public void play() {
         startGame();
+        //while loop that goes until one of the teams wins
         while(b.getTeams()[0].getNumActivePieces() > 0 && b.getTeams()[1].getNumActivePieces() > 0) {
             gameLoop();
             b.switchTurn();
@@ -72,8 +80,11 @@ public class Backgammon {
         System.out.println("Welcome to the game of Backgammon! I will not be restating the rules as I assume you know them if you're playing this. The code for this game was created from scratch by Adam Heaney using only Java and dedication. \n\nHow to play: When it is your turn to move, input the roll and coordinates as follows: \"roll x y\". Here is what the board looks like:\n\n" + b.boardString() + "\nThe two teams are B and W (black and white). Black's home is the top row and White's is the bottom. E is how many of your pieces are eaten and I is how many of your pieces are home. When ready, pick teams and press enter to begin the game!");
         console.nextLine();
         rolls = d.rolls(2);
+        //cannot start the game with doubles
         while(rolls[0] == rolls[1])
             rolls = d.rolls(2);
+
+        //Chooses who goes first based on the roll (50/50 chance for either player to go first)
         if(rolls[0] > rolls[1]) { 
             System.out.println(b.getTeams()[0].getTeamName() + " goes first!");
             b.setTurn(0);
@@ -82,12 +93,14 @@ public class Backgammon {
             System.out.println(b.getTeams()[1].getTeamName() + " goes first!");
             b.setTurn(1);
         }
+        //this while loop loops the code until the player has used all of his rolls.
         while(!rollsIsEmpty()) {
             int[] move = new int[3];
             System.out.println("Input your desired move. You have the rolls " + rollsToString());
             String moveString = console.nextLine().strip();
+            //incrementer for storing the different tokens of the input into an int[]
             int i = 0;
-            // Regex tings
+            //Regex things in order to make sure the player inputs a valid move
             String regexPattern = "\\d{1,}\\s{1}\\d{1,}\\s{1}\\d{1,}";
             Pattern pattern = Pattern.compile(regexPattern);
             Matcher matcher = pattern.matcher(moveString);
@@ -103,7 +116,7 @@ public class Backgammon {
                 }
                 i++;
             }
-            //checks if the input is valid
+            //checks if the input is valid, and if not, loops until it is
             while(!matcher.matches()) {
                 System.out.println("##########################\nINVALID INPUT\n##########################\nRemember, the format is \"roll X Y\" and don't forget to take a better look at the board. You have the rolls " + rollsToString());
                 moveString = console.nextLine().strip();
@@ -121,6 +134,7 @@ public class Backgammon {
                     i++;
                 }
             }
+            //somewhat unnecessary code with the whole validmove stuff
             Boolean validMove = b.movePiece(move[1], move[2], move[0]);
             if(validMove) {
                 rolls[indexOfRoll(move[0])] = -1;
@@ -133,6 +147,82 @@ public class Backgammon {
             System.out.println(b.boardString());
         }
         b.switchTurn();
+    }
+
+    /**
+     * The gameloop of Backgammon. Plays a single turn for a team.
+     */
+    public void gameLoop() {
+        //initialize the rolls
+        rolls = d.rolls(2);
+        System.out.println("It is " + b.getTeams()[b.getTurn()].getTeamName() + "'s turn.");
+        System.out.println("You rolled " + rollsToString());
+        if(rolls[0] == rolls[1]) {
+            System.out.println("You rolled doubles!");
+            rolls[2] = rolls[0];
+            rolls[3] = rolls[0];
+        }
+        System.out.println(b.boardString());
+        //gets all the possible moves with the rolls
+        ArrayList<int[]> allMoves = new ArrayList<>(b.getAllPossibleMoves(rolls));
+        getValidMoves(allMoves);
+        //the while loop for entering your moves
+        while(!rollsIsEmpty() && !allMoves.isEmpty()) {
+            // uncomment to print all the valid moves
+            // for(int[] list : allMoves) {
+            //     System.out.println(Arrays.toString(list));
+            // }
+            int[] move = new int[3];
+            System.out.println("Input your desired move. You have the rolls " + rollsToString());
+            String moveString = console.nextLine().strip();
+            int i = 0;
+            //Regex tings
+            String regexPattern = "\\d{1,}\\s{1}\\d{1,}\\s{1}\\d{1,}";
+            Pattern pattern = Pattern.compile(regexPattern);
+            Matcher matcher = pattern.matcher(moveString);
+            while(matcher.matches() && moveString != "") {
+                //parse through the string
+                if(moveString.indexOf(" ") > 0){
+                    move[i] = Integer.parseInt(moveString.substring(0, moveString.indexOf(" ")));
+                    moveString = moveString.substring(moveString.indexOf(" ") + 1);
+                }
+                else {
+                    move[i] = Integer.parseInt(moveString.substring(0));
+                    moveString = "";
+                }
+                i++;
+            }
+            //checks if the input is valid
+            while(!matcher.matches() || !hasMove(move, allMoves)) {
+                System.out.println("##########################\nINVALID INPUT\n##########################\nRemember, the format is \"roll X Y\" and don't forget to take a better look at the board. You have the rolls " + rollsToString());
+                moveString = console.nextLine().strip();
+                matcher = pattern.matcher(moveString);
+                i = 0;
+                while(moveString != "") {
+                    if(moveString.indexOf(" ") > 0){
+                        move[i] = Integer.parseInt(moveString.substring(0, moveString.indexOf(" ")));
+                        moveString = moveString.substring(moveString.indexOf(" ") + 1);
+                    }
+                    else {
+                        move[i] = Integer.parseInt(moveString.substring(0));
+                        moveString = "";
+                    }
+                    i++;
+                }
+            }
+            //removes the roll from rolls
+            rolls[indexOfRoll(move[0])] = -1;
+            //moves the piece using movePiece() if there are no eaten pieces, otherwise uses moveEatenPiece()
+            if(b.getTeams()[b.getTurn()].getEatenPieces() == null)
+                b.movePiece(move[1], move[2], move[0]);
+            else b.moveEatenPiece(move[0]);
+            //if rolls is not empty, generate all the possible moves again with the new set of rolls you have
+            if(!rollsIsEmpty()) {
+                allMoves = new ArrayList<>(b.getAllPossibleMoves(rolls));
+                getValidMoves(allMoves);
+            }
+            System.out.println(b.boardString());
+        }
     }
 
     //=========================================
@@ -184,92 +274,27 @@ public class Backgammon {
 
 
     //========================================================
-    //             METHOD FOR MOVEMENT
+    //            METHODS FOR GETTING THE MOVES
     //========================================================
-    public void gameLoop() {
-        //initialize the rolls
-        rolls = d.rolls(2);
-        System.out.println("It is " + b.getTeams()[b.getTurn()].getTeamName() + "'s turn.");
-        System.out.println("You rolled " + rollsToString());
-        if(rolls[0] == rolls[1]) {
-            System.out.println("You rolled doubles!");
-            rolls[2] = rolls[0];
-            rolls[3] = rolls[0];
-        }
-        System.out.println(b.boardString());
-        //gets all the possible moves with the rolls
-        ArrayList<int[]> allMoves = new ArrayList<>(b.getAllPossibleMoves(rolls));
-        getValidMoves(allMoves);
-        //the while loop for entering your moves
-        while(!rollsIsEmpty() && !allMoves.isEmpty()) {
-            // uncomment to print all the valid moves
-            // for(int[] list : allMoves) {
-            //     System.out.println(Arrays.toString(list));
-            // }
-            int[] move = new int[3];
-            System.out.println("Input your desired move. You have the rolls " + rollsToString());
-            String moveString = console.nextLine().strip();
-            int i = 0;
-            // Regex tings
-            String regexPattern = "\\d{1,}\\s{1}\\d{1,}\\s{1}\\d{1,}";
-            Pattern pattern = Pattern.compile(regexPattern);
-            Matcher matcher = pattern.matcher(moveString);
-            while(matcher.matches() && moveString != "") {
-                //parse through the string
-                if(moveString.indexOf(" ") > 0){
-                    move[i] = Integer.parseInt(moveString.substring(0, moveString.indexOf(" ")));
-                    moveString = moveString.substring(moveString.indexOf(" ") + 1);
-                }
-                else {
-                    move[i] = Integer.parseInt(moveString.substring(0));
-                    moveString = "";
-                }
-                i++;
-            }
-            //checks if the input is valid
-            while(!matcher.matches() || !hasMove(move, allMoves)) {
-                System.out.println("##########################\nINVALID INPUT\n##########################\nRemember, the format is \"roll X Y\" and don't forget to take a better look at the board. You have the rolls " + rollsToString());
-                moveString = console.nextLine().strip();
-                matcher = pattern.matcher(moveString);
-                i = 0;
-                while(moveString != "") {
-                    if(moveString.indexOf(" ") > 0){
-                        move[i] = Integer.parseInt(moveString.substring(0, moveString.indexOf(" ")));
-                        moveString = moveString.substring(moveString.indexOf(" ") + 1);
-                    }
-                    else {
-                        move[i] = Integer.parseInt(moveString.substring(0));
-                        moveString = "";
-                    }
-                    i++;
-                }
-            }
-            //does the move
-            rolls[indexOfRoll(move[0])] = -1;
-            if(b.getTeams()[b.getTurn()].getEatenPieces() == null)
-                b.movePiece(move[1], move[2], move[0]);
-            else b.moveEatenPiece(move[0]);
-            if(!rollsIsEmpty()) {
-                allMoves = new ArrayList<>(b.getAllPossibleMoves(rolls));
-                getValidMoves(allMoves);
-            }
-            System.out.println(b.boardString());
-        }
-    }
+
+    
 
     /**
      * Takes in a list of backgammon moves and sifts through them to return possible valid moves
      * @param allMoves
      */
     private void getValidMoves(ArrayList<int[]> allMoves) {
+        //initial check to make sure that you don't have eaten pieces
         if(b.getTeams()[b.getTurn()].getEatenPieces() == null){
+            //if you have no moves, then make all the rolls -1
             if(allMoves.isEmpty()) {
                 System.out.println("You have no valid moves :(");
                 for(int i = 0; i < rolls.length; i++) {
                     rolls[i] = -1;
                 }
                 return;
-            } 
+            }
+            //checks if any of the rolls have literally no move possible even in the future, and if not removes the roll
             else {
                 for(int r = 0; r < rolls.length; r++) {
                     if(rolls[r] == -1) continue;
@@ -285,9 +310,9 @@ public class Backgammon {
                     }
                 }
             }
+            //checks if both dice have the same single valid move, and discards the lower dice, as the higher dice must be played in this situation
             if(allMoves.size() <= 2 
             && b.getTeams()[b.getTurn()].numPiecesOnSpace(allMoves.get(0)[1], allMoves.get(0)[2]) < 2){
-                //checks if both dice have the same single valid move, and discards the lower dice, as the higher dice must be played in this situation
                 boolean onlyOneSpace = true;
                 int[] firstMove = new int[] {allMoves.get(0)[1],allMoves.get(0)[2]};
                 for(int i = 1; i < allMoves.size(); i++) {
@@ -356,6 +381,7 @@ public class Backgammon {
      * @param allMoves
      */
     private void pruneAllMoves(ArrayList<int[]> allMoves) {
+        //generates the moves if you have an eaten piece (the valid moves aren't generated properly with the getValidMoves() method)
         if(b.getTeams()[b.getTurn()].getEatenPieces() != null) {
             ArrayList<int[]> temp = new ArrayList<>();
             for(int r = 0; r < rolls.length; r++) {
@@ -366,6 +392,7 @@ public class Backgammon {
             allMoves.clear();
             allMoves.addAll(temp);
         }
+        //if there are no eaten pieces, then it'll clean up the moves for valid input
         else {
             ArrayList<int[]> temp = new ArrayList<>();
             for(int i = 0; i < allMoves.size(); i++) {
@@ -379,6 +406,12 @@ public class Backgammon {
         }
     }
 
+    /**
+     * checks if the List contains an int[] with exact items as arr, since it doesn't normally do that >:(
+     * @param list
+     * @param arr
+     * @return
+     */
     private boolean intArrContains(ArrayList<int[]> list, int[] arr) {
         for(int i = 0; i < list.size(); i++) {
             int[] item = list.get(i);
