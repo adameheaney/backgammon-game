@@ -444,10 +444,6 @@ public class Backgammon {
             botGameLoop(bot, bot2);
             b.switchTurn();
         }
-        if(turn > 50) {
-            b = new BackgammonBoard();
-            botAgainstBot(bot, bot2);
-        }
     }
 
     private void startBotGame(BackgammonBot bot) {

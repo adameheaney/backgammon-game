@@ -3,1231 +3,1582 @@ This output will be written to the file.
               TURN 1
 ---------------------------------------
 RandomBot goes first!
-RandomBot rolled [4, 1]
-[x:4, y:0, r:1][x:11, y:1, r:1][x:0, y:1, r:4][x:6, y:0, r:4][x:6, y:0, r:1][x:4, y:0, r:4][x:11, y:1, r:4]The bot played the piece at coordinates 6 0 with roll 1
+RandomBot rolled [2, 4]
+[x:4, y:1, r:2][x:0, y:0, r:2][x:0, y:0, r:4][x:11, y:0, r:4][x:4, y:1, r:4][x:6, y:1, r:2][x:11, y:0, r:2][x:6, y:1, r:4]The bot played the piece at coordinates 4 1 with roll 4
 5W 0  0  0  3B 0  | 5B 0  0  0  0  2W | B Home | E: 0 I: 0 
 5B 0  0  0  3W 0  | 5W 0  0  0  0  2B | W Home | E: 0 I: 0 
 
-5W 0  0  0  3B 0  | 5B 0  0  0  0  2W | B Home | E: 0 I: 0 
-5B 0  0  0  3W 0  | 4W 1W 0  0  0  2B | W Home | E: 0 I: 0 
+5W 0  0  0  2B 0  | 5B 0  1B 0  0  2W | B Home | E: 0 I: 0 
+5B 0  0  0  3W 0  | 5W 0  0  0  0  2B | W Home | E: 0 I: 0 
 
-[x:11, y:1, r:4][x:4, y:0, r:4][x:6, y:0, r:4][x:0, y:1, r:4]The bot played the piece at coordinates 11 1 with roll 4
-5W 0  0  0  3B 0  | 5B 0  0  0  0  2W | B Home | E: 0 I: 0 
-5B 0  0  0  3W 0  | 4W 1W 0  0  0  2B | W Home | E: 0 I: 0 
+[x:8, y:1, r:2][x:0, y:0, r:2][x:4, y:1, r:2][x:11, y:0, r:2][x:6, y:1, r:2]The bot played the piece at coordinates 0 0 with roll 2
+5W 0  0  0  2B 0  | 5B 0  1B 0  0  2W | B Home | E: 0 I: 0 
+5B 0  0  0  3W 0  | 5W 0  0  0  0  2B | W Home | E: 0 I: 0 
 
-5W 0  0  0  3B 0  | 5B 1W 0  0  0  1W | B Home | E: 0 I: 0 
-5B 0  0  0  3W 0  | 4W 1W 0  0  0  2B | W Home | E: 0 I: 0 
+5W 1B 0  0  2B 0  | 5B 0  1B 0  0  2W | B Home | E: 0 I: 0 
+4B 0  0  0  3W 0  | 5W 0  0  0  0  2B | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 2
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [2, 1]
-5W 0  0  0  3B 0  | 5B 1W 0  0  0  1W | B Home | E: 0 I: 0 
-5B 0  0  0  3W 0  | 4W 1W 0  0  0  2B | W Home | E: 0 I: 0 
+RandomBot rolled [1, 5]
+5W 1B 0  0  2B 0  | 5B 0  1B 0  0  2W | B Home | E: 0 I: 0 
+4B 0  0  0  3W 0  | 5W 0  0  0  0  2B | W Home | E: 0 I: 0 
 
-[x:11, y:0, r:1][x:0, y:0, r:2][x:6, y:1, r:1][x:4, y:1, r:1][x:11, y:0, r:2][x:4, y:1, r:2][x:6, y:1, r:2]The bot played the piece at coordinates 11 0 with roll 2
-5W 0  0  0  3B 0  | 5B 1W 0  0  0  1W | B Home | E: 0 I: 0 
-5B 0  0  0  3W 0  | 4W 1W 0  0  0  2B | W Home | E: 0 I: 0 
+[x:0, y:1, r:5][x:4, y:0, r:1][x:6, y:0, r:1][x:11, y:1, r:1][x:4, y:0, r:5]The bot played the piece at coordinates 4 0 with roll 5
+5W 1B 0  0  2B 0  | 5B 0  1B 0  0  2W | B Home | E: 0 I: 0 
+4B 0  0  0  3W 0  | 5W 0  0  0  0  2B | W Home | E: 0 I: 0 
 
-5W 0  0  0  3B 0  | 5B 1W 0  0  0  1W | B Home | E: 0 I: 0 
-5B 0  0  0  3W 0  | 4W 1W 0  1B 0  1B | W Home | E: 0 I: 0 
+5W 1B 0  0  2B 0  | 5B 0  1B 0  0  2W | B Home | E: 0 I: 0 
+4B 0  0  0  2W 0  | 5W 0  0  1W 0  2B | W Home | E: 0 I: 0 
 
-[x:11, y:0, r:1][x:4, y:1, r:1][x:6, y:1, r:1][x:9, y:0, r:1]The bot played the piece at coordinates 4 1 with roll 1
-5W 0  0  0  3B 0  | 5B 1W 0  0  0  1W | B Home | E: 0 I: 0 
-5B 0  0  0  3W 0  | 4W 1W 0  1B 0  1B | W Home | E: 0 I: 0 
+[x:11, y:1, r:1][x:9, y:0, r:1][x:6, y:0, r:1][x:4, y:0, r:1]The bot played the piece at coordinates 6 0 with roll 1
+5W 1B 0  0  2B 0  | 5B 0  1B 0  0  2W | B Home | E: 0 I: 0 
+4B 0  0  0  2W 0  | 5W 0  0  1W 0  2B | W Home | E: 0 I: 0 
 
-5W 0  0  0  2B 1B | 5B 1W 0  0  0  1W | B Home | E: 0 I: 0 
-5B 0  0  0  3W 0  | 4W 1W 0  1B 0  1B | W Home | E: 0 I: 0 
+5W 1B 0  0  2B 0  | 5B 0  1B 0  0  2W | B Home | E: 0 I: 0 
+4B 0  0  0  2W 0  | 4W 1W 0  1W 0  2B | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 3
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [6, 1]
-5W 0  0  0  2B 1B | 5B 1W 0  0  0  1W | B Home | E: 0 I: 0 
-5B 0  0  0  3W 0  | 4W 1W 0  1B 0  1B | W Home | E: 0 I: 0 
+RandomBot rolled [6, 3]
+5W 1B 0  0  2B 0  | 5B 0  1B 0  0  2W | B Home | E: 0 I: 0 
+4B 0  0  0  2W 0  | 4W 1W 0  1W 0  2B | W Home | E: 0 I: 0 
 
-[x:0, y:1, r:6][x:6, y:0, r:1][x:4, y:0, r:6][x:11, y:1, r:1][x:7, y:0, r:1][x:4, y:0, r:1][x:7, y:1, r:6][x:11, y:1, r:6]The bot played the piece at coordinates 7 1 with roll 6
-5W 0  0  0  2B 1B | 5B 1W 0  0  0  1W | B Home | E: 0 I: 0 
-5B 0  0  0  3W 0  | 4W 1W 0  1B 0  1B | W Home | E: 0 I: 0 
+[x:4, y:1, r:3][x:1, y:1, r:6][x:1, y:1, r:3][x:4, y:1, r:6][x:11, y:0, r:3][x:6, y:1, r:3][x:0, y:0, r:6][x:11, y:0, r:6][x:0, y:0, r:3]The bot played the piece at coordinates 0 0 with roll 6
+5W 1B 0  0  2B 0  | 5B 0  1B 0  0  2W | B Home | E: 0 I: 0 
+4B 0  0  0  2W 0  | 4W 1W 0  1W 0  2B | W Home | E: 0 I: 0 
 
-5W 1W 0  0  2B 1B | 5B 0  0  0  0  1W | B Home | E: 0 I: 0 
-5B 0  0  0  3W 0  | 4W 1W 0  1B 0  1B | W Home | E: 0 I: 0 
+5W 1B 0  0  2B 1B | 5B 0  1B 0  0  2W | B Home | E: 0 I: 0 
+3B 0  0  0  2W 0  | 4W 1W 0  1W 0  2B | W Home | E: 0 I: 0 
 
-[x:11, y:1, r:1][x:6, y:0, r:1][x:4, y:0, r:1][x:7, y:0, r:1][x:1, y:1, r:1]The bot played the piece at coordinates 4 0 with roll 1
-5W 1W 0  0  2B 1B | 5B 0  0  0  0  1W | B Home | E: 0 I: 0 
-5B 0  0  0  3W 0  | 4W 1W 0  1B 0  1B | W Home | E: 0 I: 0 
+[x:11, y:0, r:3][x:4, y:1, r:3][x:0, y:0, r:3][x:1, y:1, r:3][x:5, y:1, r:3][x:6, y:1, r:3]The bot played the piece at coordinates 4 1 with roll 3
+5W 1B 0  0  2B 1B | 5B 0  1B 0  0  2W | B Home | E: 0 I: 0 
+3B 0  0  0  2W 0  | 4W 1W 0  1W 0  2B | W Home | E: 0 I: 0 
 
-5W 1W 0  0  2B 1B | 5B 0  0  0  0  1W | B Home | E: 0 I: 0 
-5B 0  0  0  2W 1W | 4W 1W 0  1B 0  1B | W Home | E: 0 I: 0 
+5W 1B 0  0  1B 1B | 5B 1B 1B 0  0  2W | B Home | E: 0 I: 0 
+3B 0  0  0  2W 0  | 4W 1W 0  1W 0  2B | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 4
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [3, 2]
-5W 1W 0  0  2B 1B | 5B 0  0  0  0  1W | B Home | E: 0 I: 0 
-5B 0  0  0  2W 1W | 4W 1W 0  1B 0  1B | W Home | E: 0 I: 0 
+RandomBot rolled [5, 4]
+5W 1B 0  0  1B 1B | 5B 1B 1B 0  0  2W | B Home | E: 0 I: 0 
+3B 0  0  0  2W 0  | 4W 1W 0  1W 0  2B | W Home | E: 0 I: 0 
 
-[x:11, y:0, r:2][x:5, y:1, r:3][x:9, y:0, r:2][x:5, y:1, r:2][x:6, y:1, r:2][x:4, y:1, r:2][x:6, y:1, r:3][x:4, y:1, r:3][x:0, y:0, r:3][x:11, y:0, r:3][x:0, y:0, r:2]The bot played the piece at coordinates 6 1 with roll 3
-5W 1W 0  0  2B 1B | 5B 0  0  0  0  1W | B Home | E: 0 I: 0 
-5B 0  0  0  2W 1W | 4W 1W 0  1B 0  1B | W Home | E: 0 I: 0 
+[x:4, y:0, r:4][x:0, y:1, r:4][x:6, y:0, r:4][x:4, y:0, r:5][x:11, y:1, r:4][x:0, y:1, r:5]The bot played the piece at coordinates 11 1 with roll 4
+5W 1B 0  0  1B 1B | 5B 1B 1B 0  0  2W | B Home | E: 0 I: 0 
+3B 0  0  0  2W 0  | 4W 1W 0  1W 0  2B | W Home | E: 0 I: 0 
 
-5W 1W 0  0  2B 1B | 4B 0  0  1B 0  1W | B Home | E: 0 I: 0 
-5B 0  0  0  2W 1W | 4W 1W 0  1B 0  1B | W Home | E: 0 I: 0 
+5W 1B 0  0  1B 1B | 5B 1W 1B 0  0  1W | B Home | E: 1 I: 0 
+3B 0  0  0  2W 0  | 4W 1W 0  1W 0  2B | W Home | E: 0 I: 0 
 
-[x:9, y:0, r:2][x:4, y:1, r:2][x:5, y:1, r:2][x:6, y:1, r:2][x:0, y:0, r:2][x:11, y:0, r:2][x:9, y:1, r:2]The bot played the piece at coordinates 9 1 with roll 2
-5W 1W 0  0  2B 1B | 4B 0  0  1B 0  1W | B Home | E: 0 I: 0 
-5B 0  0  0  2W 1W | 4W 1W 0  1B 0  1B | W Home | E: 0 I: 0 
+[x:7, y:1, r:5][x:4, y:0, r:5][x:0, y:1, r:5]The bot played the piece at coordinates 0 1 with roll 5
+5W 1B 0  0  1B 1B | 5B 1W 1B 0  0  1W | B Home | E: 1 I: 0 
+3B 0  0  0  2W 0  | 4W 1W 0  1W 0  2B | W Home | E: 0 I: 0 
 
-5W 1W 0  0  2B 1B | 4B 0  0  0  0  1B | B Home | E: 0 I: 0 
-5B 0  0  0  2W 1W | 4W 1W 0  1B 0  1B | W Home | E: 1 I: 0 
+4W 1B 0  0  1B 1B | 5B 1W 1B 0  0  1W | B Home | E: 1 I: 0 
+3B 0  0  0  3W 0  | 4W 1W 0  1W 0  2B | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 5
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [4, 2]
-5W 1W 0  0  2B 1B | 4B 0  0  0  0  1B | B Home | E: 0 I: 0 
-5B 0  0  0  2W 1W | 4W 1W 0  1B 0  1B | W Home | E: 1 I: 0 
+RandomBot rolled [2, 6]
+4W 1B 0  0  1B 1B | 5B 1W 1B 0  0  1W | B Home | E: 1 I: 0 
+3B 0  0  0  3W 0  | 4W 1W 0  1W 0  2B | W Home | E: 0 I: 0 
 
-[x:8, y:1, r:4][x:10, y:1, r:2]The bot played the piece at coordinates 8 1 with roll 4
-5W 1W 0  0  2B 1B | 4B 0  0  0  0  1B | B Home | E: 0 I: 0 
-5B 0  0  0  2W 1W | 4W 1W 0  1B 0  1B | W Home | E: 1 I: 0 
+[x:10, y:0, r:2]The bot played the piece at coordinates 10 0 with roll 2
+4W 1B 0  0  1B 1B | 5B 1W 1B 0  0  1W | B Home | E: 1 I: 0 
+3B 0  0  0  3W 0  | 4W 1W 0  1W 0  2B | W Home | E: 0 I: 0 
 
-5W 1W 0  0  2B 1B | 4B 0  1W 0  0  1B | B Home | E: 0 I: 0 
-5B 0  0  0  2W 1W | 4W 1W 0  1B 0  1B | W Home | E: 0 I: 0 
+4W 1B 0  0  1B 1B | 5B 1W 1B 0  0  1W | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 1W 0  1W 1B 2B | W Home | E: 0 I: 0 
 
-[x:6, y:0, r:2][x:4, y:0, r:2][x:5, y:0, r:2][x:7, y:0, r:2][x:0, y:1, r:2]The bot played the piece at coordinates 5 0 with roll 2
-5W 1W 0  0  2B 1B | 4B 0  1W 0  0  1B | B Home | E: 0 I: 0 
-5B 0  0  0  2W 1W | 4W 1W 0  1B 0  1B | W Home | E: 0 I: 0 
+[x:11, y:0, r:6][x:5, y:1, r:6][x:4, y:1, r:6][x:0, y:0, r:6][x:1, y:1, r:6]The bot played the piece at coordinates 1 1 with roll 6
+4W 1B 0  0  1B 1B | 5B 1W 1B 0  0  1W | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 1W 0  1W 1B 2B | W Home | E: 0 I: 0 
 
-5W 1W 0  0  2B 1B | 4B 0  1W 0  0  1B | B Home | E: 0 I: 0 
-5B 0  0  0  2W 0  | 4W 2W 0  1B 0  1B | W Home | E: 0 I: 0 
+4W 0  0  0  1B 1B | 5B 1B 1B 0  0  1W | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 1W 0  1W 1B 2B | W Home | E: 1 I: 0 
 
 ---------------------------------------
               TURN 6
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [5, 5]
-RandomBot rolled doubles!
-5W 1W 0  0  2B 1B | 4B 0  1W 0  0  1B | B Home | E: 0 I: 0 
-5B 0  0  0  2W 0  | 4W 2W 0  1B 0  1B | W Home | E: 0 I: 0 
+RandomBot rolled [1, 3]
+4W 0  0  0  1B 1B | 5B 1B 1B 0  0  1W | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 1W 0  1W 1B 2B | W Home | E: 1 I: 0 
 
-[x:4, y:1, r:5][x:0, y:0, r:5][x:6, y:1, r:5][x:5, y:1, r:5]The bot played the piece at coordinates 6 1 with roll 5
-5W 1W 0  0  2B 1B | 4B 0  1W 0  0  1B | B Home | E: 0 I: 0 
-5B 0  0  0  2W 0  | 4W 2W 0  1B 0  1B | W Home | E: 0 I: 0 
+[x:11, y:1, r:1][x:9, y:1, r:3]The bot played the piece at coordinates 9 1 with roll 3
+4W 0  0  0  1B 1B | 5B 1B 1B 0  0  1W | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 1W 0  1W 1B 2B | W Home | E: 1 I: 0 
 
-5W 1W 0  0  2B 1B | 3B 0  1W 0  0  2B | B Home | E: 0 I: 0 
-5B 0  0  0  2W 0  | 4W 2W 0  1B 0  1B | W Home | E: 0 I: 0 
+4W 0  0  0  1B 1B | 5B 1B 1B 1W 0  1W | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 1W 0  1W 1B 2B | W Home | E: 0 I: 0 
 
-[x:4, y:1, r:5][x:6, y:1, r:5][x:0, y:0, r:5][x:5, y:1, r:5]The bot played the piece at coordinates 5 1 with roll 5
-5W 1W 0  0  2B 1B | 3B 0  1W 0  0  2B | B Home | E: 0 I: 0 
-5B 0  0  0  2W 0  | 4W 2W 0  1B 0  1B | W Home | E: 0 I: 0 
+[x:9, y:0, r:1][x:6, y:0, r:1][x:9, y:1, r:1][x:11, y:1, r:1][x:7, y:0, r:1][x:4, y:0, r:1]The bot played the piece at coordinates 7 0 with roll 1
+4W 0  0  0  1B 1B | 5B 1B 1B 1W 0  1W | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 1W 0  1W 1B 2B | W Home | E: 0 I: 0 
 
-5W 1W 0  0  2B 0  | 3B 0  1W 0  1B 2B | B Home | E: 0 I: 0 
-5B 0  0  0  2W 0  | 4W 2W 0  1B 0  1B | W Home | E: 0 I: 0 
-
-[x:6, y:1, r:5][x:4, y:1, r:5][x:0, y:0, r:5]The bot played the piece at coordinates 4 1 with roll 5
-5W 1W 0  0  2B 0  | 3B 0  1W 0  1B 2B | B Home | E: 0 I: 0 
-5B 0  0  0  2W 0  | 4W 2W 0  1B 0  1B | W Home | E: 0 I: 0 
-
-5W 1W 0  0  1B 0  | 3B 0  1W 1B 1B 2B | B Home | E: 0 I: 0 
-5B 0  0  0  2W 0  | 4W 2W 0  1B 0  1B | W Home | E: 0 I: 0 
-
-[x:4, y:1, r:5][x:6, y:1, r:5][x:0, y:0, r:5]The bot played the piece at coordinates 6 1 with roll 5
-5W 1W 0  0  1B 0  | 3B 0  1W 1B 1B 2B | B Home | E: 0 I: 0 
-5B 0  0  0  2W 0  | 4W 2W 0  1B 0  1B | W Home | E: 0 I: 0 
-
-5W 1W 0  0  1B 0  | 2B 0  1W 1B 1B 3B | B Home | E: 0 I: 0 
-5B 0  0  0  2W 0  | 4W 2W 0  1B 0  1B | W Home | E: 0 I: 0 
+4W 0  0  0  1B 1B | 5B 1B 1B 1W 0  1W | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 0  1W 1W 1B 2B | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 7
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [6, 5]
-5W 1W 0  0  1B 0  | 2B 0  1W 1B 1B 3B | B Home | E: 0 I: 0 
-5B 0  0  0  2W 0  | 4W 2W 0  1B 0  1B | W Home | E: 0 I: 0 
+RandomBot rolled [5, 3]
+4W 0  0  0  1B 1B | 5B 1B 1B 1W 0  1W | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 0  1W 1W 1B 2B | W Home | E: 0 I: 0 
 
-[x:8, y:1, r:5][x:0, y:1, r:6][x:6, y:0, r:5][x:4, y:0, r:6][x:1, y:1, r:6][x:4, y:0, r:5][x:0, y:1, r:5][x:8, y:1, r:6][x:1, y:1, r:5]The bot played the piece at coordinates 0 1 with roll 5
-5W 1W 0  0  1B 0  | 2B 0  1W 1B 1B 3B | B Home | E: 0 I: 0 
-5B 0  0  0  2W 0  | 4W 2W 0  1B 0  1B | W Home | E: 0 I: 0 
+[x:11, y:0, r:3][x:6, y:1, r:3][x:0, y:0, r:3][x:0, y:0, r:5][x:10, y:0, r:3][x:5, y:1, r:5][x:5, y:1, r:3][x:4, y:1, r:5][x:10, y:0, r:5][x:8, y:1, r:3][x:7, y:1, r:3][x:6, y:1, r:5][x:4, y:1, r:3]The bot played the piece at coordinates 5 1 with roll 5
+4W 0  0  0  1B 1B | 5B 1B 1B 1W 0  1W | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 0  1W 1W 1B 2B | W Home | E: 0 I: 0 
 
-4W 1W 0  0  1B 0  | 2B 0  1W 1B 1B 3B | B Home | E: 0 I: 0 
-5B 0  0  0  3W 0  | 4W 2W 0  1B 0  1B | W Home | E: 0 I: 0 
+4W 0  0  0  1B 0  | 5B 1B 1B 1W 1B 1W | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 0  1W 1W 1B 2B | W Home | E: 0 I: 0 
 
-[x:1, y:1, r:6][x:0, y:1, r:6][x:8, y:1, r:6][x:4, y:0, r:6]The bot played the piece at coordinates 0 1 with roll 6
-4W 1W 0  0  1B 0  | 2B 0  1W 1B 1B 3B | B Home | E: 0 I: 0 
-5B 0  0  0  3W 0  | 4W 2W 0  1B 0  1B | W Home | E: 0 I: 0 
+[x:6, y:1, r:3][x:7, y:1, r:3][x:8, y:1, r:3][x:4, y:1, r:3][x:11, y:0, r:3][x:0, y:0, r:3][x:10, y:0, r:3]The bot played the piece at coordinates 6 1 with roll 3
+4W 0  0  0  1B 0  | 5B 1B 1B 1W 1B 1W | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 0  1W 1W 1B 2B | W Home | E: 0 I: 0 
 
-3W 1W 0  0  1B 0  | 2B 0  1W 1B 1B 3B | B Home | E: 0 I: 0 
-5B 0  0  0  3W 1W | 4W 2W 0  1B 0  1B | W Home | E: 0 I: 0 
+4W 0  0  0  1B 0  | 4B 1B 1B 1B 1B 1W | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 0  1W 1W 1B 2B | W Home | E: 1 I: 0 
 
 ---------------------------------------
               TURN 8
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [1, 1]
-RandomBot rolled doubles!
-3W 1W 0  0  1B 0  | 2B 0  1W 1B 1B 3B | B Home | E: 0 I: 0 
-5B 0  0  0  3W 1W | 4W 2W 0  1B 0  1B | W Home | E: 0 I: 0 
+RandomBot rolled [3, 4]
+4W 0  0  0  1B 0  | 4B 1B 1B 1B 1B 1W | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 0  1W 1W 1B 2B | W Home | E: 1 I: 0 
 
-[x:9, y:1, r:1][x:10, y:1, r:1][x:11, y:0, r:1][x:9, y:0, r:1][x:4, y:1, r:1][x:6, y:1, r:1]The bot played the piece at coordinates 9 1 with roll 1
-3W 1W 0  0  1B 0  | 2B 0  1W 1B 1B 3B | B Home | E: 0 I: 0 
-5B 0  0  0  3W 1W | 4W 2W 0  1B 0  1B | W Home | E: 0 I: 0 
+[x:9, y:1, r:3][x:8, y:1, r:4]The bot played the piece at coordinates 9 1 with roll 3
+4W 0  0  0  1B 0  | 4B 1B 1B 1B 1B 1W | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 0  1W 1W 1B 2B | W Home | E: 1 I: 0 
 
-3W 1W 0  0  1B 0  | 2B 0  1W 0  2B 3B | B Home | E: 0 I: 0 
-5B 0  0  0  3W 1W | 4W 2W 0  1B 0  1B | W Home | E: 0 I: 0 
+4W 0  0  0  1B 0  | 4B 1B 1B 1W 1B 1W | B Home | E: 1 I: 0 
+3B 0  0  0  3W 0  | 4W 0  1W 1W 1B 2B | W Home | E: 0 I: 0 
 
-[x:4, y:1, r:1][x:11, y:0, r:1][x:10, y:1, r:1][x:6, y:1, r:1][x:9, y:0, r:1]The bot played the piece at coordinates 11 0 with roll 1
-3W 1W 0  0  1B 0  | 2B 0  1W 0  2B 3B | B Home | E: 0 I: 0 
-5B 0  0  0  3W 1W | 4W 2W 0  1B 0  1B | W Home | E: 0 I: 0 
+[x:9, y:1, r:4][x:11, y:1, r:4][x:6, y:0, r:4][x:0, y:1, r:4][x:4, y:0, r:4]The bot played the piece at coordinates 9 1 with roll 4
+4W 0  0  0  1B 0  | 4B 1B 1B 1W 1B 1W | B Home | E: 1 I: 0 
+3B 0  0  0  3W 0  | 4W 0  1W 1W 1B 2B | W Home | E: 0 I: 0 
 
-3W 1W 0  0  1B 0  | 2B 0  1W 0  2B 3B | B Home | E: 0 I: 0 
-5B 0  0  0  3W 1W | 4W 2W 0  1B 1B 0  | W Home | E: 0 I: 0 
-
-[x:10, y:1, r:1][x:6, y:1, r:1][x:4, y:1, r:1][x:9, y:0, r:1][x:10, y:0, r:1]The bot played the piece at coordinates 10 1 with roll 1
-3W 1W 0  0  1B 0  | 2B 0  1W 0  2B 3B | B Home | E: 0 I: 0 
-5B 0  0  0  3W 1W | 4W 2W 0  1B 1B 0  | W Home | E: 0 I: 0 
-
-3W 1W 0  0  1B 0  | 2B 0  1W 0  1B 4B | B Home | E: 0 I: 0 
-5B 0  0  0  3W 1W | 4W 2W 0  1B 1B 0  | W Home | E: 0 I: 0 
-
-[x:9, y:0, r:1][x:10, y:0, r:1][x:10, y:1, r:1][x:4, y:1, r:1][x:6, y:1, r:1]The bot played the piece at coordinates 10 1 with roll 1
-3W 1W 0  0  1B 0  | 2B 0  1W 0  1B 4B | B Home | E: 0 I: 0 
-5B 0  0  0  3W 1W | 4W 2W 0  1B 1B 0  | W Home | E: 0 I: 0 
-
-3W 1W 0  0  1B 0  | 2B 0  1W 0  0  5B | B Home | E: 0 I: 0 
-5B 0  0  0  3W 1W | 4W 2W 0  1B 1B 0  | W Home | E: 0 I: 0 
+4W 0  0  0  1B 1W | 4B 1B 1B 0  1B 1W | B Home | E: 1 I: 0 
+3B 0  0  0  3W 0  | 4W 0  1W 1W 1B 2B | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 9
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [2, 4]
-3W 1W 0  0  1B 0  | 2B 0  1W 0  0  5B | B Home | E: 0 I: 0 
-5B 0  0  0  3W 1W | 4W 2W 0  1B 1B 0  | W Home | E: 0 I: 0 
+RandomBot rolled [3, 5]
+4W 0  0  0  1B 1W | 4B 1B 1B 0  1B 1W | B Home | E: 1 I: 0 
+3B 0  0  0  3W 0  | 4W 0  1W 1W 1B 2B | W Home | E: 0 I: 0 
 
-[x:0, y:1, r:2][x:7, y:0, r:2][x:6, y:0, r:4][x:5, y:0, r:4][x:4, y:0, r:4][x:0, y:1, r:4][x:7, y:0, r:4][x:1, y:1, r:4][x:5, y:0, r:2][x:8, y:1, r:4][x:4, y:0, r:2][x:6, y:0, r:2]The bot played the piece at coordinates 5 0 with roll 2
-3W 1W 0  0  1B 0  | 2B 0  1W 0  0  5B | B Home | E: 0 I: 0 
-5B 0  0  0  3W 1W | 4W 2W 0  1B 1B 0  | W Home | E: 0 I: 0 
+[x:9, y:0, r:3][x:7, y:0, r:5]The bot played the piece at coordinates 7 0 with roll 5
+4W 0  0  0  1B 1W | 4B 1B 1B 0  1B 1W | B Home | E: 1 I: 0 
+3B 0  0  0  3W 0  | 4W 0  1W 1W 1B 2B | W Home | E: 0 I: 0 
 
-3W 1W 0  0  1B 0  | 2B 0  1W 0  0  5B | B Home | E: 0 I: 0 
-5B 0  0  0  3W 0  | 4W 3W 0  1B 1B 0  | W Home | E: 0 I: 0 
+4W 0  0  0  1B 1W | 4B 1B 1B 0  1B 1W | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 1B 1W 1W 1B 2B | W Home | E: 0 I: 0 
 
-[x:0, y:1, r:4][x:8, y:1, r:4][x:4, y:0, r:4][x:7, y:0, r:4][x:6, y:0, r:4][x:1, y:1, r:4]The bot played the piece at coordinates 6 0 with roll 4
-3W 1W 0  0  1B 0  | 2B 0  1W 0  0  5B | B Home | E: 0 I: 0 
-5B 0  0  0  3W 0  | 4W 3W 0  1B 1B 0  | W Home | E: 0 I: 0 
+[x:6, y:1, r:3][x:7, y:1, r:3][x:10, y:0, r:3][x:4, y:1, r:3][x:0, y:0, r:3][x:11, y:0, r:3][x:8, y:1, r:3]The bot played the piece at coordinates 11 0 with roll 3
+4W 0  0  0  1B 1W | 4B 1B 1B 0  1B 1W | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 1B 1W 1W 1B 2B | W Home | E: 0 I: 0 
 
-3W 1W 0  0  1B 0  | 2B 0  1W 0  0  5B | B Home | E: 1 I: 0 
-5B 0  0  0  3W 0  | 3W 3W 0  1B 1W 0  | W Home | E: 0 I: 0 
+4W 0  0  0  1B 1W | 4B 1B 1B 0  1B 1W | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 1B 1B 1W 1B 1B | W Home | E: 1 I: 0 
 
 ---------------------------------------
               TURN 10
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [2, 3]
-3W 1W 0  0  1B 0  | 2B 0  1W 0  0  5B | B Home | E: 1 I: 0 
-5B 0  0  0  3W 0  | 3W 3W 0  1B 1W 0  | W Home | E: 0 I: 0 
+RandomBot rolled [2, 5]
+4W 0  0  0  1B 1W | 4B 1B 1B 0  1B 1W | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 1B 1B 1W 1B 1B | W Home | E: 1 I: 0 
 
-[x:10, y:0, r:2][x:9, y:0, r:3]The bot played the piece at coordinates 9 0 with roll 3
-3W 1W 0  0  1B 0  | 2B 0  1W 0  0  5B | B Home | E: 1 I: 0 
-5B 0  0  0  3W 0  | 3W 3W 0  1B 1W 0  | W Home | E: 0 I: 0 
+[x:10, y:1, r:2][x:7, y:1, r:5]The bot played the piece at coordinates 10 1 with roll 2
+4W 0  0  0  1B 1W | 4B 1B 1B 0  1B 1W | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 1B 1B 1W 1B 1B | W Home | E: 1 I: 0 
 
-3W 1W 0  0  1B 0  | 2B 0  1W 0  0  5B | B Home | E: 0 I: 0 
-5B 0  0  0  3W 0  | 3W 3W 0  2B 1W 0  | W Home | E: 0 I: 0 
+4W 0  0  0  1B 1W | 4B 1B 1B 0  1W 1W | B Home | E: 1 I: 0 
+3B 0  0  0  3W 0  | 4W 1B 1B 1W 1B 1B | W Home | E: 0 I: 0 
 
-[x:0, y:0, r:2][x:6, y:1, r:2][x:4, y:1, r:2]The bot played the piece at coordinates 0 0 with roll 2
-3W 1W 0  0  1B 0  | 2B 0  1W 0  0  5B | B Home | E: 0 I: 0 
-5B 0  0  0  3W 0  | 3W 3W 0  2B 1W 0  | W Home | E: 0 I: 0 
+[x:4, y:0, r:5][x:6, y:0, r:5][x:10, y:1, r:5][x:0, y:1, r:5][x:5, y:1, r:5]The bot played the piece at coordinates 0 1 with roll 5
+4W 0  0  0  1B 1W | 4B 1B 1B 0  1W 1W | B Home | E: 1 I: 0 
+3B 0  0  0  3W 0  | 4W 1B 1B 1W 1B 1B | W Home | E: 0 I: 0 
 
-3W 1B 0  0  1B 0  | 2B 0  1W 0  0  5B | B Home | E: 0 I: 0 
-4B 0  0  0  3W 0  | 3W 3W 0  2B 1W 0  | W Home | E: 1 I: 0 
+3W 0  0  0  1B 1W | 4B 1B 1B 0  1W 1W | B Home | E: 1 I: 0 
+3B 0  0  0  4W 0  | 4W 1B 1B 1W 1B 1B | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 11
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [1, 4]
-3W 1B 0  0  1B 0  | 2B 0  1W 0  0  5B | B Home | E: 0 I: 0 
-4B 0  0  0  3W 0  | 3W 3W 0  2B 1W 0  | W Home | E: 1 I: 0 
+RandomBot rolled [5, 4]
+3W 0  0  0  1B 1W | 4B 1B 1B 0  1W 1W | B Home | E: 1 I: 0 
+3B 0  0  0  4W 0  | 4W 1B 1B 1W 1B 1B | W Home | E: 0 I: 0 
 
-[x:8, y:1, r:4]The bot played the piece at coordinates 8 1 with roll 4
-3W 1B 0  0  1B 0  | 2B 0  1W 0  0  5B | B Home | E: 0 I: 0 
-4B 0  0  0  3W 0  | 3W 3W 0  2B 1W 0  | W Home | E: 1 I: 0 
+[x:7, y:0, r:5][x:8, y:0, r:4]The bot played the piece at coordinates 7 0 with roll 5
+3W 0  0  0  1B 1W | 4B 1B 1B 0  1W 1W | B Home | E: 1 I: 0 
+3B 0  0  0  4W 0  | 4W 1B 1B 1W 1B 1B | W Home | E: 0 I: 0 
 
-3W 1B 0  0  1B 0  | 2B 0  2W 0  0  5B | B Home | E: 0 I: 0 
-4B 0  0  0  3W 0  | 3W 3W 0  2B 1W 0  | W Home | E: 0 I: 0 
+3W 0  0  0  1B 1W | 4B 1B 1B 0  1W 1W | B Home | E: 0 I: 0 
+3B 0  0  0  4W 0  | 4W 2B 1B 1W 1B 1B | W Home | E: 0 I: 0 
 
-[x:4, y:0, r:1][x:6, y:0, r:1][x:7, y:0, r:1][x:8, y:1, r:1][x:10, y:0, r:1]The bot played the piece at coordinates 4 0 with roll 1
-3W 1B 0  0  1B 0  | 2B 0  2W 0  0  5B | B Home | E: 0 I: 0 
-4B 0  0  0  3W 0  | 3W 3W 0  2B 1W 0  | W Home | E: 0 I: 0 
+[x:6, y:1, r:4][x:0, y:0, r:4][x:7, y:1, r:4][x:11, y:0, r:4][x:7, y:0, r:4][x:4, y:1, r:4]The bot played the piece at coordinates 4 1 with roll 4
+3W 0  0  0  1B 1W | 4B 1B 1B 0  1W 1W | B Home | E: 0 I: 0 
+3B 0  0  0  4W 0  | 4W 2B 1B 1W 1B 1B | W Home | E: 0 I: 0 
 
-3W 1B 0  0  1B 0  | 2B 0  2W 0  0  5B | B Home | E: 0 I: 0 
-4B 0  0  0  2W 1W | 3W 3W 0  2B 1W 0  | W Home | E: 0 I: 0 
+3W 0  0  0  0  1W | 4B 1B 2B 0  1W 1W | B Home | E: 0 I: 0 
+3B 0  0  0  4W 0  | 4W 2B 1B 1W 1B 1B | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 12
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [2, 4]
-3W 1B 0  0  1B 0  | 2B 0  2W 0  0  5B | B Home | E: 0 I: 0 
-4B 0  0  0  2W 1W | 3W 3W 0  2B 1W 0  | W Home | E: 0 I: 0 
+RandomBot rolled [5, 6]
+3W 0  0  0  0  1W | 4B 1B 2B 0  1W 1W | B Home | E: 0 I: 0 
+3B 0  0  0  4W 0  | 4W 2B 1B 1W 1B 1B | W Home | E: 0 I: 0 
 
-[x:0, y:0, r:2][x:0, y:0, r:4][x:4, y:1, r:2][x:1, y:1, r:2][x:1, y:1, r:4][x:9, y:0, r:4][x:6, y:1, r:4]The bot played the piece at coordinates 0 0 with roll 2
-3W 1B 0  0  1B 0  | 2B 0  2W 0  0  5B | B Home | E: 0 I: 0 
-4B 0  0  0  2W 1W | 3W 3W 0  2B 1W 0  | W Home | E: 0 I: 0 
+[x:5, y:1, r:5][x:10, y:1, r:5][x:11, y:1, r:6][x:0, y:1, r:6][x:4, y:0, r:5][x:6, y:0, r:5][x:4, y:0, r:6][x:10, y:1, r:6][x:0, y:1, r:5]The bot played the piece at coordinates 10 1 with roll 5
+3W 0  0  0  0  1W | 4B 1B 2B 0  1W 1W | B Home | E: 0 I: 0 
+3B 0  0  0  4W 0  | 4W 2B 1B 1W 1B 1B | W Home | E: 0 I: 0 
 
-3W 2B 0  0  1B 0  | 2B 0  2W 0  0  5B | B Home | E: 0 I: 0 
-3B 0  0  0  2W 1W | 3W 3W 0  2B 1W 0  | W Home | E: 0 I: 0 
+3W 0  0  0  0  2W | 4B 1B 2B 0  0  1W | B Home | E: 0 I: 0 
+3B 0  0  0  4W 0  | 4W 2B 1B 1W 1B 1B | W Home | E: 0 I: 0 
 
-[x:9, y:0, r:4][x:0, y:0, r:4][x:1, y:1, r:4][x:6, y:1, r:4]The bot played the piece at coordinates 0 0 with roll 4
-3W 2B 0  0  1B 0  | 2B 0  2W 0  0  5B | B Home | E: 0 I: 0 
-3B 0  0  0  2W 1W | 3W 3W 0  2B 1W 0  | W Home | E: 0 I: 0 
+[x:0, y:1, r:6][x:11, y:1, r:6][x:4, y:0, r:6]The bot played the piece at coordinates 4 0 with roll 6
+3W 0  0  0  0  2W | 4B 1B 2B 0  0  1W | B Home | E: 0 I: 0 
+3B 0  0  0  4W 0  | 4W 2B 1B 1W 1B 1B | W Home | E: 0 I: 0 
 
-3W 2B 0  1B 1B 0  | 2B 0  2W 0  0  5B | B Home | E: 0 I: 0 
-2B 0  0  0  2W 1W | 3W 3W 0  2B 1W 0  | W Home | E: 0 I: 0 
+3W 0  0  0  0  2W | 4B 1B 2B 0  0  1W | B Home | E: 1 I: 0 
+3B 0  0  0  3W 0  | 4W 2B 1B 1W 1W 1B | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 13
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [4, 6]
-3W 2B 0  1B 1B 0  | 2B 0  2W 0  0  5B | B Home | E: 0 I: 0 
-2B 0  0  0  2W 1W | 3W 3W 0  2B 1W 0  | W Home | E: 0 I: 0 
+RandomBot rolled [2, 4]
+3W 0  0  0  0  2W | 4B 1B 2B 0  0  1W | B Home | E: 1 I: 0 
+3B 0  0  0  3W 0  | 4W 2B 1B 1W 1W 1B | W Home | E: 0 I: 0 
 
-[x:4, y:0, r:4][x:6, y:0, r:4][x:0, y:1, r:4][x:4, y:0, r:6][x:8, y:1, r:6][x:8, y:1, r:4][x:0, y:1, r:6][x:7, y:0, r:4][x:5, y:0, r:6]The bot played the piece at coordinates 0 1 with roll 6
-3W 2B 0  1B 1B 0  | 2B 0  2W 0  0  5B | B Home | E: 0 I: 0 
-2B 0  0  0  2W 1W | 3W 3W 0  2B 1W 0  | W Home | E: 0 I: 0 
+[x:10, y:0, r:2][x:8, y:0, r:4]The bot played the piece at coordinates 8 0 with roll 4
+3W 0  0  0  0  2W | 4B 1B 2B 0  0  1W | B Home | E: 1 I: 0 
+3B 0  0  0  3W 0  | 4W 2B 1B 1W 1W 1B | W Home | E: 0 I: 0 
 
-2W 2B 0  1B 1B 0  | 2B 0  2W 0  0  5B | B Home | E: 0 I: 0 
-2B 0  0  0  2W 2W | 3W 3W 0  2B 1W 0  | W Home | E: 0 I: 0 
+3W 0  0  0  0  2W | 4B 1B 2B 0  0  1W | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 2B 2B 1W 1W 1B | W Home | E: 0 I: 0 
 
-[x:0, y:1, r:4][x:7, y:0, r:4][x:6, y:0, r:4][x:4, y:0, r:4][x:8, y:1, r:4]The bot played the piece at coordinates 4 0 with roll 4
-2W 2B 0  1B 1B 0  | 2B 0  2W 0  0  5B | B Home | E: 0 I: 0 
-2B 0  0  0  2W 2W | 3W 3W 0  2B 1W 0  | W Home | E: 0 I: 0 
+[x:8, y:1, r:2][x:0, y:0, r:2][x:6, y:1, r:2][x:7, y:0, r:2][x:7, y:1, r:2][x:11, y:0, r:2]The bot played the piece at coordinates 7 1 with roll 2
+3W 0  0  0  0  2W | 4B 1B 2B 0  0  1W | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 2B 2B 1W 1W 1B | W Home | E: 0 I: 0 
 
-2W 2B 0  1B 1B 0  | 2B 0  2W 0  0  5B | B Home | E: 0 I: 0 
-2B 0  0  0  1W 2W | 3W 3W 1W 2B 1W 0  | W Home | E: 0 I: 0 
+3W 0  0  0  0  2W | 4B 0  2B 1B 0  1W | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 2B 2B 1W 1W 1B | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 14
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [3, 4]
-2W 2B 0  1B 1B 0  | 2B 0  2W 0  0  5B | B Home | E: 0 I: 0 
-2B 0  0  0  1W 2W | 3W 3W 1W 2B 1W 0  | W Home | E: 0 I: 0 
+RandomBot rolled [6, 6]
+RandomBot rolled doubles!
+3W 0  0  0  0  2W | 4B 0  2B 1B 0  1W | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 2B 2B 1W 1W 1B | W Home | E: 0 I: 0 
 
-[x:6, y:1, r:3][x:6, y:1, r:4][x:3, y:1, r:3][x:0, y:0, r:4][x:1, y:1, r:3][x:4, y:1, r:3][x:3, y:1, r:4][x:0, y:0, r:3][x:1, y:1, r:4]The bot played the piece at coordinates 3 1 with roll 4
-2W 2B 0  1B 1B 0  | 2B 0  2W 0  0  5B | B Home | E: 0 I: 0 
-2B 0  0  0  1W 2W | 3W 3W 1W 2B 1W 0  | W Home | E: 0 I: 0 
+[x:0, y:1, r:6][x:4, y:0, r:6][x:11, y:1, r:6]The bot played the piece at coordinates 11 1 with roll 6
+3W 0  0  0  0  2W | 4B 0  2B 1B 0  1W | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 2B 2B 1W 1W 1B | W Home | E: 0 I: 0 
 
-2W 2B 0  0  1B 0  | 2B 1B 2W 0  0  5B | B Home | E: 0 I: 0 
-2B 0  0  0  1W 2W | 3W 3W 1W 2B 1W 0  | W Home | E: 0 I: 0 
+3W 0  0  0  0  3W | 4B 0  2B 1B 0  0  | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 2B 2B 1W 1W 1B | W Home | E: 0 I: 0 
 
-[x:7, y:1, r:3][x:0, y:0, r:3][x:4, y:1, r:3][x:6, y:1, r:3][x:1, y:1, r:3]The bot played the piece at coordinates 1 1 with roll 3
-2W 2B 0  0  1B 0  | 2B 1B 2W 0  0  5B | B Home | E: 0 I: 0 
-2B 0  0  0  1W 2W | 3W 3W 1W 2B 1W 0  | W Home | E: 0 I: 0 
+[x:0, y:1, r:6][x:4, y:0, r:6]The bot played the piece at coordinates 4 0 with roll 6
+3W 0  0  0  0  3W | 4B 0  2B 1B 0  0  | B Home | E: 0 I: 0 
+3B 0  0  0  3W 0  | 4W 2B 2B 1W 1W 1B | W Home | E: 0 I: 0 
 
-2W 1B 0  0  2B 0  | 2B 1B 2W 0  0  5B | B Home | E: 0 I: 0 
-2B 0  0  0  1W 2W | 3W 3W 1W 2B 1W 0  | W Home | E: 0 I: 0 
+3W 0  0  0  0  3W | 4B 0  2B 1B 0  0  | B Home | E: 0 I: 0 
+3B 0  0  0  2W 0  | 4W 2B 2B 1W 2W 1B | W Home | E: 0 I: 0 
+
+[x:0, y:1, r:6][x:4, y:0, r:6]The bot played the piece at coordinates 4 0 with roll 6
+3W 0  0  0  0  3W | 4B 0  2B 1B 0  0  | B Home | E: 0 I: 0 
+3B 0  0  0  2W 0  | 4W 2B 2B 1W 2W 1B | W Home | E: 0 I: 0 
+
+3W 0  0  0  0  3W | 4B 0  2B 1B 0  0  | B Home | E: 0 I: 0 
+3B 0  0  0  1W 0  | 4W 2B 2B 1W 3W 1B | W Home | E: 0 I: 0 
+
+[x:0, y:1, r:6][x:4, y:0, r:6]The bot played the piece at coordinates 4 0 with roll 6
+3W 0  0  0  0  3W | 4B 0  2B 1B 0  0  | B Home | E: 0 I: 0 
+3B 0  0  0  1W 0  | 4W 2B 2B 1W 3W 1B | W Home | E: 0 I: 0 
+
+3W 0  0  0  0  3W | 4B 0  2B 1B 0  0  | B Home | E: 0 I: 0 
+3B 0  0  0  0  0  | 4W 2B 2B 1W 4W 1B | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 15
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [5, 4]
-2W 1B 0  0  2B 0  | 2B 1B 2W 0  0  5B | B Home | E: 0 I: 0 
-2B 0  0  0  1W 2W | 3W 3W 1W 2B 1W 0  | W Home | E: 0 I: 0 
+RandomBot rolled [3, 2]
+3W 0  0  0  0  3W | 4B 0  2B 1B 0  0  | B Home | E: 0 I: 0 
+3B 0  0  0  0  0  | 4W 2B 2B 1W 4W 1B | W Home | E: 0 I: 0 
 
-[x:6, y:0, r:4][x:5, y:0, r:5][x:6, y:0, r:5][x:7, y:0, r:4][x:4, y:0, r:4][x:0, y:1, r:4][x:0, y:1, r:5][x:8, y:1, r:5]The bot played the piece at coordinates 4 0 with roll 4
-2W 1B 0  0  2B 0  | 2B 1B 2W 0  0  5B | B Home | E: 0 I: 0 
-2B 0  0  0  1W 2W | 3W 3W 1W 2B 1W 0  | W Home | E: 0 I: 0 
+[x:0, y:0, r:2][x:9, y:1, r:2][x:6, y:1, r:2][x:0, y:0, r:3][x:8, y:1, r:2][x:7, y:0, r:3][x:8, y:0, r:3][x:11, y:0, r:2][x:7, y:0, r:2][x:8, y:1, r:3][x:6, y:1, r:3][x:11, y:0, r:3]The bot played the piece at coordinates 7 0 with roll 2
+3W 0  0  0  0  3W | 4B 0  2B 1B 0  0  | B Home | E: 0 I: 0 
+3B 0  0  0  0  0  | 4W 2B 2B 1W 4W 1B | W Home | E: 0 I: 0 
 
-2W 1B 0  0  2B 0  | 2B 1B 2W 0  0  5B | B Home | E: 0 I: 0 
-2B 0  0  0  0  2W | 3W 3W 2W 2B 1W 0  | W Home | E: 0 I: 0 
+3W 0  0  0  0  3W | 4B 0  2B 1B 0  0  | B Home | E: 0 I: 0 
+3B 0  0  0  0  1B | 4W 1B 2B 1W 4W 1B | W Home | E: 0 I: 0 
 
-[x:5, y:0, r:5][x:0, y:1, r:5][x:8, y:1, r:5][x:6, y:0, r:5]The bot played the piece at coordinates 0 1 with roll 5
-2W 1B 0  0  2B 0  | 2B 1B 2W 0  0  5B | B Home | E: 0 I: 0 
-2B 0  0  0  0  2W | 3W 3W 2W 2B 1W 0  | W Home | E: 0 I: 0 
+[x:5, y:0, r:3][x:8, y:0, r:3][x:6, y:1, r:3][x:11, y:0, r:3][x:0, y:0, r:3][x:8, y:1, r:3][x:7, y:0, r:3]The bot played the piece at coordinates 5 0 with roll 3
+3W 0  0  0  0  3W | 4B 0  2B 1B 0  0  | B Home | E: 0 I: 0 
+3B 0  0  0  0  1B | 4W 1B 2B 1W 4W 1B | W Home | E: 0 I: 0 
 
-1W 1B 0  0  2B 0  | 2B 1B 2W 0  0  5B | B Home | E: 0 I: 0 
-2B 0  0  0  1W 2W | 3W 3W 2W 2B 1W 0  | W Home | E: 0 I: 0 
+3W 0  0  0  0  3W | 4B 0  2B 1B 0  0  | B Home | E: 0 I: 0 
+3B 0  1B 0  0  0  | 4W 1B 2B 1W 4W 1B | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 16
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [2, 2]
-RandomBot rolled doubles!
-1W 1B 0  0  2B 0  | 2B 1B 2W 0  0  5B | B Home | E: 0 I: 0 
-2B 0  0  0  1W 2W | 3W 3W 2W 2B 1W 0  | W Home | E: 0 I: 0 
+RandomBot rolled [1, 2]
+3W 0  0  0  0  3W | 4B 0  2B 1B 0  0  | B Home | E: 0 I: 0 
+3B 0  1B 0  0  0  | 4W 1B 2B 1W 4W 1B | W Home | E: 0 I: 0 
 
-[x:7, y:1, r:2][x:1, y:1, r:2][x:4, y:1, r:2][x:0, y:0, r:2]The bot played the piece at coordinates 1 1 with roll 2
-1W 1B 0  0  2B 0  | 2B 1B 2W 0  0  5B | B Home | E: 0 I: 0 
-2B 0  0  0  1W 2W | 3W 3W 2W 2B 1W 0  | W Home | E: 0 I: 0 
+[x:9, y:0, r:1][x:5, y:1, r:2][x:9, y:0, r:2][x:5, y:1, r:1][x:10, y:0, r:1][x:0, y:1, r:2][x:6, y:0, r:1]The bot played the piece at coordinates 5 1 with roll 1
+3W 0  0  0  0  3W | 4B 0  2B 1B 0  0  | B Home | E: 0 I: 0 
+3B 0  1B 0  0  0  | 4W 1B 2B 1W 4W 1B | W Home | E: 0 I: 0 
 
-1W 0  0  1B 2B 0  | 2B 1B 2W 0  0  5B | B Home | E: 0 I: 0 
-2B 0  0  0  1W 2W | 3W 3W 2W 2B 1W 0  | W Home | E: 0 I: 0 
+3W 0  0  0  1W 2W | 4B 0  2B 1B 0  0  | B Home | E: 0 I: 0 
+3B 0  1B 0  0  0  | 4W 1B 2B 1W 4W 1B | W Home | E: 0 I: 0 
 
-[x:4, y:1, r:2][x:3, y:1, r:2][x:7, y:1, r:2][x:0, y:0, r:2]The bot played the piece at coordinates 7 1 with roll 2
-1W 0  0  1B 2B 0  | 2B 1B 2W 0  0  5B | B Home | E: 0 I: 0 
-2B 0  0  0  1W 2W | 3W 3W 2W 2B 1W 0  | W Home | E: 0 I: 0 
+[x:4, y:1, r:2][x:5, y:1, r:2][x:9, y:0, r:2][x:0, y:1, r:2]The bot played the piece at coordinates 9 0 with roll 2
+3W 0  0  0  1W 2W | 4B 0  2B 1B 0  0  | B Home | E: 0 I: 0 
+3B 0  1B 0  0  0  | 4W 1B 2B 1W 4W 1B | W Home | E: 0 I: 0 
 
-1W 0  0  1B 2B 0  | 2B 0  2W 1B 0  5B | B Home | E: 0 I: 0 
-2B 0  0  0  1W 2W | 3W 3W 2W 2B 1W 0  | W Home | E: 0 I: 0 
-
-[x:4, y:1, r:2][x:9, y:1, r:2][x:0, y:0, r:2][x:3, y:1, r:2]The bot played the piece at coordinates 3 1 with roll 2
-1W 0  0  1B 2B 0  | 2B 0  2W 1B 0  5B | B Home | E: 0 I: 0 
-2B 0  0  0  1W 2W | 3W 3W 2W 2B 1W 0  | W Home | E: 0 I: 0 
-
-1W 0  0  0  2B 1B | 2B 0  2W 1B 0  5B | B Home | E: 0 I: 0 
-2B 0  0  0  1W 2W | 3W 3W 2W 2B 1W 0  | W Home | E: 0 I: 0 
-
-[x:4, y:1, r:2][x:0, y:0, r:2][x:5, y:1, r:2][x:9, y:1, r:2]The bot played the piece at coordinates 0 0 with roll 2
-1W 0  0  0  2B 1B | 2B 0  2W 1B 0  5B | B Home | E: 0 I: 0 
-2B 0  0  0  1W 2W | 3W 3W 2W 2B 1W 0  | W Home | E: 0 I: 0 
-
-1W 1B 0  0  2B 1B | 2B 0  2W 1B 0  5B | B Home | E: 0 I: 0 
-1B 0  0  0  1W 2W | 3W 3W 2W 2B 1W 0  | W Home | E: 0 I: 0 
+3W 0  0  0  1W 2W | 4B 0  2B 1B 0  0  | B Home | E: 1 I: 0 
+3B 0  1B 0  0  0  | 4W 1B 2B 0  4W 1W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 17
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [4, 1]
-1W 1B 0  0  2B 1B | 2B 0  2W 1B 0  5B | B Home | E: 0 I: 0 
-1B 0  0  0  1W 2W | 3W 3W 2W 2B 1W 0  | W Home | E: 0 I: 0 
+RandomBot rolled [2, 1]
+3W 0  0  0  1W 2W | 4B 0  2B 1B 0  0  | B Home | E: 1 I: 0 
+3B 0  1B 0  0  0  | 4W 1B 2B 0  4W 1W | W Home | E: 0 I: 0 
 
-[x:7, y:0, r:1][x:0, y:1, r:4][x:10, y:0, r:1][x:7, y:0, r:4][x:4, y:0, r:4][x:4, y:0, r:1][x:6, y:0, r:4][x:0, y:1, r:1][x:6, y:0, r:1][x:5, y:0, r:1][x:8, y:1, r:1]The bot played the piece at coordinates 4 0 with roll 1
-1W 1B 0  0  2B 1B | 2B 0  2W 1B 0  5B | B Home | E: 0 I: 0 
-1B 0  0  0  1W 2W | 3W 3W 2W 2B 1W 0  | W Home | E: 0 I: 0 
+[x:11, y:0, r:1]The bot played the piece at coordinates 11 0 with roll 1
+3W 0  0  0  1W 2W | 4B 0  2B 1B 0  0  | B Home | E: 1 I: 0 
+3B 0  1B 0  0  0  | 4W 1B 2B 0  4W 1W | W Home | E: 0 I: 0 
 
-1W 1B 0  0  2B 1B | 2B 0  2W 1B 0  5B | B Home | E: 0 I: 0 
-1B 0  0  0  0  3W | 3W 3W 2W 2B 1W 0  | W Home | E: 0 I: 0 
+3W 0  0  0  1W 2W | 4B 0  2B 1B 0  0  | B Home | E: 0 I: 0 
+3B 0  1B 0  0  0  | 4W 1B 2B 0  4W 1B | W Home | E: 1 I: 0 
 
-[x:7, y:0, r:4][x:6, y:0, r:4][x:0, y:1, r:4]The bot played the piece at coordinates 7 0 with roll 4
-1W 1B 0  0  2B 1B | 2B 0  2W 1B 0  5B | B Home | E: 0 I: 0 
-1B 0  0  0  0  3W | 3W 3W 2W 2B 1W 0  | W Home | E: 0 I: 0 
+[x:0, y:0, r:2][x:9, y:1, r:2][x:2, y:0, r:2][x:8, y:1, r:2][x:11, y:0, r:2][x:7, y:0, r:2][x:6, y:1, r:2]The bot played the piece at coordinates 2 0 with roll 2
+3W 0  0  0  1W 2W | 4B 0  2B 1B 0  0  | B Home | E: 0 I: 0 
+3B 0  1B 0  0  0  | 4W 1B 2B 0  4W 1B | W Home | E: 1 I: 0 
 
-1W 1B 0  0  2B 1B | 2B 0  2W 1B 0  5B | B Home | E: 0 I: 0 
-1B 0  0  0  0  3W | 3W 2W 2W 2B 1W 1W | W Home | E: 0 I: 0 
+3W 0  0  0  1W 2W | 4B 0  2B 1B 0  0  | B Home | E: 0 I: 0 
+4B 0  0  0  0  0  | 4W 1B 2B 0  4W 1B | W Home | E: 1 I: 0 
 
 ---------------------------------------
               TURN 18
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [6, 4]
-1W 1B 0  0  2B 1B | 2B 0  2W 1B 0  5B | B Home | E: 0 I: 0 
-1B 0  0  0  0  3W | 3W 2W 2W 2B 1W 1W | W Home | E: 0 I: 0 
+RandomBot rolled [5, 3]
+3W 0  0  0  1W 2W | 4B 0  2B 1B 0  0  | B Home | E: 0 I: 0 
+4B 0  0  0  0  0  | 4W 1B 2B 0  4W 1B | W Home | E: 1 I: 0 
 
-[x:1, y:1, r:6][x:0, y:0, r:6][x:9, y:0, r:6][x:5, y:1, r:6][x:1, y:1, r:4][x:4, y:1, r:6][x:0, y:0, r:4][x:5, y:1, r:4][x:6, y:1, r:4]The bot played the piece at coordinates 9 0 with roll 6
-1W 1B 0  0  2B 1B | 2B 0  2W 1B 0  5B | B Home | E: 0 I: 0 
-1B 0  0  0  0  3W | 3W 2W 2W 2B 1W 1W | W Home | E: 0 I: 0 
+[x:7, y:1, r:5][x:9, y:1, r:3]The bot played the piece at coordinates 9 1 with roll 3
+3W 0  0  0  1W 2W | 4B 0  2B 1B 0  0  | B Home | E: 0 I: 0 
+4B 0  0  0  0  0  | 4W 1B 2B 0  4W 1B | W Home | E: 1 I: 0 
 
-1W 1B 0  0  2B 1B | 2B 0  2W 1B 0  5B | B Home | E: 0 I: 0 
-1B 0  0  1B 0  3W | 3W 2W 2W 1B 1W 1W | W Home | E: 0 I: 0 
+3W 0  0  0  1W 2W | 4B 0  2B 1W 0  0  | B Home | E: 1 I: 0 
+4B 0  0  0  0  0  | 4W 1B 2B 0  4W 1B | W Home | E: 0 I: 0 
 
-[x:3, y:0, r:4][x:0, y:0, r:4][x:6, y:1, r:4][x:5, y:1, r:4][x:1, y:1, r:4]The bot played the piece at coordinates 5 1 with roll 4
-1W 1B 0  0  2B 1B | 2B 0  2W 1B 0  5B | B Home | E: 0 I: 0 
-1B 0  0  1B 0  3W | 3W 2W 2W 1B 1W 1W | W Home | E: 0 I: 0 
+[x:0, y:1, r:5][x:5, y:1, r:5][x:6, y:0, r:5][x:9, y:1, r:5]The bot played the piece at coordinates 0 1 with roll 5
+3W 0  0  0  1W 2W | 4B 0  2B 1W 0  0  | B Home | E: 1 I: 0 
+4B 0  0  0  0  0  | 4W 1B 2B 0  4W 1B | W Home | E: 0 I: 0 
 
-1W 1B 0  0  2B 0  | 2B 0  2W 2B 0  5B | B Home | E: 0 I: 0 
-1B 0  0  1B 0  3W | 3W 2W 2W 1B 1W 1W | W Home | E: 0 I: 0 
+2W 0  0  0  1W 2W | 4B 0  2B 1W 0  0  | B Home | E: 1 I: 0 
+4B 0  0  0  1W 0  | 4W 1B 2B 0  4W 1B | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 19
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [3, 4]
-1W 1B 0  0  2B 0  | 2B 0  2W 2B 0  5B | B Home | E: 0 I: 0 
-1B 0  0  1B 0  3W | 3W 2W 2W 1B 1W 1W | W Home | E: 0 I: 0 
+RandomBot rolled [3, 2]
+2W 0  0  0  1W 2W | 4B 0  2B 1W 0  0  | B Home | E: 1 I: 0 
+4B 0  0  0  1W 0  | 4W 1B 2B 0  4W 1B | W Home | E: 0 I: 0 
 
-[x:7, y:0, r:4][x:0, y:1, r:3][x:0, y:1, r:4][x:5, y:0, r:4][x:6, y:0, r:3][x:6, y:0, r:4][x:8, y:0, r:3][x:8, y:1, r:3][x:7, y:0, r:3][x:5, y:0, r:3]The bot played the piece at coordinates 8 1 with roll 3
-1W 1B 0  0  2B 0  | 2B 0  2W 2B 0  5B | B Home | E: 0 I: 0 
-1B 0  0  1B 0  3W | 3W 2W 2W 1B 1W 1W | W Home | E: 0 I: 0 
+[x:9, y:0, r:3]The bot played the piece at coordinates 9 0 with roll 3
+2W 0  0  0  1W 2W | 4B 0  2B 1W 0  0  | B Home | E: 1 I: 0 
+4B 0  0  0  1W 0  | 4W 1B 2B 0  4W 1B | W Home | E: 0 I: 0 
 
-1W 1B 0  0  2B 1W | 2B 0  1W 2B 0  5B | B Home | E: 0 I: 0 
-1B 0  0  1B 0  3W | 3W 2W 2W 1B 1W 1W | W Home | E: 0 I: 0 
+2W 0  0  0  1W 2W | 4B 0  2B 1W 0  0  | B Home | E: 0 I: 0 
+4B 0  0  0  1W 0  | 4W 1B 2B 1B 4W 1B | W Home | E: 0 I: 0 
 
-[x:0, y:1, r:4][x:5, y:1, r:4][x:5, y:0, r:4][x:6, y:0, r:4][x:7, y:0, r:4]The bot played the piece at coordinates 6 0 with roll 4
-1W 1B 0  0  2B 1W | 2B 0  1W 2B 0  5B | B Home | E: 0 I: 0 
-1B 0  0  1B 0  3W | 3W 2W 2W 1B 1W 1W | W Home | E: 0 I: 0 
+[x:6, y:1, r:2][x:9, y:0, r:2][x:8, y:1, r:2][x:7, y:0, r:2][x:11, y:0, r:2][x:0, y:0, r:2]The bot played the piece at coordinates 9 0 with roll 2
+2W 0  0  0  1W 2W | 4B 0  2B 1W 0  0  | B Home | E: 0 I: 0 
+4B 0  0  0  1W 0  | 4W 1B 2B 1B 4W 1B | W Home | E: 0 I: 0 
 
-1W 1B 0  0  2B 1W | 2B 0  1W 2B 0  5B | B Home | E: 0 I: 0 
-1B 0  0  1B 0  3W | 2W 2W 2W 1B 2W 1W | W Home | E: 0 I: 0 
+2W 0  0  0  1W 2W | 4B 0  2B 1W 0  0  | B Home | E: 0 I: 0 
+4B 0  0  0  1W 0  | 4W 2B 2B 0  4W 1B | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 20
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [1, 5]
-1W 1B 0  0  2B 1W | 2B 0  1W 2B 0  5B | B Home | E: 0 I: 0 
-1B 0  0  1B 0  3W | 2W 2W 2W 1B 2W 1W | W Home | E: 0 I: 0 
+RandomBot rolled [4, 3]
+2W 0  0  0  1W 2W | 4B 0  2B 1W 0  0  | B Home | E: 0 I: 0 
+4B 0  0  0  1W 0  | 4W 2B 2B 0  4W 1B | W Home | E: 0 I: 0 
 
-[x:6, y:1, r:5][x:1, y:1, r:1][x:3, y:0, r:5][x:6, y:1, r:1][x:0, y:0, r:5][x:4, y:1, r:5][x:3, y:0, r:1][x:4, y:1, r:1][x:0, y:0, r:1][x:1, y:1, r:5][x:9, y:1, r:1][x:9, y:0, r:5]The bot played the piece at coordinates 1 1 with roll 5
-1W 1B 0  0  2B 1W | 2B 0  1W 2B 0  5B | B Home | E: 0 I: 0 
-1B 0  0  1B 0  3W | 2W 2W 2W 1B 2W 1W | W Home | E: 0 I: 0 
+[x:5, y:1, r:3][x:9, y:1, r:4][x:4, y:1, r:4][x:0, y:1, r:3][x:0, y:1, r:4][x:6, y:0, r:4][x:5, y:1, r:4][x:6, y:0, r:3][x:4, y:1, r:3]The bot played the piece at coordinates 4 1 with roll 4
+2W 0  0  0  1W 2W | 4B 0  2B 1W 0  0  | B Home | E: 0 I: 0 
+4B 0  0  0  1W 0  | 4W 2B 2B 0  4W 1B | W Home | E: 0 I: 0 
 
-1W 0  0  0  2B 1W | 3B 0  1W 2B 0  5B | B Home | E: 0 I: 0 
-1B 0  0  1B 0  3W | 2W 2W 2W 1B 2W 1W | W Home | E: 0 I: 0 
+3W 0  0  0  0  2W | 4B 0  2B 1W 0  0  | B Home | E: 0 I: 0 
+4B 0  0  0  1W 0  | 4W 2B 2B 0  4W 1B | W Home | E: 0 I: 0 
 
-[x:3, y:0, r:1][x:4, y:1, r:1][x:9, y:1, r:1][x:6, y:1, r:1][x:0, y:0, r:1]The bot played the piece at coordinates 9 1 with roll 1
-1W 0  0  0  2B 1W | 3B 0  1W 2B 0  5B | B Home | E: 0 I: 0 
-1B 0  0  1B 0  3W | 2W 2W 2W 1B 2W 1W | W Home | E: 0 I: 0 
+[x:5, y:1, r:3][x:0, y:1, r:3][x:6, y:0, r:3]The bot played the piece at coordinates 5 1 with roll 3
+3W 0  0  0  0  2W | 4B 0  2B 1W 0  0  | B Home | E: 0 I: 0 
+4B 0  0  0  1W 0  | 4W 2B 2B 0  4W 1B | W Home | E: 0 I: 0 
 
-1W 0  0  0  2B 1W | 3B 0  1W 1B 1B 5B | B Home | E: 0 I: 0 
-1B 0  0  1B 0  3W | 2W 2W 2W 1B 2W 1W | W Home | E: 0 I: 0 
+3W 0  1W 0  0  1W | 4B 0  2B 1W 0  0  | B Home | E: 0 I: 0 
+4B 0  0  0  1W 0  | 4W 2B 2B 0  4W 1B | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 21
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [3, 5]
-1W 0  0  0  2B 1W | 3B 0  1W 1B 1B 5B | B Home | E: 0 I: 0 
-1B 0  0  1B 0  3W | 2W 2W 2W 1B 2W 1W | W Home | E: 0 I: 0 
+RandomBot rolled [3, 4]
+3W 0  1W 0  0  1W | 4B 0  2B 1W 0  0  | B Home | E: 0 I: 0 
+4B 0  0  0  1W 0  | 4W 2B 2B 0  4W 1B | W Home | E: 0 I: 0 
 
-[x:8, y:0, r:3][x:0, y:1, r:3][x:7, y:0, r:3][x:6, y:0, r:3][x:5, y:0, r:3][x:5, y:1, r:5][x:0, y:1, r:5][x:8, y:1, r:5][x:5, y:0, r:5][x:5, y:1, r:3][x:6, y:0, r:5][x:8, y:1, r:3]The bot played the piece at coordinates 0 1 with roll 5
-1W 0  0  0  2B 1W | 3B 0  1W 1B 1B 5B | B Home | E: 0 I: 0 
-1B 0  0  1B 0  3W | 2W 2W 2W 1B 2W 1W | W Home | E: 0 I: 0 
+[x:8, y:1, r:3][x:6, y:1, r:3][x:7, y:0, r:4][x:7, y:0, r:3][x:6, y:1, r:4][x:8, y:0, r:3][x:11, y:0, r:4][x:11, y:0, r:3][x:0, y:0, r:3][x:8, y:0, r:4][x:0, y:0, r:4]The bot played the piece at coordinates 6 1 with roll 3
+3W 0  1W 0  0  1W | 4B 0  2B 1W 0  0  | B Home | E: 0 I: 0 
+4B 0  0  0  1W 0  | 4W 2B 2B 0  4W 1B | W Home | E: 0 I: 0 
 
-0  0  0  0  2B 1W | 3B 0  1W 1B 1B 5B | B Home | E: 0 I: 0 
-1B 0  0  1B 1W 3W | 2W 2W 2W 1B 2W 1W | W Home | E: 0 I: 0 
+3W 0  1W 0  0  1W | 3B 0  2B 1B 0  0  | B Home | E: 0 I: 0 
+4B 0  0  0  1W 0  | 4W 2B 2B 0  4W 1B | W Home | E: 1 I: 0 
 
-[x:7, y:0, r:3][x:5, y:0, r:3][x:8, y:0, r:3][x:5, y:1, r:3][x:6, y:0, r:3][x:8, y:1, r:3][x:4, y:0, r:3]The bot played the piece at coordinates 4 0 with roll 3
-0  0  0  0  2B 1W | 3B 0  1W 1B 1B 5B | B Home | E: 0 I: 0 
-1B 0  0  1B 1W 3W | 2W 2W 2W 1B 2W 1W | W Home | E: 0 I: 0 
+[x:8, y:0, r:4][x:11, y:0, r:4][x:0, y:0, r:4][x:7, y:0, r:4][x:6, y:1, r:4]The bot played the piece at coordinates 6 1 with roll 4
+3W 0  1W 0  0  1W | 3B 0  2B 1B 0  0  | B Home | E: 0 I: 0 
+4B 0  0  0  1W 0  | 4W 2B 2B 0  4W 1B | W Home | E: 1 I: 0 
 
-0  0  0  0  2B 1W | 3B 0  1W 1B 1B 5B | B Home | E: 0 I: 0 
-1B 0  0  1B 0  3W | 2W 3W 2W 1B 2W 1W | W Home | E: 0 I: 0 
+3W 0  1W 0  0  1W | 2B 0  2B 1B 1B 0  | B Home | E: 0 I: 0 
+4B 0  0  0  1W 0  | 4W 2B 2B 0  4W 1B | W Home | E: 1 I: 0 
 
 ---------------------------------------
               TURN 22
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [5, 2]
-0  0  0  0  2B 1W | 3B 0  1W 1B 1B 5B | B Home | E: 0 I: 0 
-1B 0  0  1B 0  3W | 2W 3W 2W 1B 2W 1W | W Home | E: 0 I: 0 
+RandomBot rolled [3, 2]
+3W 0  1W 0  0  1W | 2B 0  2B 1B 1B 0  | B Home | E: 0 I: 0 
+4B 0  0  0  1W 0  | 4W 2B 2B 0  4W 1B | W Home | E: 1 I: 0 
 
-[x:6, y:1, r:5][x:9, y:0, r:5][x:0, y:0, r:2][x:0, y:0, r:5][x:9, y:1, r:2][x:4, y:1, r:5][x:3, y:0, r:5][x:3, y:0, r:2][x:4, y:1, r:2][x:6, y:1, r:2]The bot played the piece at coordinates 9 0 with roll 5
-0  0  0  0  2B 1W | 3B 0  1W 1B 1B 5B | B Home | E: 0 I: 0 
-1B 0  0  1B 0  3W | 2W 3W 2W 1B 2W 1W | W Home | E: 0 I: 0 
+[x:9, y:1, r:3][x:10, y:1, r:2]The bot played the piece at coordinates 10 1 with roll 2
+3W 0  1W 0  0  1W | 2B 0  2B 1B 1B 0  | B Home | E: 0 I: 0 
+4B 0  0  0  1W 0  | 4W 2B 2B 0  4W 1B | W Home | E: 1 I: 0 
 
-0  0  0  0  2B 1W | 3B 0  1W 1B 1B 5B | B Home | E: 0 I: 0 
-1B 0  0  1B 1B 3W | 2W 3W 2W 0  2W 1W | W Home | E: 0 I: 0 
+3W 0  1W 0  0  1W | 2B 0  2B 1B 1W 0  | B Home | E: 1 I: 0 
+4B 0  0  0  1W 0  | 4W 2B 2B 0  4W 1B | W Home | E: 0 I: 0 
 
-[x:4, y:1, r:2][x:6, y:1, r:2][x:9, y:1, r:2][x:0, y:0, r:2][x:3, y:0, r:2][x:4, y:0, r:2]The bot played the piece at coordinates 3 0 with roll 2
-0  0  0  0  2B 1W | 3B 0  1W 1B 1B 5B | B Home | E: 0 I: 0 
-1B 0  0  1B 1B 3W | 2W 3W 2W 0  2W 1W | W Home | E: 0 I: 0 
+[x:10, y:1, r:3][x:5, y:1, r:3][x:0, y:1, r:3][x:6, y:0, r:3]The bot played the piece at coordinates 5 1 with roll 3
+3W 0  1W 0  0  1W | 2B 0  2B 1B 1W 0  | B Home | E: 1 I: 0 
+4B 0  0  0  1W 0  | 4W 2B 2B 0  4W 1B | W Home | E: 0 I: 0 
 
-0  0  0  0  2B 1W | 3B 0  1W 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  1B 3W | 2W 3W 2W 0  2W 1W | W Home | E: 0 I: 0 
+3W 0  2W 0  0  0  | 2B 0  2B 1B 1W 0  | B Home | E: 1 I: 0 
+4B 0  0  0  1W 0  | 4W 2B 2B 0  4W 1B | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 23
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [6, 2]
-0  0  0  0  2B 1W | 3B 0  1W 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  1B 3W | 2W 3W 2W 0  2W 1W | W Home | E: 0 I: 0 
+RandomBot rolled [5, 4]
+3W 0  2W 0  0  0  | 2B 0  2B 1B 1W 0  | B Home | E: 1 I: 0 
+4B 0  0  0  1W 0  | 4W 2B 2B 0  4W 1B | W Home | E: 0 I: 0 
 
-[x:5, y:1, r:6][x:5, y:0, r:2][x:5, y:0, r:6][x:8, y:0, r:2][x:8, y:1, r:6][x:5, y:1, r:2][x:7, y:0, r:2][x:6, y:0, r:2]The bot played the piece at coordinates 5 0 with roll 2
-0  0  0  0  2B 1W | 3B 0  1W 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  1B 3W | 2W 3W 2W 0  2W 1W | W Home | E: 0 I: 0 
+[x:7, y:0, r:5][x:8, y:0, r:4]The bot played the piece at coordinates 8 0 with roll 4
+3W 0  2W 0  0  0  | 2B 0  2B 1B 1W 0  | B Home | E: 1 I: 0 
+4B 0  0  0  1W 0  | 4W 2B 2B 0  4W 1B | W Home | E: 0 I: 0 
 
-0  0  0  0  2B 1W | 3B 0  1W 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  1B 2W | 2W 4W 2W 0  2W 1W | W Home | E: 0 I: 0 
+3W 0  2W 0  0  0  | 2B 0  2B 1B 1W 0  | B Home | E: 0 I: 0 
+4B 0  0  0  1W 0  | 4W 2B 3B 0  4W 1B | W Home | E: 0 I: 0 
 
-[x:5, y:0, r:6][x:5, y:1, r:6][x:8, y:1, r:6]The bot played the piece at coordinates 8 1 with roll 6
-0  0  0  0  2B 1W | 3B 0  1W 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  1B 2W | 2W 4W 2W 0  2W 1W | W Home | E: 0 I: 0 
+[x:8, y:0, r:5][x:7, y:0, r:5][x:0, y:0, r:5][x:6, y:1, r:5]The bot played the piece at coordinates 6 1 with roll 5
+3W 0  2W 0  0  0  | 2B 0  2B 1B 1W 0  | B Home | E: 0 I: 0 
+4B 0  0  0  1W 0  | 4W 2B 3B 0  4W 1B | W Home | E: 0 I: 0 
 
-0  0  1W 0  2B 1W | 3B 0  0  1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  1B 2W | 2W 4W 2W 0  2W 1W | W Home | E: 0 I: 0 
+3W 0  2W 0  0  0  | 1B 0  2B 1B 1W 1B | B Home | E: 0 I: 0 
+4B 0  0  0  1W 0  | 4W 2B 3B 0  4W 1B | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 24
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [4, 5]
-0  0  1W 0  2B 1W | 3B 0  0  1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  1B 2W | 2W 4W 2W 0  2W 1W | W Home | E: 0 I: 0 
+RandomBot rolled [5, 4]
+3W 0  2W 0  0  0  | 1B 0  2B 1B 1W 1B | B Home | E: 0 I: 0 
+4B 0  0  0  1W 0  | 4W 2B 3B 0  4W 1B | W Home | E: 0 I: 0 
 
-[x:6, y:1, r:5][x:0, y:0, r:5][x:4, y:0, r:4][x:4, y:0, r:5][x:0, y:0, r:4][x:1, y:0, r:5][x:4, y:1, r:4][x:4, y:1, r:5][x:6, y:1, r:4][x:1, y:0, r:4]The bot played the piece at coordinates 4 0 with roll 5
-0  0  1W 0  2B 1W | 3B 0  0  1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  1B 2W | 2W 4W 2W 0  2W 1W | W Home | E: 0 I: 0 
+[x:2, y:1, r:4][x:4, y:0, r:5][x:6, y:0, r:4][x:2, y:1, r:5][x:6, y:0, r:5][x:10, y:1, r:5][x:0, y:1, r:4][x:10, y:1, r:4][x:0, y:1, r:5]The bot played the piece at coordinates 6 0 with roll 5
+3W 0  2W 0  0  0  | 1B 0  2B 1B 1W 1B | B Home | E: 0 I: 0 
+4B 0  0  0  1W 0  | 4W 2B 3B 0  4W 1B | W Home | E: 0 I: 0 
 
-1B 0  1W 0  2B 1W | 3B 0  0  1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  0  2W | 2W 4W 2W 0  2W 1W | W Home | E: 0 I: 0 
+3W 0  2W 0  0  0  | 1B 0  2B 1B 1W 1B | B Home | E: 1 I: 0 
+4B 0  0  0  1W 0  | 3W 2B 3B 0  4W 1W | W Home | E: 0 I: 0 
 
-[x:0, y:0, r:4][x:0, y:1, r:4][x:6, y:1, r:4][x:1, y:0, r:4][x:4, y:1, r:4]The bot played the piece at coordinates 4 1 with roll 4
-1B 0  1W 0  2B 1W | 3B 0  0  1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  0  2W | 2W 4W 2W 0  2W 1W | W Home | E: 0 I: 0 
+[x:2, y:1, r:4][x:0, y:1, r:4][x:6, y:0, r:4][x:10, y:1, r:4]The bot played the piece at coordinates 2 1 with roll 4
+3W 0  2W 0  0  0  | 1B 0  2B 1B 1W 1B | B Home | E: 1 I: 0 
+4B 0  0  0  1W 0  | 3W 2B 3B 0  4W 1W | W Home | E: 0 I: 0 
 
-1B 0  1W 0  1B 1W | 3B 0  1B 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  0  2W | 2W 4W 2W 0  2W 1W | W Home | E: 0 I: 0 
+3W 0  1W 0  0  0  | 1B 0  2B 1B 1W 1B | B Home | E: 1 I: 0 
+4B 1W 0  0  1W 0  | 3W 2B 3B 0  4W 1W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 25
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [5, 1]
-1B 0  1W 0  1B 1W | 3B 0  1B 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  0  2W | 2W 4W 2W 0  2W 1W | W Home | E: 0 I: 0 
+RandomBot rolled [4, 6]
+3W 0  1W 0  0  0  | 1B 0  2B 1B 1W 1B | B Home | E: 1 I: 0 
+4B 1W 0  0  1W 0  | 3W 2B 3B 0  4W 1W | W Home | E: 0 I: 0 
 
-[x:5, y:0, r:1][x:5, y:1, r:1][x:5, y:0, r:5][x:7, y:0, r:1][x:2, y:1, r:1][x:10, y:0, r:1][x:5, y:1, r:5][x:6, y:0, r:1][x:6, y:0, r:5][x:2, y:1, r:5][x:8, y:0, r:1]The bot played the piece at coordinates 5 0 with roll 5
-1B 0  1W 0  1B 1W | 3B 0  1B 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  0  2W | 2W 4W 2W 0  2W 1W | W Home | E: 0 I: 0 
+[x:8, y:0, r:4]The bot played the piece at coordinates 8 0 with roll 4
+3W 0  1W 0  0  0  | 1B 0  2B 1B 1W 1B | B Home | E: 1 I: 0 
+4B 1W 0  0  1W 0  | 3W 2B 3B 0  4W 1W | W Home | E: 0 I: 0 
 
-1B 0  1W 0  1B 1W | 3B 0  1B 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  0  1W | 2W 4W 2W 0  3W 1W | W Home | E: 0 I: 0 
+3W 0  1W 0  0  0  | 1B 0  2B 1B 1W 1B | B Home | E: 0 I: 0 
+4B 1W 0  0  1W 0  | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
 
-[x:6, y:0, r:1][x:7, y:0, r:1][x:5, y:0, r:1][x:5, y:1, r:1][x:10, y:0, r:1][x:2, y:1, r:1][x:8, y:0, r:1]The bot played the piece at coordinates 6 0 with roll 1
-1B 0  1W 0  1B 1W | 3B 0  1B 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  0  1W | 2W 4W 2W 0  3W 1W | W Home | E: 0 I: 0 
+[x:7, y:0, r:6][x:8, y:0, r:6][x:0, y:0, r:6]The bot played the piece at coordinates 0 0 with roll 6
+3W 0  1W 0  0  0  | 1B 0  2B 1B 1W 1B | B Home | E: 0 I: 0 
+4B 1W 0  0  1W 0  | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
 
-1B 0  1W 0  1B 1W | 3B 0  1B 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  0  1W | 1W 5W 2W 0  3W 1W | W Home | E: 0 I: 0 
+3W 0  1W 0  0  1B | 1B 0  2B 1B 1W 1B | B Home | E: 0 I: 0 
+3B 1W 0  0  1W 0  | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 26
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [4, 3]
-1B 0  1W 0  1B 1W | 3B 0  1B 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  0  1W | 1W 5W 2W 0  3W 1W | W Home | E: 0 I: 0 
+RandomBot rolled [3, 3]
+RandomBot rolled doubles!
+3W 0  1W 0  0  1B | 1B 0  2B 1B 1W 1B | B Home | E: 0 I: 0 
+3B 1W 0  0  1W 0  | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
 
-[x:6, y:1, r:3][x:0, y:0, r:3][x:4, y:1, r:3][x:0, y:0, r:4][x:0, y:1, r:4][x:4, y:1, r:4][x:1, y:0, r:4][x:0, y:1, r:3][x:6, y:1, r:4][x:8, y:1, r:3][x:1, y:0, r:3]The bot played the piece at coordinates 4 1 with roll 3
-1B 0  1W 0  1B 1W | 3B 0  1B 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  0  1W | 1W 5W 2W 0  3W 1W | W Home | E: 0 I: 0 
+[x:10, y:1, r:3][x:1, y:0, r:3][x:0, y:1, r:3][x:6, y:0, r:3]The bot played the piece at coordinates 10 1 with roll 3
+3W 0  1W 0  0  1B | 1B 0  2B 1B 1W 1B | B Home | E: 0 I: 0 
+3B 1W 0  0  1W 0  | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
 
-1B 0  1W 0  0  1W | 3B 1B 1B 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  0  1W | 1W 5W 2W 0  3W 1W | W Home | E: 0 I: 0 
+3W 0  1W 0  0  1B | 1B 1W 2B 1B 0  1B | B Home | E: 0 I: 0 
+3B 1W 0  0  1W 0  | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
 
-[x:1, y:0, r:4][x:7, y:1, r:4][x:0, y:1, r:4][x:6, y:1, r:4][x:0, y:0, r:4]The bot played the piece at coordinates 0 1 with roll 4
-1B 0  1W 0  0  1W | 3B 1B 1B 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  0  1W | 1W 5W 2W 0  3W 1W | W Home | E: 0 I: 0 
+[x:1, y:0, r:3][x:6, y:0, r:3][x:7, y:1, r:3][x:0, y:1, r:3]The bot played the piece at coordinates 7 1 with roll 3
+3W 0  1W 0  0  1B | 1B 1W 2B 1B 0  1B | B Home | E: 0 I: 0 
+3B 1W 0  0  1W 0  | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
 
-0  0  1W 0  1B 1W | 3B 1B 1B 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  0  1W | 1W 5W 2W 0  3W 1W | W Home | E: 0 I: 0 
+3W 0  1W 0  1W 1B | 1B 0  2B 1B 0  1B | B Home | E: 0 I: 0 
+3B 1W 0  0  1W 0  | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
+
+[x:0, y:1, r:3][x:6, y:0, r:3][x:1, y:0, r:3][x:4, y:1, r:3]The bot played the piece at coordinates 0 1 with roll 3
+3W 0  1W 0  1W 1B | 1B 0  2B 1B 0  1B | B Home | E: 0 I: 0 
+3B 1W 0  0  1W 0  | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
+
+2W 0  1W 0  1W 1B | 1B 0  2B 1B 0  1B | B Home | E: 0 I: 0 
+3B 1W 1W 0  1W 0  | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
+
+[x:2, y:0, r:3][x:0, y:1, r:3][x:6, y:0, r:3][x:4, y:1, r:3][x:1, y:0, r:3]The bot played the piece at coordinates 2 0 with roll 3
+2W 0  1W 0  1W 1B | 1B 0  2B 1B 0  1B | B Home | E: 0 I: 0 
+3B 1W 1W 0  1W 0  | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
+
+2W 0  1W 0  1W 1B | 1B 0  2B 1B 0  1B | B Home | E: 0 I: 0 
+3B 1W 0  0  1W 1W | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 27
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [2, 2]
-RandomBot rolled doubles!
-0  0  1W 0  1B 1W | 3B 1B 1B 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  0  1W | 1W 5W 2W 0  3W 1W | W Home | E: 0 I: 0 
+RandomBot rolled [4, 3]
+2W 0  1W 0  1W 1B | 1B 0  2B 1B 0  1B | B Home | E: 0 I: 0 
+3B 1W 0  0  1W 1W | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
 
-[x:5, y:0, r:2][x:2, y:1, r:2][x:7, y:0, r:2][x:8, y:0, r:2][x:6, y:0, r:2][x:5, y:1, r:2]The bot played the piece at coordinates 2 1 with roll 2
-0  0  1W 0  1B 1W | 3B 1B 1B 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  0  1W | 1W 5W 2W 0  3W 1W | W Home | E: 0 I: 0 
+[x:7, y:0, r:3][x:5, y:1, r:3][x:7, y:0, r:4][x:8, y:0, r:3][x:8, y:1, r:3][x:0, y:0, r:3][x:6, y:1, r:4][x:6, y:1, r:3][x:0, y:0, r:4][x:8, y:0, r:4][x:5, y:1, r:4]The bot played the piece at coordinates 8 1 with roll 3
+2W 0  1W 0  1W 1B | 1B 0  2B 1B 0  1B | B Home | E: 0 I: 0 
+3B 1W 0  0  1W 1W | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
 
-1W 0  0  0  1B 1W | 3B 1B 1B 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  0  1W | 1W 5W 2W 0  3W 1W | W Home | E: 0 I: 0 
+2W 0  1W 0  1W 1B | 1B 0  1B 1B 0  2B | B Home | E: 0 I: 0 
+3B 1W 0  0  1W 1W | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
 
-[x:8, y:0, r:2][x:6, y:0, r:2][x:0, y:1, r:2][x:5, y:0, r:2][x:7, y:0, r:2][x:5, y:1, r:2]The bot played the piece at coordinates 6 0 with roll 2
-1W 0  0  0  1B 1W | 3B 1B 1B 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  0  1W | 1W 5W 2W 0  3W 1W | W Home | E: 0 I: 0 
+[x:0, y:0, r:4][x:7, y:0, r:4][x:5, y:1, r:4][x:6, y:1, r:4][x:8, y:0, r:4]The bot played the piece at coordinates 5 1 with roll 4
+2W 0  1W 0  1W 1B | 1B 0  1B 1B 0  2B | B Home | E: 0 I: 0 
+3B 1W 0  0  1W 1W | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
 
-1W 0  0  0  1B 1W | 3B 1B 1B 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  0  1W | 0  5W 3W 0  3W 1W | W Home | E: 0 I: 0 
-
-[x:8, y:0, r:2][x:7, y:0, r:2][x:0, y:1, r:2][x:5, y:0, r:2][x:5, y:1, r:2]The bot played the piece at coordinates 5 0 with roll 2
-1W 0  0  0  1B 1W | 3B 1B 1B 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  0  1W | 0  5W 3W 0  3W 1W | W Home | E: 0 I: 0 
-
-1W 0  0  0  1B 1W | 3B 1B 1B 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  0  0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
-
-[x:0, y:1, r:2][x:7, y:0, r:2][x:8, y:0, r:2][x:5, y:1, r:2]The bot played the piece at coordinates 5 1 with roll 2
-1W 0  0  0  1B 1W | 3B 1B 1B 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  0  0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
-
-1W 0  0  1W 1B 0  | 3B 1B 1B 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  0  0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
+2W 0  1W 0  1W 0  | 1B 0  1B 2B 0  2B | B Home | E: 0 I: 0 
+3B 1W 0  0  1W 1W | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 28
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [4, 5]
-1W 0  0  1W 1B 0  | 3B 1B 1B 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  0  0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
+RandomBot rolled [1, 1]
+RandomBot rolled doubles!
+2W 0  1W 0  1W 0  | 1B 0  1B 2B 0  2B | B Home | E: 0 I: 0 
+3B 1W 0  0  1W 1W | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
 
-[x:4, y:1, r:4][x:0, y:0, r:5][x:1, y:0, r:5][x:7, y:1, r:4][x:0, y:0, r:4][x:1, y:0, r:4][x:4, y:1, r:5][x:6, y:1, r:4][x:6, y:1, r:5]The bot played the piece at coordinates 1 0 with roll 4
-1W 0  0  1W 1B 0  | 3B 1B 1B 1B 1B 5B | B Home | E: 0 I: 0 
-1B 1B 0  0  0  0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
+[x:2, y:1, r:1][x:4, y:0, r:1][x:1, y:0, r:1][x:5, y:0, r:1][x:4, y:1, r:1][x:10, y:0, r:1]The bot played the piece at coordinates 4 1 with roll 1
+2W 0  1W 0  1W 0  | 1B 0  1B 2B 0  2B | B Home | E: 0 I: 0 
+3B 1W 0  0  1W 1W | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
 
-1W 0  1B 1W 1B 0  | 3B 1B 1B 1B 1B 5B | B Home | E: 0 I: 0 
-1B 0  0  0  0  0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
+2W 0  1W 1W 0  0  | 1B 0  1B 2B 0  2B | B Home | E: 0 I: 0 
+3B 1W 0  0  1W 1W | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
 
-[x:0, y:0, r:5][x:4, y:1, r:5][x:6, y:1, r:5][x:2, y:1, r:5]The bot played the piece at coordinates 4 1 with roll 5
-1W 0  1B 1W 1B 0  | 3B 1B 1B 1B 1B 5B | B Home | E: 0 I: 0 
-1B 0  0  0  0  0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
+[x:4, y:0, r:1][x:2, y:1, r:1][x:3, y:1, r:1][x:5, y:0, r:1][x:1, y:0, r:1][x:10, y:0, r:1]The bot played the piece at coordinates 2 1 with roll 1
+2W 0  1W 1W 0  0  | 1B 0  1B 2B 0  2B | B Home | E: 0 I: 0 
+3B 1W 0  0  1W 1W | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
 
-1W 0  1B 1W 0  0  | 3B 1B 1B 2B 1B 5B | B Home | E: 0 I: 0 
-1B 0  0  0  0  0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
+2W 1W 0  1W 0  0  | 1B 0  1B 2B 0  2B | B Home | E: 0 I: 0 
+3B 1W 0  0  1W 1W | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
+
+[x:3, y:1, r:1][x:4, y:0, r:1][x:1, y:0, r:1][x:10, y:0, r:1][x:5, y:0, r:1][x:1, y:1, r:1]The bot played the piece at coordinates 1 0 with roll 1
+2W 1W 0  1W 0  0  | 1B 0  1B 2B 0  2B | B Home | E: 0 I: 0 
+3B 1W 0  0  1W 1W | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
+
+2W 1W 0  1W 0  0  | 1B 0  1B 2B 0  2B | B Home | E: 0 I: 0 
+3B 0  1W 0  1W 1W | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
+
+[x:5, y:0, r:1][x:4, y:0, r:1][x:2, y:0, r:1][x:3, y:1, r:1][x:10, y:0, r:1][x:1, y:1, r:1]The bot played the piece at coordinates 3 1 with roll 1
+2W 1W 0  1W 0  0  | 1B 0  1B 2B 0  2B | B Home | E: 0 I: 0 
+3B 0  1W 0  1W 1W | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
+
+2W 1W 1W 0  0  0  | 1B 0  1B 2B 0  2B | B Home | E: 0 I: 0 
+3B 0  1W 0  1W 1W | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 29
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [5, 3]
-1W 0  1B 1W 0  0  | 3B 1B 1B 2B 1B 5B | B Home | E: 0 I: 0 
-1B 0  0  0  0  0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
+RandomBot rolled [1, 2]
+2W 1W 1W 0  0  0  | 1B 0  1B 2B 0  2B | B Home | E: 0 I: 0 
+3B 0  1W 0  1W 1W | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
 
-[x:8, y:0, r:3][x:3, y:1, r:3][x:7, y:0, r:3][x:0, y:1, r:5][x:0, y:1, r:3][x:3, y:1, r:5]The bot played the piece at coordinates 3 1 with roll 5
-1W 0  1B 1W 0  0  | 3B 1B 1B 2B 1B 5B | B Home | E: 0 I: 0 
-1B 0  0  0  0  0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
+[x:7, y:0, r:2][x:6, y:1, r:2][x:8, y:1, r:2][x:9, y:1, r:1][x:9, y:1, r:2][x:6, y:1, r:1][x:8, y:1, r:1][x:8, y:0, r:1][x:0, y:0, r:2]The bot played the piece at coordinates 8 0 with roll 1
+2W 1W 1W 0  0  0  | 1B 0  1B 2B 0  2B | B Home | E: 0 I: 0 
+3B 0  1W 0  1W 1W | 3W 2B 4B 0  4W 1W | W Home | E: 0 I: 0 
 
-1W 0  1B 0  0  0  | 3B 1B 1B 2B 1B 5B | B Home | E: 0 I: 0 
-1B 1W 0  0  0  0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
+2W 1W 1W 0  0  0  | 1B 0  1B 2B 0  2B | B Home | E: 0 I: 0 
+3B 0  1W 0  1W 1W | 3W 3B 3B 0  4W 1W | W Home | E: 0 I: 0 
 
-[x:8, y:0, r:3][x:1, y:0, r:3][x:7, y:0, r:3][x:0, y:1, r:3]The bot played the piece at coordinates 0 1 with roll 3
-1W 0  1B 0  0  0  | 3B 1B 1B 2B 1B 5B | B Home | E: 0 I: 0 
-1B 1W 0  0  0  0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
+[x:7, y:0, r:2][x:8, y:1, r:2][x:9, y:1, r:2][x:0, y:0, r:2][x:6, y:1, r:2]The bot played the piece at coordinates 8 1 with roll 2
+2W 1W 1W 0  0  0  | 1B 0  1B 2B 0  2B | B Home | E: 0 I: 0 
+3B 0  1W 0  1W 1W | 3W 3B 3B 0  4W 1W | W Home | E: 0 I: 0 
 
-0  0  1B 0  0  0  | 3B 1B 1B 2B 1B 5B | B Home | E: 0 I: 0 
-1B 1W 1W 0  0  0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
+2W 1W 1W 0  0  0  | 1B 0  0  2B 1B 2B | B Home | E: 0 I: 0 
+3B 0  1W 0  1W 1W | 3W 3B 3B 0  4W 1W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 30
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [2, 2]
-RandomBot rolled doubles!
-0  0  1B 0  0  0  | 3B 1B 1B 2B 1B 5B | B Home | E: 0 I: 0 
-1B 1W 1W 0  0  0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
+RandomBot rolled [6, 2]
+2W 1W 1W 0  0  0  | 1B 0  0  2B 1B 2B | B Home | E: 0 I: 0 
+3B 0  1W 0  1W 1W | 3W 3B 3B 0  4W 1W | W Home | E: 0 I: 0 
 
-[x:2, y:1, r:2][x:7, y:1, r:2][x:9, y:1, r:2][x:0, y:0, r:2][x:6, y:1, r:2][x:8, y:1, r:2]The bot played the piece at coordinates 9 1 with roll 2
-0  0  1B 0  0  0  | 3B 1B 1B 2B 1B 5B | B Home | E: 0 I: 0 
-1B 1W 1W 0  0  0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
+[x:4, y:0, r:2][x:5, y:0, r:6][x:0, y:1, r:2][x:1, y:1, r:6][x:2, y:1, r:2][x:2, y:1, r:6][x:0, y:1, r:6][x:4, y:0, r:6][x:2, y:0, r:2]The bot played the piece at coordinates 0 1 with roll 2
+2W 1W 1W 0  0  0  | 1B 0  0  2B 1B 2B | B Home | E: 0 I: 0 
+3B 0  1W 0  1W 1W | 3W 3B 3B 0  4W 1W | W Home | E: 0 I: 0 
 
-0  0  1B 0  0  0  | 3B 1B 1B 1B 1B 6B | B Home | E: 0 I: 0 
-1B 1W 1W 0  0  0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
+1W 1W 1W 0  0  0  | 1B 0  0  2B 1B 2B | B Home | E: 0 I: 0 
+3B 1W 1W 0  1W 1W | 3W 3B 3B 0  4W 1W | W Home | E: 0 I: 0 
 
-[x:2, y:1, r:2][x:9, y:1, r:2][x:7, y:1, r:2][x:6, y:1, r:2][x:8, y:1, r:2][x:0, y:0, r:2]The bot played the piece at coordinates 8 1 with roll 2
-0  0  1B 0  0  0  | 3B 1B 1B 1B 1B 6B | B Home | E: 0 I: 0 
-1B 1W 1W 0  0  0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
+[x:4, y:0, r:6][x:1, y:1, r:6][x:5, y:0, r:6][x:0, y:1, r:6][x:2, y:1, r:6]The bot played the piece at coordinates 1 1 with roll 6
+1W 1W 1W 0  0  0  | 1B 0  0  2B 1B 2B | B Home | E: 0 I: 0 
+3B 1W 1W 0  1W 1W | 3W 3B 3B 0  4W 1W | W Home | E: 0 I: 0 
 
-0  0  1B 0  0  0  | 3B 1B 0  1B 2B 6B | B Home | E: 0 I: 0 
-1B 1W 1W 0  0  0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
-
-[x:6, y:1, r:2][x:9, y:1, r:2][x:0, y:0, r:2][x:7, y:1, r:2][x:2, y:1, r:2]The bot played the piece at coordinates 2 1 with roll 2
-0  0  1B 0  0  0  | 3B 1B 0  1B 2B 6B | B Home | E: 0 I: 0 
-1B 1W 1W 0  0  0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
-
-0  0  0  0  1B 0  | 3B 1B 0  1B 2B 6B | B Home | E: 0 I: 0 
-1B 1W 1W 0  0  0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
-
-[x:6, y:1, r:2][x:7, y:1, r:2][x:4, y:1, r:2][x:9, y:1, r:2][x:0, y:0, r:2]The bot played the piece at coordinates 4 1 with roll 2
-0  0  0  0  1B 0  | 3B 1B 0  1B 2B 6B | B Home | E: 0 I: 0 
-1B 1W 1W 0  0  0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
-
-0  0  0  0  0  0  | 4B 1B 0  1B 2B 6B | B Home | E: 0 I: 0 
-1B 1W 1W 0  0  0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
+1W 0  1W 0  0  0  | 1B 0  0  2B 1B 2B | B Home | E: 0 I: 0 
+3B 1W 1W 0  2W 1W | 3W 3B 3B 0  4W 1W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 31
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [2, 4]
-0  0  0  0  0  0  | 4B 1B 0  1B 2B 6B | B Home | E: 0 I: 0 
-1B 1W 1W 0  0  0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
+RandomBot rolled [4, 3]
+1W 0  1W 0  0  0  | 1B 0  0  2B 1B 2B | B Home | E: 0 I: 0 
+3B 1W 1W 0  2W 1W | 3W 3B 3B 0  4W 1W | W Home | E: 0 I: 0 
 
-[x:1, y:0, r:2][x:1, y:0, r:4][x:2, y:0, r:2][x:7, y:0, r:2][x:2, y:0, r:4][x:7, y:0, r:4][x:8, y:0, r:2]The bot played the piece at coordinates 2 0 with roll 2
-0  0  0  0  0  0  | 4B 1B 0  1B 2B 6B | B Home | E: 0 I: 0 
-1B 1W 1W 0  0  0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
+[x:6, y:1, r:3][x:0, y:0, r:4][x:6, y:1, r:4][x:7, y:0, r:4][x:0, y:0, r:3][x:8, y:0, r:3]The bot played the piece at coordinates 7 0 with roll 4
+1W 0  1W 0  0  0  | 1B 0  0  2B 1B 2B | B Home | E: 0 I: 0 
+3B 1W 1W 0  2W 1W | 3W 3B 3B 0  4W 1W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 4B 1B 0  1B 2B 6B | B Home | E: 0 I: 0 
-1B 1W 0  0  1W 0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
+1W 0  1W 0  0  0  | 1B 0  0  2B 1B 2B | B Home | E: 0 I: 0 
+3B 1W 1W 1B 2W 1W | 3W 2B 3B 0  4W 1W | W Home | E: 0 I: 0 
 
-[x:1, y:0, r:4][x:4, y:0, r:4][x:7, y:0, r:4]The bot played the piece at coordinates 4 0 with roll 4
-0  0  0  0  0  0  | 4B 1B 0  1B 2B 6B | B Home | E: 0 I: 0 
-1B 1W 0  0  1W 0  | 0  6W 3W 0  3W 1W | W Home | E: 0 I: 0 
+[x:8, y:0, r:3][x:0, y:0, r:3][x:3, y:0, r:3][x:6, y:1, r:3]The bot played the piece at coordinates 6 1 with roll 3
+1W 0  1W 0  0  0  | 1B 0  0  2B 1B 2B | B Home | E: 0 I: 0 
+3B 1W 1W 1B 2W 1W | 3W 2B 3B 0  4W 1W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 4B 1B 0  1B 2B 6B | B Home | E: 0 I: 0 
-1B 1W 0  0  0  0  | 0  6W 4W 0  3W 1W | W Home | E: 0 I: 0 
+1W 0  1W 0  0  0  | 0  0  0  3B 1B 2B | B Home | E: 0 I: 0 
+3B 1W 1W 1B 2W 1W | 3W 2B 3B 0  4W 1W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 32
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [4, 3]
-0  0  0  0  0  0  | 4B 1B 0  1B 2B 6B | B Home | E: 0 I: 0 
-1B 1W 0  0  0  0  | 0  6W 4W 0  3W 1W | W Home | E: 0 I: 0 
+RandomBot rolled [1, 6]
+1W 0  1W 0  0  0  | 0  0  0  3B 1B 2B | B Home | E: 0 I: 0 
+3B 1W 1W 1B 2W 1W | 3W 2B 3B 0  4W 1W | W Home | E: 0 I: 0 
 
-[x:6, y:1, r:3][x:0, y:0, r:3][x:0, y:0, r:4][x:6, y:1, r:4][x:7, y:1, r:4][x:7, y:1, r:3]The bot played the piece at coordinates 0 0 with roll 3
-0  0  0  0  0  0  | 4B 1B 0  1B 2B 6B | B Home | E: 0 I: 0 
-1B 1W 0  0  0  0  | 0  6W 4W 0  3W 1W | W Home | E: 0 I: 0 
+[x:5, y:0, r:1][x:4, y:0, r:1][x:2, y:0, r:1][x:0, y:1, r:6][x:2, y:1, r:1][x:10, y:0, r:1][x:1, y:0, r:1][x:2, y:1, r:6][x:4, y:0, r:6][x:5, y:0, r:6]The bot played the piece at coordinates 4 0 with roll 6
+1W 0  1W 0  0  0  | 0  0  0  3B 1B 2B | B Home | E: 0 I: 0 
+3B 1W 1W 1B 2W 1W | 3W 2B 3B 0  4W 1W | W Home | E: 0 I: 0 
 
-0  0  1B 0  0  0  | 4B 1B 0  1B 2B 6B | B Home | E: 0 I: 0 
-0  1W 0  0  0  0  | 0  6W 4W 0  3W 1W | W Home | E: 0 I: 0 
+1W 0  1W 0  0  0  | 0  0  0  3B 1B 2B | B Home | E: 0 I: 0 
+3B 1W 1W 1B 1W 1W | 3W 2B 3B 0  5W 1W | W Home | E: 0 I: 0 
 
-[x:6, y:1, r:4][x:7, y:1, r:4][x:2, y:1, r:4]The bot played the piece at coordinates 2 1 with roll 4
-0  0  1B 0  0  0  | 4B 1B 0  1B 2B 6B | B Home | E: 0 I: 0 
-0  1W 0  0  0  0  | 0  6W 4W 0  3W 1W | W Home | E: 0 I: 0 
+[x:10, y:0, r:1][x:2, y:0, r:1][x:4, y:0, r:1][x:2, y:1, r:1][x:1, y:0, r:1][x:5, y:0, r:1]The bot played the piece at coordinates 1 0 with roll 1
+1W 0  1W 0  0  0  | 0  0  0  3B 1B 2B | B Home | E: 0 I: 0 
+3B 1W 1W 1B 1W 1W | 3W 2B 3B 0  5W 1W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 5B 1B 0  1B 2B 6B | B Home | E: 0 I: 0 
-0  1W 0  0  0  0  | 0  6W 4W 0  3W 1W | W Home | E: 0 I: 0 
+1W 0  1W 0  0  0  | 0  0  0  3B 1B 2B | B Home | E: 0 I: 0 
+3B 0  2W 1B 1W 1W | 3W 2B 3B 0  5W 1W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 33
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [6, 5]
-0  0  0  0  0  0  | 5B 1B 0  1B 2B 6B | B Home | E: 0 I: 0 
-0  1W 0  0  0  0  | 0  6W 4W 0  3W 1W | W Home | E: 0 I: 0 
+RandomBot rolled [4, 1]
+1W 0  1W 0  0  0  | 0  0  0  3B 1B 2B | B Home | E: 0 I: 0 
+3B 0  2W 1B 1W 1W | 3W 2B 3B 0  5W 1W | W Home | E: 0 I: 0 
 
-[x:1, y:0, r:5][x:1, y:0, r:6]The bot played the piece at coordinates 1 0 with roll 5
-0  0  0  0  0  0  | 5B 1B 0  1B 2B 6B | B Home | E: 0 I: 0 
-0  1W 0  0  0  0  | 0  6W 4W 0  3W 1W | W Home | E: 0 I: 0 
+[x:9, y:1, r:1][x:0, y:0, r:4][x:8, y:0, r:1][x:3, y:0, r:4][x:7, y:0, r:4][x:8, y:0, r:4][x:0, y:0, r:1][x:10, y:1, r:1]The bot played the piece at coordinates 8 0 with roll 1
+1W 0  1W 0  0  0  | 0  0  0  3B 1B 2B | B Home | E: 0 I: 0 
+3B 0  2W 1B 1W 1W | 3W 2B 3B 0  5W 1W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 5B 1B 0  1B 2B 6B | B Home | E: 0 I: 0 
-0  0  0  0  0  0  | 1W 6W 4W 0  3W 1W | W Home | E: 0 I: 0 
+1W 0  1W 0  0  0  | 0  0  0  3B 1B 2B | B Home | E: 0 I: 0 
+3B 0  2W 1B 1W 1W | 3W 3B 2B 0  5W 1W | W Home | E: 0 I: 0 
 
-[x:6, y:0, r:6]The bot played the piece at coordinates 6 0 with roll 6
-0  0  0  0  0  0  | 5B 1B 0  1B 2B 6B | B Home | E: 0 I: 0 
-0  0  0  0  0  0  | 1W 6W 4W 0  3W 1W | W Home | E: 0 I: 0 
+[x:3, y:0, r:4][x:0, y:0, r:4][x:8, y:0, r:4][x:7, y:0, r:4]The bot played the piece at coordinates 0 0 with roll 4
+1W 0  1W 0  0  0  | 0  0  0  3B 1B 2B | B Home | E: 0 I: 0 
+3B 0  2W 1B 1W 1W | 3W 3B 2B 0  5W 1W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 5B 1B 0  1B 2B 6B | B Home | E: 0 I: 0 
-0  0  0  0  0  0  | 0  6W 4W 0  3W 1W | W Home | E: 0 I: 1 
+1W 0  1W 1B 0  0  | 0  0  0  3B 1B 2B | B Home | E: 0 I: 0 
+2B 0  2W 1B 1W 1W | 3W 3B 2B 0  5W 1W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 34
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [5, 3]
-0  0  0  0  0  0  | 5B 1B 0  1B 2B 6B | B Home | E: 0 I: 0 
-0  0  0  0  0  0  | 0  6W 4W 0  3W 1W | W Home | E: 0 I: 1 
+RandomBot rolled [5, 6]
+1W 0  1W 1B 0  0  | 0  0  0  3B 1B 2B | B Home | E: 0 I: 0 
+2B 0  2W 1B 1W 1W | 3W 3B 2B 0  5W 1W | W Home | E: 0 I: 0 
 
-[x:7, y:1, r:5][x:7, y:1, r:3][x:6, y:1, r:3][x:9, y:1, r:3][x:6, y:1, r:5]The bot played the piece at coordinates 6 1 with roll 5
-0  0  0  0  0  0  | 5B 1B 0  1B 2B 6B | B Home | E: 0 I: 0 
-0  0  0  0  0  0  | 0  6W 4W 0  3W 1W | W Home | E: 0 I: 1 
+[x:6, y:0, r:5][x:4, y:0, r:6][x:4, y:0, r:5][x:2, y:1, r:6][x:5, y:0, r:5][x:5, y:0, r:6][x:0, y:1, r:5][x:0, y:1, r:6][x:2, y:1, r:5]The bot played the piece at coordinates 0 1 with roll 6
+1W 0  1W 1B 0  0  | 0  0  0  3B 1B 2B | B Home | E: 0 I: 0 
+2B 0  2W 1B 1W 1W | 3W 3B 2B 0  5W 1W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 4B 1B 0  1B 2B 7B | B Home | E: 0 I: 0 
-0  0  0  0  0  0  | 0  6W 4W 0  3W 1W | W Home | E: 0 I: 1 
+0  0  1W 1B 0  0  | 0  0  0  3B 1B 2B | B Home | E: 0 I: 0 
+2B 0  2W 1B 1W 2W | 3W 3B 2B 0  5W 1W | W Home | E: 0 I: 0 
 
-[x:6, y:1, r:3][x:7, y:1, r:3][x:9, y:1, r:3]The bot played the piece at coordinates 6 1 with roll 3
-0  0  0  0  0  0  | 4B 1B 0  1B 2B 7B | B Home | E: 0 I: 0 
-0  0  0  0  0  0  | 0  6W 4W 0  3W 1W | W Home | E: 0 I: 1 
+[x:4, y:0, r:5][x:6, y:0, r:5][x:2, y:1, r:5][x:5, y:0, r:5]The bot played the piece at coordinates 4 0 with roll 5
+0  0  1W 1B 0  0  | 0  0  0  3B 1B 2B | B Home | E: 0 I: 0 
+2B 0  2W 1B 1W 2W | 3W 3B 2B 0  5W 1W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 3B 1B 0  2B 2B 7B | B Home | E: 0 I: 0 
-0  0  0  0  0  0  | 0  6W 4W 0  3W 1W | W Home | E: 0 I: 1 
+0  0  1W 1B 0  0  | 0  0  0  3B 1B 2B | B Home | E: 0 I: 0 
+2B 0  2W 1B 0  2W | 3W 3B 2B 1W 5W 1W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 35
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [4, 3]
-0  0  0  0  0  0  | 3B 1B 0  2B 2B 7B | B Home | E: 0 I: 0 
-0  0  0  0  0  0  | 0  6W 4W 0  3W 1W | W Home | E: 0 I: 1 
+RandomBot rolled [2, 4]
+0  0  1W 1B 0  0  | 0  0  0  3B 1B 2B | B Home | E: 0 I: 0 
+2B 0  2W 1B 0  2W | 3W 3B 2B 1W 5W 1W | W Home | E: 0 I: 0 
 
-[x:8, y:0, r:3][x:7, y:0, r:4][x:7, y:0, r:3][x:8, y:0, r:4]The bot played the piece at coordinates 7 0 with roll 3
-0  0  0  0  0  0  | 3B 1B 0  2B 2B 7B | B Home | E: 0 I: 0 
-0  0  0  0  0  0  | 0  6W 4W 0  3W 1W | W Home | E: 0 I: 1 
+[x:3, y:0, r:2][x:3, y:0, r:4][x:9, y:1, r:2][x:8, y:0, r:4][x:7, y:0, r:4][x:0, y:0, r:2][x:3, y:1, r:2][x:3, y:1, r:4][x:0, y:0, r:4]The bot played the piece at coordinates 3 0 with roll 2
+0  0  1W 1B 0  0  | 0  0  0  3B 1B 2B | B Home | E: 0 I: 0 
+2B 0  2W 1B 0  2W | 3W 3B 2B 1W 5W 1W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 3B 1B 0  2B 2B 7B | B Home | E: 0 I: 0 
-0  0  0  0  0  0  | 0  5W 4W 0  4W 1W | W Home | E: 0 I: 1 
+0  0  1W 1B 0  0  | 0  0  0  3B 1B 2B | B Home | E: 0 I: 0 
+2B 1B 2W 0  0  2W | 3W 3B 2B 1W 5W 1W | W Home | E: 0 I: 0 
 
-[x:8, y:0, r:4][x:7, y:0, r:4]The bot played the piece at coordinates 8 0 with roll 4
-0  0  0  0  0  0  | 3B 1B 0  2B 2B 7B | B Home | E: 0 I: 0 
-0  0  0  0  0  0  | 0  5W 4W 0  4W 1W | W Home | E: 0 I: 1 
+[x:7, y:0, r:4][x:3, y:1, r:4][x:1, y:0, r:4][x:0, y:0, r:4][x:8, y:0, r:4]The bot played the piece at coordinates 3 1 with roll 4
+0  0  1W 1B 0  0  | 0  0  0  3B 1B 2B | B Home | E: 0 I: 0 
+2B 1B 2W 0  0  2W | 3W 3B 2B 1W 5W 1W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 3B 1B 0  2B 2B 7B | B Home | E: 0 I: 0 
-0  0  0  0  0  0  | 0  5W 3W 0  4W 1W | W Home | E: 0 I: 2 
+0  0  1W 0  0  0  | 0  1B 0  3B 1B 2B | B Home | E: 0 I: 0 
+2B 1B 2W 0  0  2W | 3W 3B 2B 1W 5W 1W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 36
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [5, 1]
-0  0  0  0  0  0  | 3B 1B 0  2B 2B 7B | B Home | E: 0 I: 0 
-0  0  0  0  0  0  | 0  5W 3W 0  4W 1W | W Home | E: 0 I: 2 
+RandomBot rolled [5, 3]
+0  0  1W 0  0  0  | 0  1B 0  3B 1B 2B | B Home | E: 0 I: 0 
+2B 1B 2W 0  0  2W | 3W 3B 2B 1W 5W 1W | W Home | E: 0 I: 0 
 
-[x:11, y:1, r:1][x:7, y:1, r:5][x:10, y:1, r:1][x:6, y:1, r:5][x:9, y:1, r:1][x:6, y:1, r:1][x:7, y:1, r:1]The bot played the piece at coordinates 7 1 with roll 5
-0  0  0  0  0  0  | 3B 1B 0  2B 2B 7B | B Home | E: 0 I: 0 
-0  0  0  0  0  0  | 0  5W 3W 0  4W 1W | W Home | E: 0 I: 2 
+[x:2, y:0, r:3][x:5, y:0, r:5][x:2, y:1, r:5][x:6, y:0, r:5][x:6, y:0, r:3]The bot played the piece at coordinates 2 0 with roll 3
+0  0  1W 0  0  0  | 0  1B 0  3B 1B 2B | B Home | E: 0 I: 0 
+2B 1B 2W 0  0  2W | 3W 3B 2B 1W 5W 1W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 3B 0  0  2B 2B 7B | B Home | E: 0 I: 1 
-0  0  0  0  0  0  | 0  5W 3W 0  4W 1W | W Home | E: 0 I: 2 
+0  0  1W 0  0  0  | 0  1B 0  3B 1B 2B | B Home | E: 0 I: 0 
+2B 1B 1W 0  0  3W | 3W 3B 2B 1W 5W 1W | W Home | E: 0 I: 0 
 
-[x:9, y:1, r:1][x:6, y:1, r:1][x:10, y:1, r:1][x:11, y:1, r:1]The bot played the piece at coordinates 9 1 with roll 1
-0  0  0  0  0  0  | 3B 0  0  2B 2B 7B | B Home | E: 0 I: 1 
-0  0  0  0  0  0  | 0  5W 3W 0  4W 1W | W Home | E: 0 I: 2 
+[x:6, y:0, r:5][x:5, y:0, r:5][x:2, y:1, r:5]The bot played the piece at coordinates 2 1 with roll 5
+0  0  1W 0  0  0  | 0  1B 0  3B 1B 2B | B Home | E: 0 I: 0 
+2B 1B 1W 0  0  3W | 3W 3B 2B 1W 5W 1W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 3B 0  0  1B 3B 7B | B Home | E: 0 I: 1 
-0  0  0  0  0  0  | 0  5W 3W 0  4W 1W | W Home | E: 0 I: 2 
+0  0  0  0  0  0  | 0  1B 0  3B 1B 2B | B Home | E: 0 I: 0 
+2B 1B 2W 0  0  3W | 3W 3B 2B 1W 5W 1W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 37
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [4, 3]
-0  0  0  0  0  0  | 3B 0  0  1B 3B 7B | B Home | E: 0 I: 1 
-0  0  0  0  0  0  | 0  5W 3W 0  4W 1W | W Home | E: 0 I: 2 
+RandomBot rolled [2, 4]
+0  0  0  0  0  0  | 0  1B 0  3B 1B 2B | B Home | E: 0 I: 0 
+2B 1B 2W 0  0  3W | 3W 3B 2B 1W 5W 1W | W Home | E: 0 I: 0 
 
-[x:8, y:0, r:4][x:8, y:0, r:3][x:7, y:0, r:4][x:7, y:0, r:3]The bot played the piece at coordinates 8 0 with roll 3
-0  0  0  0  0  0  | 3B 0  0  1B 3B 7B | B Home | E: 0 I: 1 
-0  0  0  0  0  0  | 0  5W 3W 0  4W 1W | W Home | E: 0 I: 2 
+[x:7, y:1, r:2][x:1, y:0, r:4][x:9, y:1, r:2][x:0, y:0, r:4][x:0, y:0, r:2][x:7, y:0, r:4][x:1, y:0, r:2][x:7, y:1, r:4][x:8, y:0, r:4]The bot played the piece at coordinates 1 0 with roll 4
+0  0  0  0  0  0  | 0  1B 0  3B 1B 2B | B Home | E: 0 I: 0 
+2B 1B 2W 0  0  3W | 3W 3B 2B 1W 5W 1W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 3B 0  0  1B 3B 7B | B Home | E: 0 I: 1 
-0  0  0  0  0  0  | 0  5W 2W 0  4W 2W | W Home | E: 0 I: 2 
+0  0  1B 0  0  0  | 0  1B 0  3B 1B 2B | B Home | E: 0 I: 0 
+2B 0  2W 0  0  3W | 3W 3B 2B 1W 5W 1W | W Home | E: 0 I: 0 
 
-[x:7, y:0, r:4][x:8, y:0, r:4]The bot played the piece at coordinates 8 0 with roll 4
-0  0  0  0  0  0  | 3B 0  0  1B 3B 7B | B Home | E: 0 I: 1 
-0  0  0  0  0  0  | 0  5W 2W 0  4W 2W | W Home | E: 0 I: 2 
+[x:0, y:0, r:2][x:7, y:1, r:2][x:9, y:1, r:2][x:2, y:1, r:2]The bot played the piece at coordinates 9 1 with roll 2
+0  0  1B 0  0  0  | 0  1B 0  3B 1B 2B | B Home | E: 0 I: 0 
+2B 0  2W 0  0  3W | 3W 3B 2B 1W 5W 1W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 3B 0  0  1B 3B 7B | B Home | E: 0 I: 1 
-0  0  0  0  0  0  | 0  5W 1W 0  4W 2W | W Home | E: 0 I: 3 
+0  0  1B 0  0  0  | 0  1B 0  2B 1B 3B | B Home | E: 0 I: 0 
+2B 0  2W 0  0  3W | 3W 3B 2B 1W 5W 1W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 38
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [4, 2]
-0  0  0  0  0  0  | 3B 0  0  1B 3B 7B | B Home | E: 0 I: 1 
-0  0  0  0  0  0  | 0  5W 1W 0  4W 2W | W Home | E: 0 I: 3 
+RandomBot rolled [6, 2]
+0  0  1B 0  0  0  | 0  1B 0  2B 1B 3B | B Home | E: 0 I: 0 
+2B 0  2W 0  0  3W | 3W 3B 2B 1W 5W 1W | W Home | E: 0 I: 0 
 
-[x:10, y:1, r:2][x:6, y:1, r:4][x:9, y:1, r:2][x:6, y:1, r:2]The bot played the piece at coordinates 9 1 with roll 2
-0  0  0  0  0  0  | 3B 0  0  1B 3B 7B | B Home | E: 0 I: 1 
-0  0  0  0  0  0  | 0  5W 1W 0  4W 2W | W Home | E: 0 I: 3 
+[x:2, y:0, r:2][x:9, y:0, r:2][x:5, y:0, r:6]The bot played the piece at coordinates 5 0 with roll 6
+0  0  1B 0  0  0  | 0  1B 0  2B 1B 3B | B Home | E: 0 I: 0 
+2B 0  2W 0  0  3W | 3W 3B 2B 1W 5W 1W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 3B 0  0  0  3B 8B | B Home | E: 0 I: 1 
-0  0  0  0  0  0  | 0  5W 1W 0  4W 2W | W Home | E: 0 I: 3 
+0  0  1B 0  0  0  | 0  1B 0  2B 1B 3B | B Home | E: 0 I: 0 
+2B 0  2W 0  0  2W | 3W 3B 2B 1W 5W 2W | W Home | E: 0 I: 0 
 
-[x:6, y:1, r:4]The bot played the piece at coordinates 6 1 with roll 4
-0  0  0  0  0  0  | 3B 0  0  0  3B 8B | B Home | E: 0 I: 1 
-0  0  0  0  0  0  | 0  5W 1W 0  4W 2W | W Home | E: 0 I: 3 
+[x:9, y:0, r:2][x:2, y:0, r:2]The bot played the piece at coordinates 2 0 with roll 2
+0  0  1B 0  0  0  | 0  1B 0  2B 1B 3B | B Home | E: 0 I: 0 
+2B 0  2W 0  0  2W | 3W 3B 2B 1W 5W 2W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 2B 0  0  0  4B 8B | B Home | E: 0 I: 1 
-0  0  0  0  0  0  | 0  5W 1W 0  4W 2W | W Home | E: 0 I: 3 
+0  0  1B 0  0  0  | 0  1B 0  2B 1B 3B | B Home | E: 0 I: 0 
+2B 0  1W 0  1W 2W | 3W 3B 2B 1W 5W 2W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 39
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [1, 1]
-RandomBot rolled doubles!
-0  0  0  0  0  0  | 2B 0  0  0  4B 8B | B Home | E: 0 I: 1 
-0  0  0  0  0  0  | 0  5W 1W 0  4W 2W | W Home | E: 0 I: 3 
+RandomBot rolled [3, 2]
+0  0  1B 0  0  0  | 0  1B 0  2B 1B 3B | B Home | E: 0 I: 0 
+2B 0  1W 0  1W 2W | 3W 3B 2B 1W 5W 2W | W Home | E: 0 I: 0 
 
-[x:7, y:0, r:1][x:8, y:0, r:1][x:11, y:0, r:1][x:10, y:0, r:1]The bot played the piece at coordinates 11 0 with roll 1
-0  0  0  0  0  0  | 2B 0  0  0  4B 8B | B Home | E: 0 I: 1 
-0  0  0  0  0  0  | 0  5W 1W 0  4W 2W | W Home | E: 0 I: 3 
+[x:2, y:1, r:3][x:9, y:1, r:2][x:0, y:0, r:2][x:7, y:1, r:2][x:0, y:0, r:3][x:7, y:1, r:3][x:2, y:1, r:2][x:7, y:0, r:3]The bot played the piece at coordinates 9 1 with roll 2
+0  0  1B 0  0  0  | 0  1B 0  2B 1B 3B | B Home | E: 0 I: 0 
+2B 0  1W 0  1W 2W | 3W 3B 2B 1W 5W 2W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 2B 0  0  0  4B 8B | B Home | E: 0 I: 1 
-0  0  0  0  0  0  | 0  5W 1W 0  4W 1W | W Home | E: 0 I: 4 
+0  0  1B 0  0  0  | 0  1B 0  1B 1B 4B | B Home | E: 0 I: 0 
+2B 0  1W 0  1W 2W | 3W 3B 2B 1W 5W 2W | W Home | E: 0 I: 0 
 
-[x:10, y:0, r:1][x:8, y:0, r:1][x:11, y:0, r:1][x:7, y:0, r:1]The bot played the piece at coordinates 11 0 with roll 1
-0  0  0  0  0  0  | 2B 0  0  0  4B 8B | B Home | E: 0 I: 1 
-0  0  0  0  0  0  | 0  5W 1W 0  4W 1W | W Home | E: 0 I: 4 
+[x:2, y:1, r:3][x:7, y:0, r:3][x:0, y:0, r:3][x:7, y:1, r:3]The bot played the piece at coordinates 0 0 with roll 3
+0  0  1B 0  0  0  | 0  1B 0  1B 1B 4B | B Home | E: 0 I: 0 
+2B 0  1W 0  1W 2W | 3W 3B 2B 1W 5W 2W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 2B 0  0  0  4B 8B | B Home | E: 0 I: 1 
-0  0  0  0  0  0  | 0  5W 1W 0  4W 0  | W Home | E: 0 I: 5 
-
-[x:7, y:0, r:1][x:8, y:0, r:1][x:10, y:0, r:1]The bot played the piece at coordinates 8 0 with roll 1
-0  0  0  0  0  0  | 2B 0  0  0  4B 8B | B Home | E: 0 I: 1 
-0  0  0  0  0  0  | 0  5W 1W 0  4W 0  | W Home | E: 0 I: 5 
-
-0  0  0  0  0  0  | 2B 0  0  0  4B 8B | B Home | E: 0 I: 1 
-0  0  0  0  0  0  | 0  5W 0  1W 4W 0  | W Home | E: 0 I: 5 
-
-[x:10, y:0, r:1][x:7, y:0, r:1][x:9, y:0, r:1]The bot played the piece at coordinates 7 0 with roll 1
-0  0  0  0  0  0  | 2B 0  0  0  4B 8B | B Home | E: 0 I: 1 
-0  0  0  0  0  0  | 0  5W 0  1W 4W 0  | W Home | E: 0 I: 5 
-
-0  0  0  0  0  0  | 2B 0  0  0  4B 8B | B Home | E: 0 I: 1 
-0  0  0  0  0  0  | 0  4W 1W 1W 4W 0  | W Home | E: 0 I: 5 
+0  0  2B 0  0  0  | 0  1B 0  1B 1B 4B | B Home | E: 0 I: 0 
+1B 0  1W 0  1W 2W | 3W 3B 2B 1W 5W 2W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 40
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [1, 4]
-0  0  0  0  0  0  | 2B 0  0  0  4B 8B | B Home | E: 0 I: 1 
-0  0  0  0  0  0  | 0  4W 1W 1W 4W 0  | W Home | E: 0 I: 5 
+RandomBot rolled [3, 1]
+0  0  2B 0  0  0  | 0  1B 0  1B 1B 4B | B Home | E: 0 I: 0 
+1B 0  1W 0  1W 2W | 3W 3B 2B 1W 5W 2W | W Home | E: 0 I: 0 
 
-[x:6, y:1, r:1][x:10, y:1, r:1][x:6, y:1, r:4][x:11, y:1, r:1]The bot played the piece at coordinates 11 1 with roll 1
-0  0  0  0  0  0  | 2B 0  0  0  4B 8B | B Home | E: 0 I: 1 
-0  0  0  0  0  0  | 0  4W 1W 1W 4W 0  | W Home | E: 0 I: 5 
+[x:2, y:0, r:3][x:9, y:0, r:1][x:5, y:0, r:1][x:4, y:0, r:1][x:2, y:0, r:1][x:6, y:0, r:3][x:10, y:0, r:1]The bot played the piece at coordinates 10 0 with roll 1
+0  0  2B 0  0  0  | 0  1B 0  1B 1B 4B | B Home | E: 0 I: 0 
+1B 0  1W 0  1W 2W | 3W 3B 2B 1W 5W 2W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 2B 0  0  0  4B 7B | B Home | E: 0 I: 2 
-0  0  0  0  0  0  | 0  4W 1W 1W 4W 0  | W Home | E: 0 I: 5 
+0  0  2B 0  0  0  | 0  1B 0  1B 1B 4B | B Home | E: 0 I: 0 
+1B 0  1W 0  1W 2W | 3W 3B 2B 1W 4W 3W | W Home | E: 0 I: 0 
 
-[x:6, y:1, r:4]The bot played the piece at coordinates 6 1 with roll 4
-0  0  0  0  0  0  | 2B 0  0  0  4B 7B | B Home | E: 0 I: 2 
-0  0  0  0  0  0  | 0  4W 1W 1W 4W 0  | W Home | E: 0 I: 5 
+[x:6, y:0, r:3][x:2, y:0, r:3]The bot played the piece at coordinates 6 0 with roll 3
+0  0  2B 0  0  0  | 0  1B 0  1B 1B 4B | B Home | E: 0 I: 0 
+1B 0  1W 0  1W 2W | 3W 3B 2B 1W 4W 3W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 1B 0  0  0  5B 7B | B Home | E: 0 I: 2 
-0  0  0  0  0  0  | 0  4W 1W 1W 4W 0  | W Home | E: 0 I: 5 
+0  0  2B 0  0  0  | 0  1B 0  1B 1B 4B | B Home | E: 0 I: 0 
+1B 0  1W 0  1W 2W | 2W 3B 2B 2W 4W 3W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 41
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [6, 2]
-0  0  0  0  0  0  | 1B 0  0  0  5B 7B | B Home | E: 0 I: 2 
-0  0  0  0  0  0  | 0  4W 1W 1W 4W 0  | W Home | E: 0 I: 5 
+RandomBot rolled [1, 1]
+RandomBot rolled doubles!
+0  0  2B 0  0  0  | 0  1B 0  1B 1B 4B | B Home | E: 0 I: 0 
+1B 0  1W 0  1W 2W | 2W 3B 2B 2W 4W 3W | W Home | E: 0 I: 0 
 
-[x:7, y:0, r:6][x:7, y:0, r:2][x:9, y:0, r:2][x:10, y:0, r:2][x:8, y:0, r:2]The bot played the piece at coordinates 10 0 with roll 2
-0  0  0  0  0  0  | 1B 0  0  0  5B 7B | B Home | E: 0 I: 2 
-0  0  0  0  0  0  | 0  4W 1W 1W 4W 0  | W Home | E: 0 I: 5 
+[x:8, y:0, r:1][x:7, y:1, r:1][x:10, y:1, r:1][x:2, y:1, r:1][x:0, y:0, r:1][x:9, y:1, r:1]The bot played the piece at coordinates 10 1 with roll 1
+0  0  2B 0  0  0  | 0  1B 0  1B 1B 4B | B Home | E: 0 I: 0 
+1B 0  1W 0  1W 2W | 2W 3B 2B 2W 4W 3W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 1B 0  0  0  5B 7B | B Home | E: 0 I: 2 
-0  0  0  0  0  0  | 0  4W 1W 1W 3W 0  | W Home | E: 0 I: 6 
+0  0  2B 0  0  0  | 0  1B 0  1B 0  5B | B Home | E: 0 I: 0 
+1B 0  1W 0  1W 2W | 2W 3B 2B 2W 4W 3W | W Home | E: 0 I: 0 
 
-[x:7, y:0, r:6]The bot played the piece at coordinates 7 0 with roll 6
-0  0  0  0  0  0  | 1B 0  0  0  5B 7B | B Home | E: 0 I: 2 
-0  0  0  0  0  0  | 0  4W 1W 1W 3W 0  | W Home | E: 0 I: 6 
+[x:0, y:0, r:1][x:2, y:1, r:1][x:9, y:1, r:1][x:7, y:1, r:1][x:8, y:0, r:1]The bot played the piece at coordinates 0 0 with roll 1
+0  0  2B 0  0  0  | 0  1B 0  1B 0  5B | B Home | E: 0 I: 0 
+1B 0  1W 0  1W 2W | 2W 3B 2B 2W 4W 3W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 1B 0  0  0  5B 7B | B Home | E: 0 I: 2 
-0  0  0  0  0  0  | 0  3W 1W 1W 3W 0  | W Home | E: 0 I: 7 
+1B 0  2B 0  0  0  | 0  1B 0  1B 0  5B | B Home | E: 0 I: 0 
+0  0  1W 0  1W 2W | 2W 3B 2B 2W 4W 3W | W Home | E: 0 I: 0 
+
+[x:0, y:1, r:1][x:2, y:1, r:1][x:9, y:1, r:1][x:8, y:0, r:1][x:7, y:1, r:1]The bot played the piece at coordinates 9 1 with roll 1
+1B 0  2B 0  0  0  | 0  1B 0  1B 0  5B | B Home | E: 0 I: 0 
+0  0  1W 0  1W 2W | 2W 3B 2B 2W 4W 3W | W Home | E: 0 I: 0 
+
+1B 0  2B 0  0  0  | 0  1B 0  0  1B 5B | B Home | E: 0 I: 0 
+0  0  1W 0  1W 2W | 2W 3B 2B 2W 4W 3W | W Home | E: 0 I: 0 
+
+[x:10, y:1, r:1][x:2, y:1, r:1][x:0, y:1, r:1][x:7, y:1, r:1][x:8, y:0, r:1]The bot played the piece at coordinates 7 1 with roll 1
+1B 0  2B 0  0  0  | 0  1B 0  0  1B 5B | B Home | E: 0 I: 0 
+0  0  1W 0  1W 2W | 2W 3B 2B 2W 4W 3W | W Home | E: 0 I: 0 
+
+1B 0  2B 0  0  0  | 0  0  1B 0  1B 5B | B Home | E: 0 I: 0 
+0  0  1W 0  1W 2W | 2W 3B 2B 2W 4W 3W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 42
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [4, 5]
-0  0  0  0  0  0  | 1B 0  0  0  5B 7B | B Home | E: 0 I: 2 
-0  0  0  0  0  0  | 0  3W 1W 1W 3W 0  | W Home | E: 0 I: 7 
+RandomBot rolled [3, 1]
+1B 0  2B 0  0  0  | 0  0  1B 0  1B 5B | B Home | E: 0 I: 0 
+0  0  1W 0  1W 2W | 2W 3B 2B 2W 4W 3W | W Home | E: 0 I: 0 
 
-[x:6, y:1, r:4][x:6, y:1, r:5]The bot played the piece at coordinates 6 1 with roll 4
-0  0  0  0  0  0  | 1B 0  0  0  5B 7B | B Home | E: 0 I: 2 
-0  0  0  0  0  0  | 0  3W 1W 1W 3W 0  | W Home | E: 0 I: 7 
+[x:2, y:0, r:1][x:5, y:0, r:1][x:4, y:0, r:1][x:10, y:0, r:1][x:9, y:0, r:1][x:2, y:0, r:3][x:6, y:0, r:3]The bot played the piece at coordinates 4 0 with roll 1
+1B 0  2B 0  0  0  | 0  0  1B 0  1B 5B | B Home | E: 0 I: 0 
+0  0  1W 0  1W 2W | 2W 3B 2B 2W 4W 3W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 0  0  0  0  6B 7B | B Home | E: 0 I: 2 
-0  0  0  0  0  0  | 0  3W 1W 1W 3W 0  | W Home | E: 0 I: 7 
+1B 0  2B 0  0  0  | 0  0  1B 0  1B 5B | B Home | E: 0 I: 0 
+0  0  1W 0  0  3W | 2W 3B 2B 2W 4W 3W | W Home | E: 0 I: 0 
 
-[x:10, y:1, r:5]The bot played the piece at coordinates 10 1 with roll 5
-0  0  0  0  0  0  | 0  0  0  0  6B 7B | B Home | E: 0 I: 2 
-0  0  0  0  0  0  | 0  3W 1W 1W 3W 0  | W Home | E: 0 I: 7 
+[x:2, y:0, r:3][x:6, y:0, r:3]The bot played the piece at coordinates 2 0 with roll 3
+1B 0  2B 0  0  0  | 0  0  1B 0  1B 5B | B Home | E: 0 I: 0 
+0  0  1W 0  0  3W | 2W 3B 2B 2W 4W 3W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 0  0  0  0  5B 7B | B Home | E: 0 I: 3 
-0  0  0  0  0  0  | 0  3W 1W 1W 3W 0  | W Home | E: 0 I: 7 
+1B 0  2B 0  0  0  | 0  0  1B 0  1B 5B | B Home | E: 0 I: 0 
+0  0  0  0  0  4W | 2W 3B 2B 2W 4W 3W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 43
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [6, 4]
-0  0  0  0  0  0  | 0  0  0  0  5B 7B | B Home | E: 0 I: 3 
-0  0  0  0  0  0  | 0  3W 1W 1W 3W 0  | W Home | E: 0 I: 7 
+RandomBot rolled [5, 3]
+1B 0  2B 0  0  0  | 0  0  1B 0  1B 5B | B Home | E: 0 I: 0 
+0  0  0  0  0  4W | 2W 3B 2B 2W 4W 3W | W Home | E: 0 I: 0 
 
-[x:7, y:0, r:4][x:7, y:0, r:6][x:8, y:0, r:4]The bot played the piece at coordinates 7 0 with roll 4
-0  0  0  0  0  0  | 0  0  0  0  5B 7B | B Home | E: 0 I: 3 
-0  0  0  0  0  0  | 0  3W 1W 1W 3W 0  | W Home | E: 0 I: 7 
+[x:7, y:0, r:3][x:2, y:1, r:3][x:7, y:0, r:5][x:0, y:1, r:5][x:8, y:1, r:3][x:8, y:0, r:5][x:0, y:1, r:3][x:2, y:1, r:5]The bot played the piece at coordinates 7 0 with roll 5
+1B 0  2B 0  0  0  | 0  0  1B 0  1B 5B | B Home | E: 0 I: 0 
+0  0  0  0  0  4W | 2W 3B 2B 2W 4W 3W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 0  0  0  0  5B 7B | B Home | E: 0 I: 3 
-0  0  0  0  0  0  | 0  2W 1W 1W 3W 1W | W Home | E: 0 I: 7 
+1B 0  2B 0  0  0  | 0  0  1B 0  1B 5B | B Home | E: 0 I: 0 
+0  0  1B 0  0  4W | 2W 2B 2B 2W 4W 3W | W Home | E: 0 I: 0 
 
-[x:7, y:0, r:6]The bot played the piece at coordinates 7 0 with roll 6
-0  0  0  0  0  0  | 0  0  0  0  5B 7B | B Home | E: 0 I: 3 
-0  0  0  0  0  0  | 0  2W 1W 1W 3W 1W | W Home | E: 0 I: 7 
+[x:2, y:1, r:3][x:8, y:1, r:3][x:2, y:0, r:3][x:7, y:0, r:3][x:0, y:1, r:3]The bot played the piece at coordinates 8 1 with roll 3
+1B 0  2B 0  0  0  | 0  0  1B 0  1B 5B | B Home | E: 0 I: 0 
+0  0  1B 0  0  4W | 2W 2B 2B 2W 4W 3W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 0  0  0  0  5B 7B | B Home | E: 0 I: 3 
-0  0  0  0  0  0  | 0  1W 1W 1W 3W 1W | W Home | E: 0 I: 8 
+1B 0  2B 0  0  0  | 0  0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  1B 0  0  4W | 2W 2B 2B 2W 4W 3W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 44
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [4, 4]
-RandomBot rolled doubles!
-0  0  0  0  0  0  | 0  0  0  0  5B 7B | B Home | E: 0 I: 3 
-0  0  0  0  0  0  | 0  1W 1W 1W 3W 1W | W Home | E: 0 I: 8 
+RandomBot rolled [2, 1]
+1B 0  2B 0  0  0  | 0  0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  1B 0  0  4W | 2W 2B 2B 2W 4W 3W | W Home | E: 0 I: 0 
 
-[x:10, y:1, r:4]The bot played the piece at coordinates 10 1 with roll 4
-0  0  0  0  0  0  | 0  0  0  0  5B 7B | B Home | E: 0 I: 3 
-0  0  0  0  0  0  | 0  1W 1W 1W 3W 1W | W Home | E: 0 I: 8 
+[x:5, y:0, r:1][x:9, y:0, r:1][x:9, y:0, r:2][x:10, y:0, r:1]The bot played the piece at coordinates 9 0 with roll 1
+1B 0  2B 0  0  0  | 0  0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  1B 0  0  4W | 2W 2B 2B 2W 4W 3W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 0  0  0  0  4B 7B | B Home | E: 0 I: 4 
-0  0  0  0  0  0  | 0  1W 1W 1W 3W 1W | W Home | E: 0 I: 8 
+1B 0  2B 0  0  0  | 0  0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  1B 0  0  4W | 2W 2B 2B 1W 5W 3W | W Home | E: 0 I: 0 
 
-[x:10, y:1, r:4]The bot played the piece at coordinates 10 1 with roll 4
-0  0  0  0  0  0  | 0  0  0  0  4B 7B | B Home | E: 0 I: 4 
-0  0  0  0  0  0  | 0  1W 1W 1W 3W 1W | W Home | E: 0 I: 8 
+[x:9, y:0, r:2]The bot played the piece at coordinates 9 0 with roll 2
+1B 0  2B 0  0  0  | 0  0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  1B 0  0  4W | 2W 2B 2B 1W 5W 3W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 0  0  0  0  3B 7B | B Home | E: 0 I: 5 
-0  0  0  0  0  0  | 0  1W 1W 1W 3W 1W | W Home | E: 0 I: 8 
-
-[x:10, y:1, r:4]The bot played the piece at coordinates 10 1 with roll 4
-0  0  0  0  0  0  | 0  0  0  0  3B 7B | B Home | E: 0 I: 5 
-0  0  0  0  0  0  | 0  1W 1W 1W 3W 1W | W Home | E: 0 I: 8 
-
-0  0  0  0  0  0  | 0  0  0  0  2B 7B | B Home | E: 0 I: 6 
-0  0  0  0  0  0  | 0  1W 1W 1W 3W 1W | W Home | E: 0 I: 8 
-
-[x:10, y:1, r:4]The bot played the piece at coordinates 10 1 with roll 4
-0  0  0  0  0  0  | 0  0  0  0  2B 7B | B Home | E: 0 I: 6 
-0  0  0  0  0  0  | 0  1W 1W 1W 3W 1W | W Home | E: 0 I: 8 
-
-0  0  0  0  0  0  | 0  0  0  0  1B 7B | B Home | E: 0 I: 7 
-0  0  0  0  0  0  | 0  1W 1W 1W 3W 1W | W Home | E: 0 I: 8 
+1B 0  2B 0  0  0  | 0  0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  1B 0  0  4W | 2W 2B 2B 0  5W 4W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 45
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [1, 2]
-0  0  0  0  0  0  | 0  0  0  0  1B 7B | B Home | E: 0 I: 7 
-0  0  0  0  0  0  | 0  1W 1W 1W 3W 1W | W Home | E: 0 I: 8 
+RandomBot rolled [1, 5]
+1B 0  2B 0  0  0  | 0  0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  1B 0  0  4W | 2W 2B 2B 0  5W 4W | W Home | E: 0 I: 0 
 
-[x:9, y:0, r:1][x:10, y:0, r:2][x:11, y:0, r:1][x:8, y:0, r:2][x:10, y:0, r:1][x:7, y:0, r:2][x:7, y:0, r:1][x:8, y:0, r:1][x:9, y:0, r:2]The bot played the piece at coordinates 7 0 with roll 1
-0  0  0  0  0  0  | 0  0  0  0  1B 7B | B Home | E: 0 I: 7 
-0  0  0  0  0  0  | 0  1W 1W 1W 3W 1W | W Home | E: 0 I: 8 
+[x:0, y:1, r:1][x:7, y:0, r:5][x:8, y:0, r:5][x:2, y:1, r:1][x:0, y:1, r:5][x:2, y:0, r:5][x:8, y:0, r:1][x:10, y:1, r:1][x:2, y:1, r:5][x:2, y:0, r:1]The bot played the piece at coordinates 2 0 with roll 5
+1B 0  2B 0  0  0  | 0  0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  1B 0  0  4W | 2W 2B 2B 0  5W 4W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 0  0  0  0  1B 7B | B Home | E: 0 I: 7 
-0  0  0  0  0  0  | 0  0  2W 1W 3W 1W | W Home | E: 0 I: 8 
+1B 0  3B 0  0  0  | 0  0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  0  0  0  4W | 2W 2B 2B 0  5W 4W | W Home | E: 0 I: 0 
 
-[x:8, y:0, r:2][x:10, y:0, r:2][x:9, y:0, r:2]The bot played the piece at coordinates 9 0 with roll 2
-0  0  0  0  0  0  | 0  0  0  0  1B 7B | B Home | E: 0 I: 7 
-0  0  0  0  0  0  | 0  0  2W 1W 3W 1W | W Home | E: 0 I: 8 
+[x:8, y:0, r:1][x:10, y:1, r:1][x:0, y:1, r:1][x:2, y:1, r:1]The bot played the piece at coordinates 0 1 with roll 1
+1B 0  3B 0  0  0  | 0  0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  0  0  0  4W | 2W 2B 2B 0  5W 4W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 0  0  0  0  1B 7B | B Home | E: 0 I: 7 
-0  0  0  0  0  0  | 0  0  2W 0  3W 2W | W Home | E: 0 I: 8 
+0  1B 3B 0  0  0  | 0  0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  0  0  0  4W | 2W 2B 2B 0  5W 4W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 46
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [6, 6]
-RandomBot rolled doubles!
-0  0  0  0  0  0  | 0  0  0  0  1B 7B | B Home | E: 0 I: 7 
-0  0  0  0  0  0  | 0  0  2W 0  3W 2W | W Home | E: 0 I: 8 
+RandomBot rolled [5, 4]
+0  1B 3B 0  0  0  | 0  0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  0  0  0  4W | 2W 2B 2B 0  5W 4W | W Home | E: 0 I: 0 
 
-[x:10, y:1, r:6]The bot played the piece at coordinates 10 1 with roll 6
-0  0  0  0  0  0  | 0  0  0  0  1B 7B | B Home | E: 0 I: 7 
-0  0  0  0  0  0  | 0  0  2W 0  3W 2W | W Home | E: 0 I: 8 
+[x:6, y:0, r:4][x:6, y:0, r:5][x:5, y:0, r:5][x:5, y:0, r:4]The bot played the piece at coordinates 6 0 with roll 4
+0  1B 3B 0  0  0  | 0  0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  0  0  0  4W | 2W 2B 2B 0  5W 4W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 0  0  0  0  0  7B | B Home | E: 0 I: 8 
-0  0  0  0  0  0  | 0  0  2W 0  3W 2W | W Home | E: 0 I: 8 
+0  1B 3B 0  0  0  | 0  0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  0  0  0  4W | 1W 2B 2B 0  6W 4W | W Home | E: 0 I: 0 
 
-[x:11, y:1, r:6]The bot played the piece at coordinates 11 1 with roll 6
-0  0  0  0  0  0  | 0  0  0  0  0  7B | B Home | E: 0 I: 8 
-0  0  0  0  0  0  | 0  0  2W 0  3W 2W | W Home | E: 0 I: 8 
+[x:5, y:0, r:5][x:6, y:0, r:5]The bot played the piece at coordinates 5 0 with roll 5
+0  1B 3B 0  0  0  | 0  0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  0  0  0  4W | 1W 2B 2B 0  6W 4W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 0  0  0  0  0  6B | B Home | E: 0 I: 9 
-0  0  0  0  0  0  | 0  0  2W 0  3W 2W | W Home | E: 0 I: 8 
-
-[x:11, y:1, r:6]The bot played the piece at coordinates 11 1 with roll 6
-0  0  0  0  0  0  | 0  0  0  0  0  6B | B Home | E: 0 I: 9 
-0  0  0  0  0  0  | 0  0  2W 0  3W 2W | W Home | E: 0 I: 8 
-
-0  0  0  0  0  0  | 0  0  0  0  0  5B | B Home | E: 0 I: 10 
-0  0  0  0  0  0  | 0  0  2W 0  3W 2W | W Home | E: 0 I: 8 
-
-[x:11, y:1, r:6]The bot played the piece at coordinates 11 1 with roll 6
-0  0  0  0  0  0  | 0  0  0  0  0  5B | B Home | E: 0 I: 10 
-0  0  0  0  0  0  | 0  0  2W 0  3W 2W | W Home | E: 0 I: 8 
-
-0  0  0  0  0  0  | 0  0  0  0  0  4B | B Home | E: 0 I: 11 
-0  0  0  0  0  0  | 0  0  2W 0  3W 2W | W Home | E: 0 I: 8 
+0  1B 3B 0  0  0  | 0  0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  0  0  0  3W | 1W 2B 2B 0  7W 4W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 47
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [5, 5]
-RandomBot rolled doubles!
-0  0  0  0  0  0  | 0  0  0  0  0  4B | B Home | E: 0 I: 11 
-0  0  0  0  0  0  | 0  0  2W 0  3W 2W | W Home | E: 0 I: 8 
+RandomBot rolled [3, 4]
+0  1B 3B 0  0  0  | 0  0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  0  0  0  3W | 1W 2B 2B 0  7W 4W | W Home | E: 0 I: 0 
 
-[x:8, y:0, r:5]The bot played the piece at coordinates 8 0 with roll 5
-0  0  0  0  0  0  | 0  0  0  0  0  4B | B Home | E: 0 I: 11 
-0  0  0  0  0  0  | 0  0  2W 0  3W 2W | W Home | E: 0 I: 8 
+[x:1, y:1, r:3][x:2, y:1, r:4][x:7, y:0, r:4][x:2, y:1, r:3][x:7, y:0, r:3][x:1, y:1, r:4][x:8, y:0, r:4]The bot played the piece at coordinates 2 1 with roll 3
+0  1B 3B 0  0  0  | 0  0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  0  0  0  3W | 1W 2B 2B 0  7W 4W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 0  0  0  0  0  4B | B Home | E: 0 I: 11 
-0  0  0  0  0  0  | 0  0  1W 0  3W 2W | W Home | E: 0 I: 9 
+0  1B 2B 0  0  1B | 0  0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  0  0  0  3W | 1W 2B 2B 0  7W 4W | W Home | E: 0 I: 0 
 
-[x:8, y:0, r:5]The bot played the piece at coordinates 8 0 with roll 5
-0  0  0  0  0  0  | 0  0  0  0  0  4B | B Home | E: 0 I: 11 
-0  0  0  0  0  0  | 0  0  1W 0  3W 2W | W Home | E: 0 I: 9 
+[x:8, y:0, r:4][x:2, y:1, r:4][x:5, y:1, r:4][x:7, y:0, r:4][x:1, y:1, r:4]The bot played the piece at coordinates 2 1 with roll 4
+0  1B 2B 0  0  1B | 0  0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  0  0  0  3W | 1W 2B 2B 0  7W 4W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 0  0  0  0  0  4B | B Home | E: 0 I: 11 
-0  0  0  0  0  0  | 0  0  0  0  3W 2W | W Home | E: 0 I: 10 
-
-[x:10, y:0, r:5]The bot played the piece at coordinates 10 0 with roll 5
-0  0  0  0  0  0  | 0  0  0  0  0  4B | B Home | E: 0 I: 11 
-0  0  0  0  0  0  | 0  0  0  0  3W 2W | W Home | E: 0 I: 10 
-
-0  0  0  0  0  0  | 0  0  0  0  0  4B | B Home | E: 0 I: 11 
-0  0  0  0  0  0  | 0  0  0  0  2W 2W | W Home | E: 0 I: 11 
-
-[x:10, y:0, r:5]The bot played the piece at coordinates 10 0 with roll 5
-0  0  0  0  0  0  | 0  0  0  0  0  4B | B Home | E: 0 I: 11 
-0  0  0  0  0  0  | 0  0  0  0  2W 2W | W Home | E: 0 I: 11 
-
-0  0  0  0  0  0  | 0  0  0  0  0  4B | B Home | E: 0 I: 11 
-0  0  0  0  0  0  | 0  0  0  0  1W 2W | W Home | E: 0 I: 12 
+0  1B 1B 0  0  1B | 1B 0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  0  0  0  3W | 1W 2B 2B 0  7W 4W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 48
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [1, 2]
-0  0  0  0  0  0  | 0  0  0  0  0  4B | B Home | E: 0 I: 11 
-0  0  0  0  0  0  | 0  0  0  0  1W 2W | W Home | E: 0 I: 12 
+RandomBot rolled [2, 3]
+0  1B 1B 0  0  1B | 1B 0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  0  0  0  3W | 1W 2B 2B 0  7W 4W | W Home | E: 0 I: 0 
 
-[x:11, y:1, r:2][x:11, y:1, r:1]The bot played the piece at coordinates 11 1 with roll 1
-0  0  0  0  0  0  | 0  0  0  0  0  4B | B Home | E: 0 I: 11 
-0  0  0  0  0  0  | 0  0  0  0  1W 2W | W Home | E: 0 I: 12 
+[x:6, y:0, r:3]The bot played the piece at coordinates 6 0 with roll 3
+0  1B 1B 0  0  1B | 1B 0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  0  0  0  3W | 1W 2B 2B 0  7W 4W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 0  0  0  0  0  3B | B Home | E: 0 I: 12 
-0  0  0  0  0  0  | 0  0  0  0  1W 2W | W Home | E: 0 I: 12 
+0  1B 1B 0  0  1B | 1B 0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  0  0  0  3W | 0  2B 2B 1W 7W 4W | W Home | E: 0 I: 0 
 
-[x:11, y:1, r:2]The bot played the piece at coordinates 11 1 with roll 2
-0  0  0  0  0  0  | 0  0  0  0  0  3B | B Home | E: 0 I: 12 
-0  0  0  0  0  0  | 0  0  0  0  1W 2W | W Home | E: 0 I: 12 
+[x:9, y:0, r:2]The bot played the piece at coordinates 9 0 with roll 2
+0  1B 1B 0  0  1B | 1B 0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  0  0  0  3W | 0  2B 2B 1W 7W 4W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 0  0  0  0  0  2B | B Home | E: 0 I: 13 
-0  0  0  0  0  0  | 0  0  0  0  1W 2W | W Home | E: 0 I: 12 
+0  1B 1B 0  0  1B | 1B 0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  0  0  0  3W | 0  2B 2B 0  7W 5W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 49
 ---------------------------------------
 It is RandomBot's your turn.
-RandomBot rolled [2, 6]
-0  0  0  0  0  0  | 0  0  0  0  0  2B | B Home | E: 0 I: 13 
-0  0  0  0  0  0  | 0  0  0  0  1W 2W | W Home | E: 0 I: 12 
+RandomBot rolled [5, 4]
+0  1B 1B 0  0  1B | 1B 0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  0  0  0  3W | 0  2B 2B 0  7W 5W | W Home | E: 0 I: 0 
 
-[x:10, y:0, r:2][x:10, y:0, r:6]The bot played the piece at coordinates 10 0 with roll 6
-0  0  0  0  0  0  | 0  0  0  0  0  2B | B Home | E: 0 I: 13 
-0  0  0  0  0  0  | 0  0  0  0  1W 2W | W Home | E: 0 I: 12 
+[x:5, y:1, r:5][x:5, y:1, r:4][x:2, y:1, r:5][x:8, y:0, r:5][x:8, y:0, r:4][x:6, y:1, r:5][x:7, y:0, r:4][x:7, y:0, r:5][x:6, y:1, r:4][x:1, y:1, r:5][x:1, y:1, r:4][x:2, y:1, r:4]The bot played the piece at coordinates 8 0 with roll 5
+0  1B 1B 0  0  1B | 1B 0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  0  0  0  3W | 0  2B 2B 0  7W 5W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 0  0  0  0  0  2B | B Home | E: 0 I: 13 
-0  0  0  0  0  0  | 0  0  0  0  0  2W | W Home | E: 0 I: 13 
+0  1B 1B 0  0  1B | 1B 0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  0  1B 0  3W | 0  2B 1B 0  7W 5W | W Home | E: 0 I: 0 
 
-[x:11, y:0, r:2]The bot played the piece at coordinates 11 0 with roll 2
-0  0  0  0  0  0  | 0  0  0  0  0  2B | B Home | E: 0 I: 13 
-0  0  0  0  0  0  | 0  0  0  0  0  2W | W Home | E: 0 I: 13 
+[x:3, y:0, r:4][x:6, y:1, r:4][x:1, y:1, r:4][x:8, y:0, r:4][x:5, y:1, r:4][x:2, y:1, r:4][x:7, y:0, r:4]The bot played the piece at coordinates 6 1 with roll 4
+0  1B 1B 0  0  1B | 1B 0  0  0  1B 6B | B Home | E: 0 I: 0 
+0  0  0  1B 0  3W | 0  2B 1B 0  7W 5W | W Home | E: 0 I: 0 
 
-0  0  0  0  0  0  | 0  0  0  0  0  2B | B Home | E: 0 I: 13 
-0  0  0  0  0  0  | 0  0  0  0  0  1W | W Home | E: 0 I: 14 
+0  1B 1B 0  0  1B | 0  0  0  0  2B 6B | B Home | E: 0 I: 0 
+0  0  0  1B 0  3W | 0  2B 1B 0  7W 5W | W Home | E: 0 I: 0 
 
 ---------------------------------------
               TURN 50
 ---------------------------------------
 It is RandomBot's your turn.
+RandomBot rolled [5, 4]
+0  1B 1B 0  0  1B | 0  0  0  0  2B 6B | B Home | E: 0 I: 0 
+0  0  0  1B 0  3W | 0  2B 1B 0  7W 5W | W Home | E: 0 I: 0 
+
+[x:5, y:0, r:4][x:5, y:0, r:5]The bot played the piece at coordinates 5 0 with roll 5
+0  1B 1B 0  0  1B | 0  0  0  0  2B 6B | B Home | E: 0 I: 0 
+0  0  0  1B 0  3W | 0  2B 1B 0  7W 5W | W Home | E: 0 I: 0 
+
+0  1B 1B 0  0  1B | 0  0  0  0  2B 6B | B Home | E: 0 I: 0 
+0  0  0  1B 0  2W | 0  2B 1B 0  8W 5W | W Home | E: 0 I: 0 
+
+[x:5, y:0, r:4]The bot played the piece at coordinates 5 0 with roll 4
+0  1B 1B 0  0  1B | 0  0  0  0  2B 6B | B Home | E: 0 I: 0 
+0  0  0  1B 0  2W | 0  2B 1B 0  8W 5W | W Home | E: 0 I: 0 
+
+0  1B 1B 0  0  1B | 0  0  0  0  2B 6B | B Home | E: 0 I: 0 
+0  0  0  1B 0  1W | 0  2B 1B 1W 8W 5W | W Home | E: 0 I: 0 
+
+---------------------------------------
+              TURN 51
+---------------------------------------
+It is RandomBot's your turn.
+RandomBot rolled [3, 4]
+0  1B 1B 0  0  1B | 0  0  0  0  2B 6B | B Home | E: 0 I: 0 
+0  0  0  1B 0  1W | 0  2B 1B 1W 8W 5W | W Home | E: 0 I: 0 
+
+[x:7, y:0, r:4][x:8, y:0, r:3][x:5, y:1, r:4][x:5, y:1, r:3][x:1, y:1, r:3][x:2, y:1, r:3][x:2, y:1, r:4][x:7, y:0, r:3][x:3, y:0, r:4][x:1, y:1, r:4][x:3, y:0, r:3][x:8, y:0, r:4]The bot played the piece at coordinates 3 0 with roll 4
+0  1B 1B 0  0  1B | 0  0  0  0  2B 6B | B Home | E: 0 I: 0 
+0  0  0  1B 0  1W | 0  2B 1B 1W 8W 5W | W Home | E: 0 I: 0 
+
+1B 1B 1B 0  0  1B | 0  0  0  0  2B 6B | B Home | E: 0 I: 0 
+0  0  0  0  0  1W | 0  2B 1B 1W 8W 5W | W Home | E: 0 I: 0 
+
+[x:2, y:1, r:3][x:0, y:1, r:3][x:7, y:0, r:3][x:8, y:0, r:3][x:5, y:1, r:3][x:1, y:1, r:3]The bot played the piece at coordinates 7 0 with roll 3
+1B 1B 1B 0  0  1B | 0  0  0  0  2B 6B | B Home | E: 0 I: 0 
+0  0  0  0  0  1W | 0  2B 1B 1W 8W 5W | W Home | E: 0 I: 0 
+
+1B 1B 1B 0  0  1B | 0  0  0  0  2B 6B | B Home | E: 0 I: 0 
+0  0  0  0  1B 1W | 0  1B 1B 1W 8W 5W | W Home | E: 0 I: 0 
+
+---------------------------------------
+              TURN 52
+---------------------------------------
+It is RandomBot's your turn.
+RandomBot rolled [1, 4]
+1B 1B 1B 0  0  1B | 0  0  0  0  2B 6B | B Home | E: 0 I: 0 
+0  0  0  0  1B 1W | 0  1B 1B 1W 8W 5W | W Home | E: 0 I: 0 
+
+[x:5, y:0, r:1][x:10, y:0, r:1][x:5, y:0, r:4][x:9, y:0, r:1]The bot played the piece at coordinates 5 0 with roll 1
+1B 1B 1B 0  0  1B | 0  0  0  0  2B 6B | B Home | E: 0 I: 0 
+0  0  0  0  1B 1W | 0  1B 1B 1W 8W 5W | W Home | E: 0 I: 0 
+
+1B 1B 1B 0  0  1B | 0  0  0  0  2B 6B | B Home | E: 0 I: 0 
+0  0  0  0  1B 0  | 1W 1B 1B 1W 8W 5W | W Home | E: 0 I: 0 
+
+[x:6, y:0, r:4]The bot played the piece at coordinates 6 0 with roll 4
+1B 1B 1B 0  0  1B | 0  0  0  0  2B 6B | B Home | E: 0 I: 0 
+0  0  0  0  1B 0  | 1W 1B 1B 1W 8W 5W | W Home | E: 0 I: 0 
+
+1B 1B 1B 0  0  1B | 0  0  0  0  2B 6B | B Home | E: 0 I: 0 
+0  0  0  0  1B 0  | 0  1B 1B 1W 9W 5W | W Home | E: 0 I: 0 
+
+---------------------------------------
+              TURN 53
+---------------------------------------
+It is RandomBot's your turn.
+RandomBot rolled [6, 1]
+1B 1B 1B 0  0  1B | 0  0  0  0  2B 6B | B Home | E: 0 I: 0 
+0  0  0  0  1B 0  | 0  1B 1B 1W 9W 5W | W Home | E: 0 I: 0 
+
+[x:1, y:1, r:6][x:10, y:1, r:1][x:0, y:1, r:1][x:5, y:1, r:6][x:1, y:1, r:1][x:8, y:0, r:1][x:2, y:1, r:1][x:8, y:0, r:6][x:4, y:0, r:1][x:2, y:1, r:6][x:7, y:0, r:6][x:7, y:0, r:1][x:5, y:1, r:1][x:0, y:1, r:6][x:4, y:0, r:6]The bot played the piece at coordinates 10 1 with roll 1
+1B 1B 1B 0  0  1B | 0  0  0  0  2B 6B | B Home | E: 0 I: 0 
+0  0  0  0  1B 0  | 0  1B 1B 1W 9W 5W | W Home | E: 0 I: 0 
+
+1B 1B 1B 0  0  1B | 0  0  0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  0  0  1B 0  | 0  1B 1B 1W 9W 5W | W Home | E: 0 I: 0 
+
+[x:1, y:1, r:6][x:0, y:1, r:6][x:7, y:0, r:6][x:8, y:0, r:6][x:4, y:0, r:6][x:2, y:1, r:6][x:5, y:1, r:6]The bot played the piece at coordinates 1 1 with roll 6
+1B 1B 1B 0  0  1B | 0  0  0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  0  0  1B 0  | 0  1B 1B 1W 9W 5W | W Home | E: 0 I: 0 
+
+1B 0  1B 0  0  1B | 0  1B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  0  0  1B 0  | 0  1B 1B 1W 9W 5W | W Home | E: 0 I: 0 
+
+---------------------------------------
+              TURN 54
+---------------------------------------
+It is RandomBot's your turn.
+RandomBot rolled [2, 5]
+1B 0  1B 0  0  1B | 0  1B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  0  0  1B 0  | 0  1B 1B 1W 9W 5W | W Home | E: 0 I: 0 
+
+[x:9, y:0, r:5][x:10, y:0, r:2][x:9, y:0, r:2]The bot played the piece at coordinates 9 0 with roll 5
+1B 0  1B 0  0  1B | 0  1B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  0  0  1B 0  | 0  1B 1B 1W 9W 5W | W Home | E: 0 I: 0 
+
+1B 0  1B 0  0  1B | 0  1B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  0  0  1B 0  | 0  1B 1B 0  9W 5W | W Home | E: 0 I: 1 
+
+[x:10, y:0, r:2]The bot played the piece at coordinates 10 0 with roll 2
+1B 0  1B 0  0  1B | 0  1B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  0  0  1B 0  | 0  1B 1B 0  9W 5W | W Home | E: 0 I: 1 
+
+1B 0  1B 0  0  1B | 0  1B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  0  0  1B 0  | 0  1B 1B 0  8W 5W | W Home | E: 0 I: 2 
+
+---------------------------------------
+              TURN 55
+---------------------------------------
+It is RandomBot's your turn.
+RandomBot rolled [3, 3]
+RandomBot rolled doubles!
+1B 0  1B 0  0  1B | 0  1B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  0  0  1B 0  | 0  1B 1B 0  8W 5W | W Home | E: 0 I: 2 
+
+[x:8, y:0, r:3][x:7, y:0, r:3][x:4, y:0, r:3][x:5, y:1, r:3][x:0, y:1, r:3][x:2, y:1, r:3][x:7, y:1, r:3]The bot played the piece at coordinates 7 0 with roll 3
+1B 0  1B 0  0  1B | 0  1B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  0  0  1B 0  | 0  1B 1B 0  8W 5W | W Home | E: 0 I: 2 
+
+1B 0  1B 0  0  1B | 0  1B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  0  0  2B 0  | 0  0  1B 0  8W 5W | W Home | E: 0 I: 2 
+
+[x:4, y:0, r:3][x:8, y:0, r:3][x:5, y:1, r:3][x:0, y:1, r:3][x:7, y:1, r:3][x:2, y:1, r:3]The bot played the piece at coordinates 2 1 with roll 3
+1B 0  1B 0  0  1B | 0  1B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  0  0  2B 0  | 0  0  1B 0  8W 5W | W Home | E: 0 I: 2 
+
+1B 0  0  0  0  2B | 0  1B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  0  0  2B 0  | 0  0  1B 0  8W 5W | W Home | E: 0 I: 2 
+
+[x:5, y:1, r:3][x:4, y:0, r:3][x:0, y:1, r:3][x:8, y:0, r:3][x:7, y:1, r:3]The bot played the piece at coordinates 8 0 with roll 3
+1B 0  0  0  0  2B | 0  1B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  0  0  2B 0  | 0  0  1B 0  8W 5W | W Home | E: 0 I: 2 
+
+1B 0  0  0  0  2B | 0  1B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  0  0  2B 1B | 0  0  0  0  8W 5W | W Home | E: 0 I: 2 
+
+[x:4, y:0, r:3][x:5, y:1, r:3][x:7, y:1, r:3][x:0, y:1, r:3][x:5, y:0, r:3]The bot played the piece at coordinates 5 0 with roll 3
+1B 0  0  0  0  2B | 0  1B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  0  0  2B 1B | 0  0  0  0  8W 5W | W Home | E: 0 I: 2 
+
+1B 0  0  0  0  2B | 0  1B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  1B 0  2B 0  | 0  0  0  0  8W 5W | W Home | E: 0 I: 2 
+
+---------------------------------------
+              TURN 56
+---------------------------------------
+It is RandomBot's your turn.
+RandomBot rolled [1, 3]
+1B 0  0  0  0  2B | 0  1B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  1B 0  2B 0  | 0  0  0  0  8W 5W | W Home | E: 0 I: 2 
+
+[x:11, y:0, r:1][x:10, y:0, r:1][x:10, y:0, r:3]The bot played the piece at coordinates 10 0 with roll 3
+1B 0  0  0  0  2B | 0  1B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  1B 0  2B 0  | 0  0  0  0  8W 5W | W Home | E: 0 I: 2 
+
+1B 0  0  0  0  2B | 0  1B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  1B 0  2B 0  | 0  0  0  0  7W 5W | W Home | E: 0 I: 3 
+
+[x:11, y:0, r:1][x:10, y:0, r:1]The bot played the piece at coordinates 11 0 with roll 1
+1B 0  0  0  0  2B | 0  1B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  1B 0  2B 0  | 0  0  0  0  7W 5W | W Home | E: 0 I: 3 
+
+1B 0  0  0  0  2B | 0  1B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  1B 0  2B 0  | 0  0  0  0  7W 4W | W Home | E: 0 I: 4 
+
+---------------------------------------
+              TURN 57
+---------------------------------------
+It is RandomBot's your turn.
+RandomBot rolled [1, 6]
+1B 0  0  0  0  2B | 0  1B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  1B 0  2B 0  | 0  0  0  0  7W 4W | W Home | E: 0 I: 4 
+
+[x:0, y:1, r:6][x:4, y:0, r:6][x:5, y:1, r:1][x:2, y:0, r:6][x:10, y:1, r:1][x:0, y:1, r:1][x:7, y:1, r:1][x:2, y:0, r:1][x:5, y:1, r:6][x:4, y:0, r:1]The bot played the piece at coordinates 0 1 with roll 6
+1B 0  0  0  0  2B | 0  1B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  1B 0  2B 0  | 0  0  0  0  7W 4W | W Home | E: 0 I: 4 
+
+0  0  0  0  0  2B | 1B 1B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  1B 0  2B 0  | 0  0  0  0  7W 4W | W Home | E: 0 I: 4 
+
+[x:2, y:0, r:1][x:4, y:0, r:1][x:6, y:1, r:1][x:7, y:1, r:1][x:10, y:1, r:1][x:5, y:1, r:1]The bot played the piece at coordinates 6 1 with roll 1
+0  0  0  0  0  2B | 1B 1B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  1B 0  2B 0  | 0  0  0  0  7W 4W | W Home | E: 0 I: 4 
+
+0  0  0  0  0  2B | 0  2B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  1B 0  2B 0  | 0  0  0  0  7W 4W | W Home | E: 0 I: 4 
+
+---------------------------------------
+              TURN 58
+---------------------------------------
+It is RandomBot's your turn.
+RandomBot rolled [3, 1]
+0  0  0  0  0  2B | 0  2B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  1B 0  2B 0  | 0  0  0  0  7W 4W | W Home | E: 0 I: 4 
+
+[x:11, y:0, r:1][x:10, y:0, r:3][x:10, y:0, r:1]The bot played the piece at coordinates 11 0 with roll 1
+0  0  0  0  0  2B | 0  2B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  1B 0  2B 0  | 0  0  0  0  7W 4W | W Home | E: 0 I: 4 
+
+0  0  0  0  0  2B | 0  2B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  1B 0  2B 0  | 0  0  0  0  7W 3W | W Home | E: 0 I: 5 
+
+[x:10, y:0, r:3]The bot played the piece at coordinates 10 0 with roll 3
+0  0  0  0  0  2B | 0  2B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  1B 0  2B 0  | 0  0  0  0  7W 3W | W Home | E: 0 I: 5 
+
+0  0  0  0  0  2B | 0  2B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  1B 0  2B 0  | 0  0  0  0  6W 3W | W Home | E: 0 I: 6 
+
+---------------------------------------
+              TURN 59
+---------------------------------------
+It is RandomBot's your turn.
+RandomBot rolled [3, 6]
+0  0  0  0  0  2B | 0  2B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  1B 0  2B 0  | 0  0  0  0  6W 3W | W Home | E: 0 I: 6 
+
+[x:2, y:0, r:3][x:4, y:0, r:3][x:2, y:0, r:6][x:5, y:1, r:6][x:7, y:1, r:3][x:4, y:0, r:6][x:5, y:1, r:3]The bot played the piece at coordinates 4 0 with roll 3
+0  0  0  0  0  2B | 0  2B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  0  1B 0  2B 0  | 0  0  0  0  6W 3W | W Home | E: 0 I: 6 
+
+0  0  0  0  0  2B | 0  2B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  1B 1B 0  1B 0  | 0  0  0  0  6W 3W | W Home | E: 0 I: 6 
+
+[x:1, y:0, r:6][x:4, y:0, r:6][x:2, y:0, r:6][x:5, y:1, r:6]The bot played the piece at coordinates 5 1 with roll 6
+0  0  0  0  0  2B | 0  2B 0  0  1B 7B | B Home | E: 0 I: 0 
+0  1B 1B 0  1B 0  | 0  0  0  0  6W 3W | W Home | E: 0 I: 6 
+
+0  0  0  0  0  1B | 0  2B 0  0  1B 8B | B Home | E: 0 I: 0 
+0  1B 1B 0  1B 0  | 0  0  0  0  6W 3W | W Home | E: 0 I: 6 
+
+---------------------------------------
+              TURN 60
+---------------------------------------
+It is RandomBot's your turn.
 RandomBot rolled [4, 2]
-0  0  0  0  0  0  | 0  0  0  0  0  2B | B Home | E: 0 I: 13 
+0  0  0  0  0  1B | 0  2B 0  0  1B 8B | B Home | E: 0 I: 0 
+0  1B 1B 0  1B 0  | 0  0  0  0  6W 3W | W Home | E: 0 I: 6 
+
+[x:10, y:0, r:4][x:10, y:0, r:2]The bot played the piece at coordinates 10 0 with roll 2
+0  0  0  0  0  1B | 0  2B 0  0  1B 8B | B Home | E: 0 I: 0 
+0  1B 1B 0  1B 0  | 0  0  0  0  6W 3W | W Home | E: 0 I: 6 
+
+0  0  0  0  0  1B | 0  2B 0  0  1B 8B | B Home | E: 0 I: 0 
+0  1B 1B 0  1B 0  | 0  0  0  0  5W 3W | W Home | E: 0 I: 7 
+
+[x:10, y:0, r:4]The bot played the piece at coordinates 10 0 with roll 4
+0  0  0  0  0  1B | 0  2B 0  0  1B 8B | B Home | E: 0 I: 0 
+0  1B 1B 0  1B 0  | 0  0  0  0  5W 3W | W Home | E: 0 I: 7 
+
+0  0  0  0  0  1B | 0  2B 0  0  1B 8B | B Home | E: 0 I: 0 
+0  1B 1B 0  1B 0  | 0  0  0  0  4W 3W | W Home | E: 0 I: 8 
+
+---------------------------------------
+              TURN 61
+---------------------------------------
+It is RandomBot's your turn.
+RandomBot rolled [5, 6]
+0  0  0  0  0  1B | 0  2B 0  0  1B 8B | B Home | E: 0 I: 0 
+0  1B 1B 0  1B 0  | 0  0  0  0  4W 3W | W Home | E: 0 I: 8 
+
+[x:1, y:0, r:6][x:4, y:0, r:6][x:4, y:0, r:5][x:5, y:1, r:5][x:5, y:1, r:6][x:1, y:0, r:5][x:2, y:0, r:5][x:2, y:0, r:6]The bot played the piece at coordinates 2 0 with roll 5
+0  0  0  0  0  1B | 0  2B 0  0  1B 8B | B Home | E: 0 I: 0 
+0  1B 1B 0  1B 0  | 0  0  0  0  4W 3W | W Home | E: 0 I: 8 
+
+0  0  1B 0  0  1B | 0  2B 0  0  1B 8B | B Home | E: 0 I: 0 
+0  1B 0  0  1B 0  | 0  0  0  0  4W 3W | W Home | E: 0 I: 8 
+
+[x:2, y:1, r:6][x:1, y:0, r:6][x:4, y:0, r:6][x:5, y:1, r:6]The bot played the piece at coordinates 4 0 with roll 6
+0  0  1B 0  0  1B | 0  2B 0  0  1B 8B | B Home | E: 0 I: 0 
+0  1B 0  0  1B 0  | 0  0  0  0  4W 3W | W Home | E: 0 I: 8 
+
+0  1B 1B 0  0  1B | 0  2B 0  0  1B 8B | B Home | E: 0 I: 0 
+0  1B 0  0  0  0  | 0  0  0  0  4W 3W | W Home | E: 0 I: 8 
+
+---------------------------------------
+              TURN 62
+---------------------------------------
+It is RandomBot's your turn.
+RandomBot rolled [1, 2]
+0  1B 1B 0  0  1B | 0  2B 0  0  1B 8B | B Home | E: 0 I: 0 
+0  1B 0  0  0  0  | 0  0  0  0  4W 3W | W Home | E: 0 I: 8 
+
+[x:10, y:0, r:1][x:10, y:0, r:2][x:11, y:0, r:1]The bot played the piece at coordinates 11 0 with roll 1
+0  1B 1B 0  0  1B | 0  2B 0  0  1B 8B | B Home | E: 0 I: 0 
+0  1B 0  0  0  0  | 0  0  0  0  4W 3W | W Home | E: 0 I: 8 
+
+0  1B 1B 0  0  1B | 0  2B 0  0  1B 8B | B Home | E: 0 I: 0 
+0  1B 0  0  0  0  | 0  0  0  0  4W 2W | W Home | E: 0 I: 9 
+
+[x:10, y:0, r:2]The bot played the piece at coordinates 10 0 with roll 2
+0  1B 1B 0  0  1B | 0  2B 0  0  1B 8B | B Home | E: 0 I: 0 
+0  1B 0  0  0  0  | 0  0  0  0  4W 2W | W Home | E: 0 I: 9 
+
+0  1B 1B 0  0  1B | 0  2B 0  0  1B 8B | B Home | E: 0 I: 0 
+0  1B 0  0  0  0  | 0  0  0  0  3W 2W | W Home | E: 0 I: 10 
+
+---------------------------------------
+              TURN 63
+---------------------------------------
+It is RandomBot's your turn.
+RandomBot rolled [2, 6]
+0  1B 1B 0  0  1B | 0  2B 0  0  1B 8B | B Home | E: 0 I: 0 
+0  1B 0  0  0  0  | 0  0  0  0  3W 2W | W Home | E: 0 I: 10 
+
+[x:5, y:1, r:6][x:1, y:1, r:2][x:2, y:1, r:6][x:1, y:1, r:6][x:1, y:0, r:2][x:5, y:1, r:2][x:7, y:1, r:2][x:1, y:0, r:6][x:2, y:1, r:2]The bot played the piece at coordinates 2 1 with roll 2
+0  1B 1B 0  0  1B | 0  2B 0  0  1B 8B | B Home | E: 0 I: 0 
+0  1B 0  0  0  0  | 0  0  0  0  3W 2W | W Home | E: 0 I: 10 
+
+0  1B 0  0  1B 1B | 0  2B 0  0  1B 8B | B Home | E: 0 I: 0 
+0  1B 0  0  0  0  | 0  0  0  0  3W 2W | W Home | E: 0 I: 10 
+
+[x:1, y:1, r:6][x:4, y:1, r:6][x:5, y:1, r:6][x:1, y:0, r:6]The bot played the piece at coordinates 5 1 with roll 6
+0  1B 0  0  1B 1B | 0  2B 0  0  1B 8B | B Home | E: 0 I: 0 
+0  1B 0  0  0  0  | 0  0  0  0  3W 2W | W Home | E: 0 I: 10 
+
+0  1B 0  0  1B 0  | 0  2B 0  0  1B 9B | B Home | E: 0 I: 0 
+0  1B 0  0  0  0  | 0  0  0  0  3W 2W | W Home | E: 0 I: 10 
+
+---------------------------------------
+              TURN 64
+---------------------------------------
+It is RandomBot's your turn.
+RandomBot rolled [1, 1]
+RandomBot rolled doubles!
+0  1B 0  0  1B 0  | 0  2B 0  0  1B 9B | B Home | E: 0 I: 0 
+0  1B 0  0  0  0  | 0  0  0  0  3W 2W | W Home | E: 0 I: 10 
+
+[x:11, y:0, r:1][x:10, y:0, r:1]The bot played the piece at coordinates 10 0 with roll 1
+0  1B 0  0  1B 0  | 0  2B 0  0  1B 9B | B Home | E: 0 I: 0 
+0  1B 0  0  0  0  | 0  0  0  0  3W 2W | W Home | E: 0 I: 10 
+
+0  1B 0  0  1B 0  | 0  2B 0  0  1B 9B | B Home | E: 0 I: 0 
+0  1B 0  0  0  0  | 0  0  0  0  2W 3W | W Home | E: 0 I: 10 
+
+[x:10, y:0, r:1][x:11, y:0, r:1]The bot played the piece at coordinates 10 0 with roll 1
+0  1B 0  0  1B 0  | 0  2B 0  0  1B 9B | B Home | E: 0 I: 0 
+0  1B 0  0  0  0  | 0  0  0  0  2W 3W | W Home | E: 0 I: 10 
+
+0  1B 0  0  1B 0  | 0  2B 0  0  1B 9B | B Home | E: 0 I: 0 
+0  1B 0  0  0  0  | 0  0  0  0  1W 4W | W Home | E: 0 I: 10 
+
+[x:11, y:0, r:1][x:10, y:0, r:1]The bot played the piece at coordinates 10 0 with roll 1
+0  1B 0  0  1B 0  | 0  2B 0  0  1B 9B | B Home | E: 0 I: 0 
+0  1B 0  0  0  0  | 0  0  0  0  1W 4W | W Home | E: 0 I: 10 
+
+0  1B 0  0  1B 0  | 0  2B 0  0  1B 9B | B Home | E: 0 I: 0 
+0  1B 0  0  0  0  | 0  0  0  0  0  5W | W Home | E: 0 I: 10 
+
+[x:11, y:0, r:1]The bot played the piece at coordinates 11 0 with roll 1
+0  1B 0  0  1B 0  | 0  2B 0  0  1B 9B | B Home | E: 0 I: 0 
+0  1B 0  0  0  0  | 0  0  0  0  0  5W | W Home | E: 0 I: 10 
+
+0  1B 0  0  1B 0  | 0  2B 0  0  1B 9B | B Home | E: 0 I: 0 
+0  1B 0  0  0  0  | 0  0  0  0  0  4W | W Home | E: 0 I: 11 
+
+---------------------------------------
+              TURN 65
+---------------------------------------
+It is RandomBot's your turn.
+RandomBot rolled [5, 4]
+0  1B 0  0  1B 0  | 0  2B 0  0  1B 9B | B Home | E: 0 I: 0 
+0  1B 0  0  0  0  | 0  0  0  0  0  4W | W Home | E: 0 I: 11 
+
+[x:1, y:0, r:4][x:7, y:1, r:4][x:1, y:0, r:5][x:1, y:1, r:5][x:4, y:1, r:4][x:1, y:1, r:4][x:4, y:1, r:5]The bot played the piece at coordinates 1 0 with roll 4
+0  1B 0  0  1B 0  | 0  2B 0  0  1B 9B | B Home | E: 0 I: 0 
+0  1B 0  0  0  0  | 0  0  0  0  0  4W | W Home | E: 0 I: 11 
+
+0  1B 1B 0  1B 0  | 0  2B 0  0  1B 9B | B Home | E: 0 I: 0 
+0  0  0  0  0  0  | 0  0  0  0  0  4W | W Home | E: 0 I: 11 
+
+[x:1, y:1, r:5][x:2, y:1, r:5][x:4, y:1, r:5]The bot played the piece at coordinates 2 1 with roll 5
+0  1B 1B 0  1B 0  | 0  2B 0  0  1B 9B | B Home | E: 0 I: 0 
+0  0  0  0  0  0  | 0  0  0  0  0  4W | W Home | E: 0 I: 11 
+
+0  1B 0  0  1B 0  | 0  3B 0  0  1B 9B | B Home | E: 0 I: 0 
+0  0  0  0  0  0  | 0  0  0  0  0  4W | W Home | E: 0 I: 11 
+
+---------------------------------------
+              TURN 66
+---------------------------------------
+It is RandomBot's your turn.
+RandomBot rolled [4, 2]
+0  1B 0  0  1B 0  | 0  3B 0  0  1B 9B | B Home | E: 0 I: 0 
+0  0  0  0  0  0  | 0  0  0  0  0  4W | W Home | E: 0 I: 11 
+
+[x:11, y:0, r:2][x:11, y:0, r:4]The bot played the piece at coordinates 11 0 with roll 2
+0  1B 0  0  1B 0  | 0  3B 0  0  1B 9B | B Home | E: 0 I: 0 
+0  0  0  0  0  0  | 0  0  0  0  0  4W | W Home | E: 0 I: 11 
+
+0  1B 0  0  1B 0  | 0  3B 0  0  1B 9B | B Home | E: 0 I: 0 
+0  0  0  0  0  0  | 0  0  0  0  0  3W | W Home | E: 0 I: 12 
+
+[x:11, y:0, r:4]The bot played the piece at coordinates 11 0 with roll 4
+0  1B 0  0  1B 0  | 0  3B 0  0  1B 9B | B Home | E: 0 I: 0 
+0  0  0  0  0  0  | 0  0  0  0  0  3W | W Home | E: 0 I: 12 
+
+0  1B 0  0  1B 0  | 0  3B 0  0  1B 9B | B Home | E: 0 I: 0 
+0  0  0  0  0  0  | 0  0  0  0  0  2W | W Home | E: 0 I: 13 
+
+---------------------------------------
+              TURN 67
+---------------------------------------
+It is RandomBot's your turn.
+RandomBot rolled [6, 2]
+0  1B 0  0  1B 0  | 0  3B 0  0  1B 9B | B Home | E: 0 I: 0 
+0  0  0  0  0  0  | 0  0  0  0  0  2W | W Home | E: 0 I: 13 
+
+[x:1, y:1, r:6][x:4, y:1, r:2][x:4, y:1, r:6][x:7, y:1, r:2][x:1, y:1, r:2]The bot played the piece at coordinates 7 1 with roll 2
+0  1B 0  0  1B 0  | 0  3B 0  0  1B 9B | B Home | E: 0 I: 0 
+0  0  0  0  0  0  | 0  0  0  0  0  2W | W Home | E: 0 I: 13 
+
+0  1B 0  0  1B 0  | 0  2B 0  1B 1B 9B | B Home | E: 0 I: 0 
+0  0  0  0  0  0  | 0  0  0  0  0  2W | W Home | E: 0 I: 13 
+
+[x:1, y:1, r:6][x:4, y:1, r:6]The bot played the piece at coordinates 4 1 with roll 6
+0  1B 0  0  1B 0  | 0  2B 0  1B 1B 9B | B Home | E: 0 I: 0 
+0  0  0  0  0  0  | 0  0  0  0  0  2W | W Home | E: 0 I: 13 
+
+0  1B 0  0  0  0  | 0  2B 0  1B 2B 9B | B Home | E: 0 I: 0 
+0  0  0  0  0  0  | 0  0  0  0  0  2W | W Home | E: 0 I: 13 
+
+---------------------------------------
+              TURN 68
+---------------------------------------
+It is RandomBot's your turn.
+RandomBot rolled [4, 3]
+0  1B 0  0  0  0  | 0  2B 0  1B 2B 9B | B Home | E: 0 I: 0 
+0  0  0  0  0  0  | 0  0  0  0  0  2W | W Home | E: 0 I: 13 
+
+[x:11, y:0, r:4][x:11, y:0, r:3]The bot played the piece at coordinates 11 0 with roll 4
+0  1B 0  0  0  0  | 0  2B 0  1B 2B 9B | B Home | E: 0 I: 0 
+0  0  0  0  0  0  | 0  0  0  0  0  2W | W Home | E: 0 I: 13 
+
+0  1B 0  0  0  0  | 0  2B 0  1B 2B 9B | B Home | E: 0 I: 0 
 0  0  0  0  0  0  | 0  0  0  0  0  1W | W Home | E: 0 I: 14 
 
-[x:11, y:1, r:4][x:11, y:1, r:2]The bot played the piece at coordinates 11 1 with roll 4
-0  0  0  0  0  0  | 0  0  0  0  0  2B | B Home | E: 0 I: 13 
+[x:11, y:0, r:3]The bot played the piece at coordinates 11 0 with roll 3
+0  1B 0  0  0  0  | 0  2B 0  1B 2B 9B | B Home | E: 0 I: 0 
 0  0  0  0  0  0  | 0  0  0  0  0  1W | W Home | E: 0 I: 14 
 
-0  0  0  0  0  0  | 0  0  0  0  0  1B | B Home | E: 0 I: 14 
-0  0  0  0  0  0  | 0  0  0  0  0  1W | W Home | E: 0 I: 14 
-
-[x:11, y:1, r:2]The bot played the piece at coordinates 11 1 with roll 2
-0  0  0  0  0  0  | 0  0  0  0  0  1B | B Home | E: 0 I: 14 
-0  0  0  0  0  0  | 0  0  0  0  0  1W | W Home | E: 0 I: 14 
-
-0  0  0  0  0  0  | 0  0  0  0  0  0  | B Home | E: 0 I: 15 
-0  0  0  0  0  0  | 0  0  0  0  0  1W | W Home | E: 0 I: 14 
+0  1B 0  0  0  0  | 0  2B 0  1B 2B 9B | B Home | E: 0 I: 0 
+0  0  0  0  0  0  | 0  0  0  0  0  0  | W Home | E: 0 I: 15 
 
