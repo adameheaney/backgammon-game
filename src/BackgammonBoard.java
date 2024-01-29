@@ -36,6 +36,7 @@ public class BackgammonBoard {
      * creates a board with the default setup
      */
     public BackgammonBoard() {
+        //DO NOT CHANGE THESE NUMBERS AS THEY ARE WHAT SETS THE BOARD UP CORRECTLY AT THE START
         initializeBoard("0 1 0 1 0 1 0 1 0 1 11 1 11 1 4 0 4 0 4 0 6 0 6 0 6 0 6 0 6 0"
         , "0 0 0 0 0 0 0 0 0 0 11 0 11 0 4 1 4 1 4 1 6 1 6 1 6 1 6 1 6 1");
     }
@@ -127,8 +128,10 @@ public class BackgammonBoard {
      * @param moveTwo
      * @return
      */
-    public HashSet<int[]> getAllValidMoves(int[] rolls) {
+    public HashSet<int[]> getAllPossibleMoves(int[] rolls) {
         HashSet<int[]> validMoves = new HashSet<>();
+        //if(rolls[3] > -1)
+        //    rolls = new int[] {rolls[0], -1, -1, -1};
         for(int i = 0; i < 2; i++) {
             for(int j = 0; j < NUM_SPACES; j++) {
                 validMoves.addAll(validMovesForPlace(j, i, rolls, new int[] {j , i}, new boolean[4], new HashSet<int[]>()));
