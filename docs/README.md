@@ -24,7 +24,7 @@ Alternatively, you can use an IDE of your choice and run the BackgammonRunner cl
 - The same rules as a player vs. player game applies
 
 ## How to play a bot vs. bot game
-- When you type "BB" upon running the program, you will be prompted to choose your two bots. Enter the name of the bot of your choice's class. (if you made your own bot make sure to add it to the map; see [How to add your own bots!](##How-to-add-your-own-bots!) for more info)
+- When you type "BB" upon running the program, you will be prompted to choose your two bots. Enter the name of the bot of your choice's class. (if you made your own bot make sure to add it to the map; see [How to add your own bots!](#How-to-add-your-own-bots!) for more info)
 - The game will happen instantly and be saved to the game.txt file. If you want it to be printed to the console, then comment out the line that calls printToFile()
 
 ## How to add your own bots!
