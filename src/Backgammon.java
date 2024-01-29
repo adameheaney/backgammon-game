@@ -415,8 +415,10 @@ public class Backgammon {
     //Methods to play with bots
     //--------------------------------------------------------------------------------------------------------------------
 
+
     /**
-     * The method to call to start the game: it starts the game and then keeps the gameloop going until someone wins
+     * Method to call that starts a game with a bot
+     * @param bot
      */
     public void playAgainstBot(BackgammonBot bot) {
         int turn = 1;
@@ -431,6 +433,11 @@ public class Backgammon {
         }
     }
 
+    /**
+     * Method to call that starts a game with two bots against each other 
+     * @param bot The first bot 
+     * @param bot2 second bot
+     */
     public void botAgainstBot(BackgammonBot bot, BackgammonBot bot2) {
         printToFile("docs/game.txt");
         int turn = 1;
@@ -446,6 +453,10 @@ public class Backgammon {
         }
     }
 
+    /**
+     * starts a bot game against a bot
+     * @param bot
+     */
     private void startBotGame(BackgammonBot bot) {
         System.out.println("Welcome to the game of Backgammon! I will not be restating the rules as I assume you know them if you're playing this. The code for this game was created from scratch by Adam Heaney using only Java and dedication. \n\nHow to play: When it is your turn to move, input the roll and coordinates as follows: \"roll x y\". Here is what the board looks like:\n\n" + b.boardString() + "\nThe two teams are B and W (black and white). Black's home is the top row and White's is the bottom. E is how many of your pieces are eaten and I is how many of your pieces are home. When ready, pick teams and press enter to begin the game!");
         console.nextLine();
@@ -485,6 +496,11 @@ public class Backgammon {
         b.switchTurn();
     }
 
+    /**
+     * starts a game with two bots against each other 
+     * @param bot
+     * @param bot2
+     */
     private void startBotGame(BackgammonBot bot, BackgammonBot bot2) {
         //System.out.println("Welcome to the game of Backgammon! I will not be restating the rules as I assume you know them if you're playing this. The code for this game was created from scratch by Adam Heaney using only Java and dedication. \n\nHow to play: When it is your turn to move, input the roll and coordinates as follows: \"roll x y\". Here is what the board looks like:\n\n" + b.boardString() + "\nThe two teams are B and W (black and white). Black's home is the top row and White's is the bottom. E is how many of your pieces are eaten and I is how many of your pieces are home. When ready, pick teams and press enter to begin the game!");
         //console.nextLine();
@@ -524,6 +540,10 @@ public class Backgammon {
         b.switchTurn();
     }
 
+    /**
+     * The game loop for a game of a player vs a bot
+     * @param bot
+     */
     private void botGameLoop(BackgammonBot bot) {
         //initialize the rolls
         rolls = d.rolls(2);
@@ -571,6 +591,11 @@ public class Backgammon {
         }
     }
 
+    /**
+     * the game loop for a game with a bot vs a bot
+     * @param bot
+     * @param bot2
+     */
     private void botGameLoop(BackgammonBot bot, BackgammonBot bot2) {
         //initialize the rolls
         rolls = d.rolls(2);
@@ -618,6 +643,12 @@ public class Backgammon {
         }
     }
     
+    /**
+     * the logic for a bot's turn to be processed.
+     * @param bot the bot used
+     * @param allMoves all valid moves
+     * @return the move the bot chooses
+     */
     private int[] botTurn(BackgammonBot bot, ArrayList<int[]> allMoves) {
         bot.evaluateMoves(allMoves);
         int[] botMove = bot.getMove();
@@ -626,6 +657,11 @@ public class Backgammon {
         return botMove;
     }
 
+    /**
+     * The logic for a player's turn
+     * @param allMoves arraylist of int[] of all valid moves
+     * @return the move chosen by the player
+     */
     private int[] playerTurn(ArrayList<int[]> allMoves) {
         // uncomment to print all the valid moves
         // for(int[] list : allMoves) {
