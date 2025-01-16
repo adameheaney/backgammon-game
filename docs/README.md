@@ -1,5 +1,9 @@
 # READ ME
 
+## Backgammon
+This is a recreation of the boardgame Backgammon, programmed in Java, entirely by myself, playable in the terminal. 
+You can play against another person, a bot, or you can run a game with a bot versus another bot and see the results.
+
 ## Getting Started
 - Download the files
 - Open your terminal
